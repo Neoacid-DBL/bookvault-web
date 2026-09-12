@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BookVault — Tu biblioteca y tu lector, sin nube y sin cuenta</title>
+<meta name="description" content="BookVault es un lector de EPUB, PDF, TXT y CBZ para Android con estantería de baldas, anotaciones, estadísticas y objetivos. Funciona sin conexión: tus libros no salen del móvil." />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="assets/bookvault_icon.svg" />
+<link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/" />
+<meta property="og:title" content="BookVault — Tu biblioteca y tu lector, sin nube y sin cuenta" />
+<meta property="og:description" content="Lector de EPUB, PDF, TXT y CBZ para Android con estantería de baldas, anotaciones y estadísticas. Tus libros no salen del móvil." />
+<meta property="og:site_name" content="BookVault" />
+<meta property="og:image" content="https://neoacid-dbl.github.io/bookvault-web/assets/bookvault_icon.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BookVault — Tu biblioteca y tu lector, sin nube y sin cuenta" />
+<meta name="twitter:description" content="Lector de EPUB, PDF, TXT y CBZ para Android con estantería de baldas, anotaciones y estadísticas. Tus libros no salen del móvil." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ─────────────────────────── NAV ─────────────────────────── -->
+<nav class="nav">
+  <a href="#" class="nav-logo" aria-label="BookVault">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">BookVault</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="#features" data-i18n="nav.features">Funciones</a>
+    <a href="#formats"  data-i18n="nav.formats">Formatos</a>
+    <a href="#privacy"  data-i18n="nav.privacy">Privacidad</a>
+    <a href="#download" data-i18n="nav.download">Descargar</a>
+  </div>
+
+  <div class="nav-right">
+    <div class="lang-wrap">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <span class="flag" id="langFlag">🇪🇸</span>
+        <span id="langLabel">ES</span>
+        <span class="chev">▾</span>
+      </button>
+      <div class="lang-menu" id="langMenu" role="menu"></div>
+    </div>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.danib.bookvault" target="_blank" rel="noopener" data-i18n="nav.download">Descargar</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ─────────────────────────── HERO ─────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow" data-i18n="hero.eyebrow">Android · Gratis · Sin conexión</div>
+        <h1>
+          <span class="row" data-i18n="hero.titleA">Tu biblioteca.</span>
+          <span class="row em" data-i18n="hero.titleB">Tu estantería.</span>
+          <span class="row muted" data-i18n="hero.titleC">Tu móvil, y ya está.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">BookVault es un lector de EPUB, PDF, TXT y CBZ con estantería de baldas, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+            </svg>
+            <span class="btn-sub">
+              <span class="small" data-i18n="hero.ctaSub">En Google Play</span>
+              <span data-i18n="hero.cta">Descargar gratis</span>
+            </span>
+          </a>
+          <a class="btn-ghost" href="#how">
+            <span data-i18n="hero.secondary">Cómo funciona</span>
+            <span style="font-size:13px;opacity:0.6;">↓</span>
+          </a>
+        </div>
+        <div class="hero-chips" data-chips></div>
+        <p class="hero-note" data-i18n="hero.note">Gratis, con anuncios en las pantallas de navegación. Ni uno mientras lees.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shelf-card">
+          <div class="shelf-card-head">
+            <span class="name" data-i18n="hero.shelfName">Leyendo ahora</span>
+            <span class="count" data-i18n="hero.shelfCount">6 libros</span>
+          </div>
+
+          <!-- Balda de roble con seis lomos, dibujada con los mismos tonos que la app -->
+          <svg class="shelf-svg" viewBox="0 0 420 214" role="presentation">
+            <defs>
+              <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3B2C21"/>
+                <stop offset="1" stop-color="#4A382A"/>
+              </linearGradient>
+              <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#C79A62"/>
+                <stop offset="0.45" stop-color="#B0834C"/>
+                <stop offset="1" stop-color="#8A6236"/>
+              </linearGradient>
+            </defs>
+
+            <rect x="6" y="4" width="408" height="176" rx="10" fill="url(#panel)"/>
+
+            <!-- Lomos -->
+            <g>
+              <rect x="34"  y="52"  width="34" height="128" rx="3" fill="#A0505F"/>
+              <rect x="34"  y="74"  width="34" height="9"       fill="#F7E9EC" opacity="0.75"/>
+              <rect x="42"  y="96"  width="18" height="4" rx="2" fill="#F7E9EC" opacity="0.45"/>
+
+              <rect x="74"  y="76"  width="26" height="104" rx="3" fill="#C9D2BF"/>
+              <rect x="74"  y="96"  width="26" height="7"       fill="#33402C" opacity="0.5"/>
+
+              <rect x="106" y="38"  width="38" height="142" rx="3" fill="#E8D2A8"/>
+              <rect x="106" y="62"  width="38" height="10"      fill="#5C4517" opacity="0.35"/>
+              <rect x="116" y="88"  width="18" height="4" rx="2" fill="#5C4517" opacity="0.3"/>
+
+              <rect x="150" y="66"  width="30" height="114" rx="3" fill="#241E1B"/>
+              <rect x="150" y="88"  width="30" height="8"       fill="#F3D9A0" opacity="0.85"/>
+
+              <rect x="186" y="46"  width="32" height="134" rx="3" fill="#DCC7CB"/>
+              <rect x="186" y="70"  width="32" height="9"       fill="#4F323A" opacity="0.45"/>
+              <rect x="195" y="96"  width="14" height="4" rx="2" fill="#4F323A" opacity="0.35"/>
+
+              <rect x="224" y="82"  width="28" height="98" rx="3" fill="#B7C4CE"/>
+              <rect x="224" y="100" width="28" height="7"      fill="#2E3A44" opacity="0.45"/>
+            </g>
+
+            <!-- Hueco: el libro que viaja a esta balda -->
+            <g opacity="0.95">
+              <rect x="286" y="58" width="36" height="122" rx="3" fill="none" stroke="#8A6236" stroke-width="2" stroke-dasharray="6 6" opacity="0.75"/>
+              <g transform="translate(330 30) rotate(7)">
+                <rect x="0" y="0" width="36" height="122" rx="3" fill="#CFC4BA"/>
+                <rect x="0" y="26" width="36" height="10" fill="#3B332D" opacity="0.42"/>
+                <rect x="9" y="54" width="18" height="4" rx="2" fill="#3B332D" opacity="0.3"/>
+              </g>
+            </g>
+
+            <!-- Tabla -->
+            <rect x="6" y="180" width="408" height="18" rx="4" fill="url(#board)"/>
+            <rect x="6" y="180" width="408" height="3"  rx="1.5" fill="#E0BD8E" opacity="0.6"/>
+            <rect x="26" y="198" width="16" height="12" rx="3" fill="#6B4A33"/>
+            <rect x="378" y="198" width="16" height="12" rx="3" fill="#6B4A33"/>
+          </svg>
+
+          <div class="shelf-caption" data-i18n="hero.shelfCaption">Arrastra un libro de una balda a otra. Como en casa.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CIFRAS ─────────────────────────── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-inner reveal">
+        <div class="stats-label" data-i18n="stats.label">BookVault en cuatro cifras</div>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="num" data-i18n="stats.a.num">0</span><span class="unit" data-i18n="stats.a.unit">bytes</span>
+            <div class="cap" data-i18n="stats.a.cap">de tus libros salen del móvil</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.b.num">5</span><span class="unit" data-i18n="stats.b.unit">formatos</span>
+            <div class="cap" data-i18n="stats.b.cap">EPUB, PDF, TXT, MD y CBZ</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.c.num">0</span><span class="unit" data-i18n="stats.c.unit">cuentas</span>
+            <div class="cap" data-i18n="stats.c.cap">que crear para empezar a leer</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.d.num">0</span><span class="unit" data-i18n="stats.d.unit">permisos</span>
+            <div class="cap" data-i18n="stats.d.cap">de acceso a tu almacenamiento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CÓMO FUNCIONA ─────────────────────────── -->
+  <section class="showcase" id="how">
+    <div class="container showcase-grid">
+      <div class="showcase-text reveal">
+        <div class="eyebrow" data-i18n="showcase.eyebrow">Cómo funciona</div>
+        <h2 data-i18n="showcase.title">Tres pasos y a leer.</h2>
+        <p class="sub" data-i18n="showcase.sub">Nada de asistentes, escaneos ni registros. Traes tus ficheros y la app se aparta.</p>
+        <div class="steps" id="steps"></div>
+      </div>
+
+      <div class="showcase-visual reveal" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-bar">
+              <span data-i18n="showcase.phone.bar">Capítulo 4</span>
+              <span data-i18n="showcase.phone.time">21:40</span>
+            </div>
+            <div class="phone-body">
+              <div class="reader-title" data-i18n="showcase.phone.title">La casa junto al faro</div>
+              <div class="reader-line w9"></div>
+              <div class="reader-line w8"></div>
+              <div class="reader-line w9 mark"></div>
+              <div class="reader-line w7 mark"></div>
+              <div class="reader-line w9"></div>
+              <div class="reader-line w8"></div>
+              <div class="reader-line w9 mark2"></div>
+              <div class="reader-line w7"></div>
+              <div class="reader-line w9"></div>
+              <div class="reader-line w8"></div>
+              <div class="no-ads-badge" data-i18n="showcase.phone.badge">✓ Sin anuncios aquí dentro</div>
+              <div class="reader-foot">
+                <div class="progress-track"><div class="progress-fill"></div></div>
+                <div class="reader-meta">
+                  <span data-i18n="showcase.phone.page">Página 148 / 239</span>
+                  <span data-i18n="showcase.phone.left">Te quedan 41 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── FUNCIONES ─────────────────────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-head reveal">
+        <div class="eyebrow" data-i18n="features.eyebrow">Funciones</div>
+        <h2 data-i18n="features.title">Lo que esperas de un lector, y la parte que las apps suelen quitarte.</h2>
+        <p class="sub" data-i18n="features.sub">Tener libros también es colocarlos, subrayarlos y saber cuánto has leído.</p>
+      </div>
+      <div class="features-grid" id="featuresGrid"></div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── FORMATOS ─────────────────────────── -->
+  <section class="formats" id="formats">
+    <div class="container">
+      <div class="formats-wrap reveal">
+        <div class="formats-head">
+          <div>
+            <div class="eyebrow" data-i18n="formats.eyebrow">Formatos</div>
+            <h2 data-i18n="formats.title">Los que ya tienes en la carpeta de descargas.</h2>
+          </div>
+          <p class="sub" style="max-width:34ch" data-i18n="formats.sub">Sin convertir nada y sin herramientas de escritorio por medio.</p>
+        </div>
+        <div class="formats-grid" id="formatsGrid"></div>
+        <p class="formats-note" data-i18n="formats.note">Los .cbr se quedan fuera a propósito: casi todos usan RAR5 y no hay lector en Android capaz de abrirlos, así que la app te lo dice al importar en lugar de dejarte con un cómic que no abre. FB2 y MOBI llegan en la 1.5.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── PRIVACIDAD ─────────────────────────── -->
+  <section class="privacy" id="privacy">
+    <div class="container">
+      <div class="privacy-wrap reveal">
+        <div class="privacy-grid">
+          <div class="privacy-text">
+            <div class="eyebrow" data-i18n="privacy.eyebrow">Privacidad</div>
+            <h2>
+              <span data-i18n="privacy.titleA">Tus libros no salen</span>
+              <span class="em" data-i18n="privacy.titleB">del móvil.</span>
+            </h2>
+            <p class="sub" data-i18n="privacy.sub">No hay servidor, no hay cuenta y no hay sincronización. Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas viven en la base de datos del teléfono y no se envían a ningún sitio.</p>
+            <div class="check-grid" id="checkGrid"></div>
+            <a class="more" href="privacy.html" data-i18n="privacy.cta">Leer la política completa →</a>
+          </div>
+
+          <div class="vault" aria-hidden="true">
+            <div class="vault-ring">
+              <div class="vault-inner">
+                <div class="vault-core">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>
+                    <circle cx="14" cy="11" r="2.6"/>
+                    <path d="M14 13.6V16"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CTA FINAL ─────────────────────────── -->
+  <section class="bigcta" id="download">
+    <div class="container">
+      <div class="bigcta-wrap reveal">
+        <span class="mark">
+          <svg viewBox="0 0 48 56" width="44" height="51" aria-hidden="true">
+            <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+            <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+            <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+            <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+            <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+            <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+          </svg>
+        </span>
+        <h2 id="ctaTitle">Listo para abrir el primer libro.</h2>
+        <p data-i18n="cta.sub">Gratis en Google Play, para Android 8 y superior. En español e inglés.</p>
+        <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:26px;height:26px;">
+            <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+          </svg>
+          <span class="btn-sub">
+            <span class="small" data-i18n="cta.btnSub">Compatible con Android 8.0+</span>
+            <span data-i18n="cta.btn">Descargar en Google Play</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">BookVault</div>
+        <div class="tag" data-i18n="footer.tagline">Tus libros y tu lectura no salen del móvil.</div>
+      </div>
+    </div>
+    <div class="footer-links" id="footerLinks"></div>
+    <div class="footer-copy" data-i18n="footer.copy">© 2026 BookVault · Daniel Barea</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "BookVault",
+  "description": "Lector de EPUB, PDF, TXT y CBZ para Android con estantería de baldas, anotaciones, estadísticas y objetivos de lectura. Funciona sin conexión y sin cuenta.",
+  "applicationCategory": "BooksApplication",
+  "operatingSystem": "Android 8.0+",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.danib.bookvault",
+  "author": { "@type": "Person", "name": "Daniel Barea" },
+  "url": "https://neoacid-dbl.github.io/bookvault-web/"
+}
+</script>
+
+<script src="i18n.js"></script>
+<script>
+(function(){
+  const I18N  = window.BV_I18N;
+  const LANGS = ['es','en'];
+  const SHORT = { es:'ES', en:'EN' };
+
+  // Iconos de las tarjetas de función (trazo, estilo Lucide)
+  const ICONS = {
+    shelf:   '<svg viewBox="0 0 24 24"><path d="M3 3v18"/><path d="M7 8h3v13H7z"/><path d="M14 4h3v17h-3z"/><path d="M20 12h1v9h-1z"/><path d="M3 21h18"/></svg>',
+    book:    '<svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>',
+    marker:  '<svg viewBox="0 0 24 24"><path d="m9 11-6 6v3h3l6-6"/><path d="m15 5 4 4"/><path d="m13 7 4-4 4 4-4 4-4-4Z"/><path d="M9 11l4 4"/></svg>',
+    chart:   '<svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg>',
+    target:  '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg>',
+    tablet:  '<svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M10 19h4"/></svg>',
+    offline: '<svg viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 4.3-2.6"/><path d="M14.7 10.3A10 10 0 0 1 19 12.9"/><path d="M2 8.8A15 15 0 0 1 8 5.6"/><path d="M16 5.6a15 15 0 0 1 6 3.2"/><path d="M12 20h.01"/></svg>',
+    eyeoff:  '<svg viewBox="0 0 24 24"><path d="M9.9 4.2A10.9 10.9 0 0 1 12 4c7 0 10 8 10 8a18 18 0 0 1-2.7 3.9"/><path d="M6.6 6.6A18 18 0 0 0 2 12s3 8 10 8a10.9 10.9 0 0 0 5.4-1.4"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/><path d="m2 2 20 20"/></svg>',
+    folder:  '<svg viewBox="0 0 24 24"><path d="M4 20a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2Z"/><path d="M12 11v6"/><path d="m9 14 3-3 3 3"/></svg>'
+  };
+
+  function get(obj, path){
+    return path.split('.').reduce((a,k)=> (a && a[k] != null) ? a[k] : null, obj);
+  }
+  function esc(s){
+    return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function applyLang(lang){
+    const d = I18N[lang]; if (!d) return;
+    document.documentElement.lang = lang;
+    document.documentElement.dir  = d.dir;
+
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const v = get(d, el.getAttribute('data-i18n'));
+      if (v != null) el.textContent = v;
+    });
+
+    // Chips del hero
+    const chips = document.querySelector('[data-chips]');
+    if (chips){
+      chips.innerHTML = '';
+      (d.hero.chips || []).forEach(c=>{
+        const s = document.createElement('span');
+        s.className = 'chip'; s.textContent = c;
+        chips.appendChild(s);
+      });
+    }
+
+    renderSteps(d);
+    renderFeatures(d);
+    renderFormats(d);
+    renderChecks(d);
+    renderFooterLinks(d);
+
+    // Título del CTA: la última frase en cursiva rosa
+    const ctaH2 = document.getElementById('ctaTitle');
+    if (ctaH2 && d.cta && d.cta.title){
+      const parts = d.cta.title.split(' ');
+      const last  = parts.length > 2 ? parts.splice(-2).join(' ') : parts.pop();
+      ctaH2.innerHTML = esc(parts.join(' ')) + ' <span class="em">' + esc(last) + '</span>';
+    }
+
+    document.getElementById('langLabel').textContent = SHORT[lang];
+    document.getElementById('langFlag').textContent  = d.flag;
+
+    try { localStorage.setItem('bv_lang', lang); } catch(e){}
+    observeReveals();
+  }
+
+  function renderSteps(d){
+    const wrap = document.getElementById('steps'); if (!wrap) return;
+    wrap.innerHTML = '';
+    (d.showcase.steps || []).forEach((s,i)=>{
+      const el = document.createElement('div');
+      el.className = 'step';
+      el.innerHTML =
+        '<div class="step-num">' + (i+1) + '</div>' +
+        '<div class="step-body">' +
+          '<div class="kicker">' + esc(s.kicker) + '</div>' +
+          '<h3>' + esc(s.title) + '</h3>' +
+          '<p>' + esc(s.body) + '</p>' +
+        '</div>';
+      wrap.appendChild(el);
+    });
+  }
+
+  function renderFeatures(d){
+    const grid = document.getElementById('featuresGrid'); if (!grid) return;
+    const accents = ['', 'acc-sage', 'acc-honey', 'acc-ink', '', 'acc-sage', 'acc-honey', 'acc-ink', ''];
+    grid.innerHTML = '';
+    (d.features.items || []).forEach((f,i)=>{
+      const card = document.createElement('div');
+      card.className = ('f-card reveal ' + accents[i % accents.length]).trim();
+      card.innerHTML =
+        '<div class="icon-wrap">' + (ICONS[f.icon] || ICONS.book) + '</div>' +
+        '<div class="f-label">' + esc(f.label) + '</div>' +
+        '<h3>' + esc(f.title) + '</h3>' +
+        '<p>' + esc(f.body) + '</p>';
+      grid.appendChild(card);
+    });
+  }
+
+  function renderFormats(d){
+    const grid = document.getElementById('formatsGrid'); if (!grid) return;
+    grid.innerHTML = '';
+    (d.formats.items || []).forEach(f=>{
+      const el = document.createElement('div');
+      el.className = 'fmt' + (f.soon ? ' soon' : '');
+      el.innerHTML = '<span class="tag">' + esc(f.tag) + '</span><span class="what">' + esc(f.what) + '</span>';
+      grid.appendChild(el);
+    });
+  }
+
+  function renderChecks(d){
+    const wrap = document.getElementById('checkGrid'); if (!wrap) return;
+    wrap.innerHTML = '';
+    (d.privacy.checks || []).forEach(c=>{
+      const el = document.createElement('div');
+      el.className = 'check';
+      el.innerHTML =
+        '<span class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>' +
+        '<span>' + esc(c) + '</span>';
+      wrap.appendChild(el);
+    });
+  }
+
+  function renderFooterLinks(d){
+    const wrap = document.getElementById('footerLinks'); if (!wrap) return;
+    const hrefs = ['privacy.html', 'mailto:danibarea@gmail.com', 'https://play.google.com/store/apps/details?id=com.danib.bookvault'];
+    wrap.innerHTML = '';
+    (d.footer.links || []).forEach((label,i)=>{
+      const a = document.createElement('a');
+      a.href = hrefs[i] || '#';
+      a.textContent = label;
+      if (i === 2) { a.target = '_blank'; a.rel = 'noopener'; }
+      wrap.appendChild(a);
+    });
+  }
+
+  // ── Menú de idioma ────────────────────────────────────────
+  function buildLangMenu(){
+    const menu = document.getElementById('langMenu');
+    menu.innerHTML = '';
+    LANGS.forEach(l=>{
+      const d = I18N[l];
+      const btn = document.createElement('button');
+      btn.setAttribute('role','menuitem');
+      btn.dataset.lang = l;
+      btn.innerHTML = '<span class="flag">' + d.flag + '</span><span>' + d.name + '</span>';
+      btn.addEventListener('click', ()=>{ applyLang(l); markActive(l); toggleMenu(false); });
+      menu.appendChild(btn);
+    });
+  }
+  function markActive(lang){
+    document.querySelectorAll('#langMenu button').forEach(b=>{
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+  }
+  function toggleMenu(force){
+    const menu = document.getElementById('langMenu');
+    const btn  = document.getElementById('langBtn');
+    const open = typeof force === 'boolean' ? force : !menu.classList.contains('open');
+    menu.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.getElementById('langBtn').addEventListener('click', e=>{ e.stopPropagation(); toggleMenu(); });
+  document.addEventListener('click', e=>{ if (!e.target.closest('.lang-wrap')) toggleMenu(false); });
+
+  // ── Aparición al hacer scroll ─────────────────────────────
+  let io;
+  function observeReveals(){
+    if (!('IntersectionObserver' in window)){
+      document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+      return;
+    }
+    if (!io){
+      io = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+    }
+    document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
+  }
+
+  // ── Arranque ──────────────────────────────────────────────
+  buildLangMenu();
+  const stored  = (function(){ try { return localStorage.getItem('bv_lang'); } catch(e){ return null; } })();
+  const browser = (navigator.language || 'es').slice(0,2).toLowerCase();
+  const init    = (stored && I18N[stored]) ? stored : (I18N[browser] ? browser : 'es');
+  applyLang(init);
+  markActive(init);
+})();
+</script>
+</body>
+</html>

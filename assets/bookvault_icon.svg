@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108" role="img" aria-label="BookVault">
+  <defs>
+    <radialGradient id="paper" cx="32%" cy="26%" r="88%">
+      <stop offset="0" stop-color="#FFFCF7"/>
+      <stop offset="0.62" stop-color="#FAF5EE"/>
+      <stop offset="1" stop-color="#EAE3DA"/>
+    </radialGradient>
+  </defs>
+  <rect width="108" height="108" rx="24" fill="url(#paper)"/>
+  <!-- Balda -->
+  <rect x="31.5" y="74.5" width="45" height="6.5" rx="2" fill="#241E1B"/>
+  <!-- Lomo salvia -->
+  <rect x="32.5" y="38" width="10.5" height="36.5" rx="2" fill="#5F7254"/>
+  <!-- Lomo rosa palo -->
+  <rect x="47" y="26" width="14" height="48.5" rx="2" fill="#A0505F"/>
+  <!-- Lomo tinta -->
+  <rect x="65" y="42" width="10.5" height="32.5" rx="2" fill="#241E1B"/>
+  <!-- Filetes -->
+  <rect x="47" y="40" width="14" height="6.5" fill="#E8D2A8"/>
+  <rect x="32.5" y="47" width="10.5" height="6" fill="#FAF5EE" opacity="0.6"/>
+  <rect x="65" y="53" width="10.5" height="6" fill="#F3D9A0"/>
+</svg>
