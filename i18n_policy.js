@@ -54,13 +54,14 @@ window.BV_POLICY = {
       {
         id: 'ads', num: '04', kicker: 'Publicidad', title: 'Google AdMob',
         body: 'La app es gratuita y se sostiene con anuncios. Los sirve Google AdMob, que puede recoger el identificador de publicidad del dispositivo, datos técnicos (modelo, versión de Android, idioma), la dirección IP —de la que se deduce una ubicación aproximada, nunca precisa— y tus interacciones con los anuncios. Ese tratamiento lo hace Google como responsable, con sus propias políticas.',
+        body2: 'Antes de pedir el primer anuncio, la app te enseña un formulario de consentimiento. Lo gestiona la plataforma de mensajes de usuario de Google, la CMP certificada que exige AdMob, y aparece a quien se encuentra en el Espacio Económico Europeo, el Reino Unido o Suiza. Ahí decides si aceptas los anuncios personalizados o prefieres anuncios no personalizados. Hasta que respondas, la app no inicializa el SDK de anuncios ni hace una sola petición: no verás publicidad sin que se te haya preguntado antes.',
         list: [
           'Banner en las pantallas de biblioteca, estantería, estadísticas y objetivos',
           'Un intersticial al cerrar un libro, y solo si ha habido lectura de verdad',
           'Anuncios con recompensa, siempre voluntarios, para desbloquear temas de balda durante 24 horas'
         ],
         callout: 'Dentro del lector no hay publicidad. Ni banner ni corte a mitad de página. Y durante los primeros días de uso no se muestra ningún anuncio.',
-        warn: 'Puedes limitar el seguimiento publicitario o borrar tu identificador desde Ajustes de Android → Google → Anuncios. Al restablecerlo, los anuncios dejan de asociarse al identificador anterior.',
+        warn: 'Puedes cambiar de opinión cuando quieras: en Ajustes → Publicidad → Opciones de privacidad de los anuncios se reabre el mismo formulario, y lo que elijas allí sustituye a tu respuesta anterior. Esa entrada solo aparece donde el formulario es obligatorio, así que si no la ves es que en tu región no se te llegó a pedir consentimiento. Aparte de eso, desde Ajustes de Android → Google → Anuncios puedes limitar el seguimiento publicitario o borrar tu identificador; al restablecerlo, los anuncios dejan de asociarse al anterior.',
         links: [
           { label: 'Política de privacidad de Google', href: 'https://policies.google.com/privacy' },
           { label: 'Cómo usa Google los datos de AdMob', href: 'https://support.google.com/admob/answer/6128543' },
@@ -204,13 +205,14 @@ window.BV_POLICY = {
       {
         id: 'ads', num: '04', kicker: 'Advertising', title: 'Google AdMob',
         body: 'The app is free and pays for itself with ads, served by Google AdMob. AdMob may collect the device advertising identifier, technical data (model, Android version, language), the IP address — from which an approximate, never precise, location is inferred — and your interactions with ads. Google carries out that processing as a controller, under its own policies.',
+        body2: 'Before the first ad is requested, the app shows you a consent form. It is handled by Google’s User Messaging Platform, the certified CMP that AdMob requires, and it appears to anyone in the European Economic Area, the United Kingdom or Switzerland. There you choose whether to accept personalised ads or to get non-personalised ones instead. Until you answer, the app initialises no ad SDK and makes no ad request at all: you will not be shown advertising without having been asked first.',
         list: [
           'A banner on the library, bookcase, stats and goals screens',
           'One interstitial when you close a book, and only if you actually read',
           'Rewarded ads, always opt-in, to unlock shelf themes for 24 hours'
         ],
         callout: 'There is no advertising inside the reader. No banner, no interruption mid-page. And during the first days of use no ads are shown at all.',
-        warn: 'You can limit ad tracking or delete your identifier from Android Settings → Google → Ads. Resetting it stops ads from being tied to the previous identifier.',
+        warn: 'You can change your mind whenever you like: Settings → Ads → Ad privacy options reopens the same form, and whatever you choose there replaces your earlier answer. That entry only appears where the form is required, so if you cannot see it, consent was never asked for in your region. Separately, from Android Settings → Google → Ads you can limit ad tracking or delete your identifier; resetting it stops ads from being tied to the previous one.',
         links: [
           { label: 'Google Privacy Policy', href: 'https://policies.google.com/privacy' },
           { label: 'How Google uses AdMob data', href: 'https://support.google.com/admob/answer/6128543' },

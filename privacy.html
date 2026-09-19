@@ -193,6 +193,10 @@
       html += '<div class="sec-head"><span class="sec-num">' + esc(s.num) + '</span><span class="sec-kicker">' + esc(s.kicker) + '</span></div>';
       html += '<h2>' + esc(s.title) + '</h2>';
       if (s.body) html += '<p>' + esc(s.body) + '</p>';
+      // Segundo parrafo opcional. Lo estrena la seccion de publicidad: el
+      // consentimiento es una explicacion aparte de lo que recoge AdMob, y
+      // meterlo dentro de `body` dejaba un ladrillo de ocho lineas.
+      if (s.body2) html += '<p>' + esc(s.body2) + '</p>';
 
       if (s.list){
         html += '<ul class="bullets">';
