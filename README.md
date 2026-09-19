@@ -1,6 +1,6 @@
-# BookVault — web
+# Balda — web
 
-Sitio de promoción y política de privacidad de [BookVault](https://play.google.com/store/apps/details?id=com.danib.bookvault),
+Sitio de promoción y política de privacidad de [Balda](https://play.google.com/store/apps/details?id=com.danib.bookvault),
 un lector de libros para Android que funciona entero en el dispositivo.
 
 Publicado con GitHub Pages desde la rama `main`, carpeta raíz:

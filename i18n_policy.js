@@ -1,4 +1,4 @@
-/* Política de privacidad de BookVault — español e inglés.
+/* Política de privacidad de Balda — español e inglés.
 
    Regla de este fichero: describe lo que la app hace HOY, no lo que podría
    hacer. Si se añade un SDK, se activa la compra sin anuncios o se suma un
@@ -16,7 +16,7 @@ window.BV_POLICY = {
       title: 'Tus libros. Tu lectura. Tu dispositivo.',
       sub: 'Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas se quedan en el teléfono y nunca se envían. Lo único que sale son los anuncios y —si no lo apagas— los informes de fallo.',
       meta: 'Última actualización: 12 de septiembre de 2026',
-      author: 'BookVault · por Daniel Barea',
+      author: 'Balda · por Daniel Barea',
       tldr: 'Sin cuenta · sin servidor propio · tus libros no se suben nunca · AdMob para los anuncios y Firebase para los fallos, con interruptor.'
     },
 
@@ -25,7 +25,7 @@ window.BV_POLICY = {
     sections: [
       {
         id: 'principle', num: '01', kicker: 'El principio', title: 'Lo que significa «no sale del móvil»',
-        body: 'BookVault es un lector de libros que funciona entero en tu dispositivo. No hay cuenta de usuario, no hay registro y no existe ningún servidor nuestro al que la app se conecte. Los libros que importas, por dónde vas, lo que subrayas y las estadísticas que genera tu lectura se guardan en la base de datos del propio teléfono y no viajan a ninguna parte.',
+        body: 'Balda es un lector de libros que funciona entero en tu dispositivo. No hay cuenta de usuario, no hay registro y no existe ningún servidor nuestro al que la app se conecte. Los libros que importas, por dónde vas, lo que subrayas y las estadísticas que genera tu lectura se guardan en la base de datos del propio teléfono y no viajan a ninguna parte.',
         callout: 'La frase es literal: el contenido de tus libros y tus datos de lectura nunca se transmiten. Lo que sí sale del dispositivo son los anuncios y los diagnósticos, y esta política dedica una sección a cada uno.'
       },
       {
@@ -44,7 +44,7 @@ window.BV_POLICY = {
       },
       {
         id: 'offdevice', num: '03', kicker: 'Lo que sí sale', title: 'Los dos únicos servicios que reciben datos',
-        body: 'BookVault usa dos SDK de Google que se ejecutan dentro de la app y hablan con los servidores de Google, no con los nuestros:',
+        body: 'Balda usa dos SDK de Google que se ejecutan dentro de la app y hablan con los servidores de Google, no con los nuestros:',
         list: [
           'Google AdMob, para mostrar los anuncios que mantienen la app gratuita',
           'Firebase Crashlytics y Firebase Analytics, para saber que la app se ha roto y en qué pantalla'
@@ -80,7 +80,7 @@ window.BV_POLICY = {
       },
       {
         id: 'nocollect', num: '06', kicker: 'Lo que no recogemos', title: 'Datos que la app no pide ni envía',
-        body: 'BookVault no recopila, almacena ni transmite ninguno de los siguientes datos:',
+        body: 'Balda no recopila, almacena ni transmite ninguno de los siguientes datos:',
         nope: [
           'Tu nombre o identidad',
           'Tu correo electrónico',
@@ -104,17 +104,17 @@ window.BV_POLICY = {
           { icon: 'wifi',   name: 'ACCESS_NETWORK_STATE',  desc: 'Saber si hay conexión antes de pedir un anuncio, para no gastar batería intentándolo sin red.' },
           { icon: 'bell',   name: 'POST_NOTIFICATIONS',    desc: 'Mostrar avisos locales, como el recordatorio de un objetivo cumplido. Puedes denegarlo y la app funciona igual.' }
         ],
-        callout: 'BookVault no pide permiso de acceso al almacenamiento. Los libros entran por el selector del sistema —eliges un fichero o concedes una carpeta— y la app solo ve lo que tú le has dado.',
+        callout: 'Balda no pide permiso de acceso al almacenamiento. Los libros entran por el selector del sistema —eliges un fichero o concedes una carpeta— y la app solo ve lo que tú le has dado.',
         outro: 'Esto no es un tecnicismo: significa que la app no puede recorrer tu galería, tus documentos ni tus descargas aunque quisiera.'
       },
       {
         id: 'payments', num: '08', kicker: 'Pagos', title: 'Compras y recompensas',
         body: 'Hoy la app es gratuita y no procesa ningún pago. Los temas de balda de pago se desbloquean viendo un anuncio con recompensa, algo voluntario que tú decides iniciar y que dura 24 horas.',
-        outro: 'Si en el futuro se ofrece la compra «sin anuncios», la gestionará Google Play Billing de principio a fin: los datos de pago los trata Google y BookVault no llega a verlos ni a guardarlos. Lo único que se guardaría en el teléfono es un indicador cifrado de que la compra existe.'
+        outro: 'Si en el futuro se ofrece la compra «sin anuncios», la gestionará Google Play Billing de principio a fin: los datos de pago los trata Google y Balda no llega a verlos ni a guardarlos. Lo único que se guardaría en el teléfono es un indicador cifrado de que la compra existe.'
       },
       {
         id: 'children', num: '09', kicker: 'Menores', title: 'Menores de edad',
-        body: 'BookVault no está dirigida a menores de 13 años y no recopila conscientemente información de menores. Si eres madre, padre o tutor y crees que un menor a tu cargo ha facilitado datos personales a través de la app, escríbenos y lo resolveremos de inmediato.'
+        body: 'Balda no está dirigida a menores de 13 años y no recopila conscientemente información de menores. Si eres madre, padre o tutor y crees que un menor a tu cargo ha facilitado datos personales a través de la app, escríbenos y lo resolveremos de inmediato.'
       },
       {
         id: 'rights', num: '10', kicker: 'Tus derechos', title: 'Control sobre tus datos',
@@ -152,7 +152,7 @@ window.BV_POLICY = {
 
     footer: {
       tagline: 'Tus libros y tu lectura no salen del móvil.',
-      copy: '© 2026 BookVault · Daniel Barea',
+      copy: '© 2026 Balda · Daniel Barea',
       links: ['Inicio', 'Contacto', 'Google Play']
     }
   },
@@ -167,7 +167,7 @@ window.BV_POLICY = {
       title: 'Your books. Your reading. Your device.',
       sub: 'Your library, your progress, your highlights and your stats stay on the phone and are never sent anywhere. The only things that leave are the ads and — unless you turn it off — the crash reports.',
       meta: 'Last updated: 12 September 2026',
-      author: 'BookVault · by Daniel Barea',
+      author: 'Balda · by Daniel Barea',
       tldr: 'No account · no server of our own · your books are never uploaded · AdMob for ads and Firebase for crashes, with an off switch.'
     },
 
@@ -176,7 +176,7 @@ window.BV_POLICY = {
     sections: [
       {
         id: 'principle', num: '01', kicker: 'The principle', title: 'What "never leaves the phone" means',
-        body: 'BookVault is a book reader that runs entirely on your device. There is no user account, no sign-up, and no server of ours for the app to talk to. The books you import, where you are in them, what you highlight and the stats your reading produces are stored in the phone database and travel nowhere.',
+        body: 'Balda is a book reader that runs entirely on your device. There is no user account, no sign-up, and no server of ours for the app to talk to. The books you import, where you are in them, what you highlight and the stats your reading produces are stored in the phone database and travel nowhere.',
         callout: 'That sentence is literal: the contents of your books and your reading data are never transmitted. What does leave the device is advertising and diagnostics, and this policy gives each one its own section.'
       },
       {
@@ -195,7 +195,7 @@ window.BV_POLICY = {
       },
       {
         id: 'offdevice', num: '03', kicker: 'What does leave', title: 'The only two services that receive data',
-        body: 'BookVault uses two Google SDKs that run inside the app and talk to Google servers, not to ours:',
+        body: 'Balda uses two Google SDKs that run inside the app and talk to Google servers, not to ours:',
         list: [
           'Google AdMob, to show the ads that keep the app free',
           'Firebase Crashlytics and Firebase Analytics, to know the app broke and on which screen'
@@ -231,7 +231,7 @@ window.BV_POLICY = {
       },
       {
         id: 'nocollect', num: '06', kicker: 'What we never collect', title: 'Data the app neither asks for nor sends',
-        body: 'BookVault does not collect, store or transmit any of the following:',
+        body: 'Balda does not collect, store or transmit any of the following:',
         nope: [
           'Your name or identity',
           'Your email address',
@@ -255,17 +255,17 @@ window.BV_POLICY = {
           { icon: 'wifi',   name: 'ACCESS_NETWORK_STATE',  desc: 'Check whether there is a connection before requesting an ad, so battery is not spent trying without a network.' },
           { icon: 'bell',   name: 'POST_NOTIFICATIONS',    desc: 'Show local notices, such as a completed reading goal. You can deny it and the app works the same.' }
         ],
-        callout: 'BookVault does not request storage access permission. Books come in through the system picker — you pick a file or grant a folder — and the app only ever sees what you hand it.',
+        callout: 'Balda does not request storage access permission. Books come in through the system picker — you pick a file or grant a folder — and the app only ever sees what you hand it.',
         outro: 'That is not a technicality: it means the app could not walk through your gallery, your documents or your downloads even if it wanted to.'
       },
       {
         id: 'payments', num: '08', kicker: 'Payments', title: 'Purchases and rewards',
         body: 'Today the app is free and processes no payments. Paid shelf themes are unlocked by watching a rewarded ad — voluntary, started by you, and lasting 24 hours.',
-        outro: 'If an ad-free purchase is offered in the future, Google Play Billing will handle it end to end: payment details are processed by Google and BookVault never sees or stores them. The only thing kept on the phone would be an encrypted flag saying the purchase exists.'
+        outro: 'If an ad-free purchase is offered in the future, Google Play Billing will handle it end to end: payment details are processed by Google and Balda never sees or stores them. The only thing kept on the phone would be an encrypted flag saying the purchase exists.'
       },
       {
         id: 'children', num: '09', kicker: 'Children', title: 'Children',
-        body: 'BookVault is not directed at children under 13 and does not knowingly collect information from children. If you are a parent or guardian and believe a child in your care has provided personal data through the app, write to us and we will resolve it immediately.'
+        body: 'Balda is not directed at children under 13 and does not knowingly collect information from children. If you are a parent or guardian and believe a child in your care has provided personal data through the app, write to us and we will resolve it immediately.'
       },
       {
         id: 'rights', num: '10', kicker: 'Your rights', title: 'Control over your data',
@@ -303,7 +303,7 @@ window.BV_POLICY = {
 
     footer: {
       tagline: 'Your books and your reading never leave the phone.',
-      copy: '© 2026 BookVault · Daniel Barea',
+      copy: '© 2026 Balda · Daniel Barea',
       links: ['Home', 'Contact', 'Google Play']
     }
   }

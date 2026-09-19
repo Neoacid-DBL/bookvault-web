@@ -1,4 +1,4 @@
-/* Textos de la portada de BookVault — español e inglés.
+/* Textos de la portada de Balda — español e inglés.
    Los dos idiomas que habla la app (res/values y res/values-es). Si algún día
    la app suma otro, este fichero y `i18n_policy.js` son los dos sitios que hay
    que tocar en la web. */
@@ -14,7 +14,7 @@ window.BV_I18N = {
       titleA: 'Tu biblioteca.',
       titleB: 'Tu estantería.',
       titleC: 'Tu móvil, y ya está.',
-      sub: 'BookVault es un lector de EPUB, PDF, TXT y CBZ con estantería de baldas, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.',
+      sub: 'Balda es un lector de EPUB, PDF, TXT y CBZ con estantería de baldas, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.',
       cta: 'Descargar gratis',
       ctaSub: 'En Google Play',
       secondary: 'Cómo funciona',
@@ -26,7 +26,7 @@ window.BV_I18N = {
     },
 
     stats: {
-      label: 'BookVault en cuatro cifras',
+      label: 'Balda en cuatro cifras',
       a: { num: '0', unit: 'bytes',    cap: 'de tus libros salen del móvil' },
       b: { num: '5', unit: 'formatos', cap: 'EPUB, PDF, TXT, MD y CBZ' },
       c: { num: '0', unit: 'cuentas',  cap: 'que crear para empezar a leer' },
@@ -121,7 +121,7 @@ window.BV_I18N = {
 
     footer: {
       tagline: 'Tus libros y tu lectura no salen del móvil.',
-      copy: '© 2026 BookVault · Daniel Barea',
+      copy: '© 2026 Balda · Daniel Barea',
       links: ['Política de privacidad', 'Contacto', 'Google Play']
     }
   },
@@ -136,7 +136,7 @@ window.BV_I18N = {
       titleA: 'Your library.',
       titleB: 'Your bookshelf.',
       titleC: 'Your phone, and that is it.',
-      sub: 'BookVault is an EPUB, PDF, TXT and CBZ reader with a real shelf you arrange, highlights and reading stats. No account, no cloud, no sync to break: your books and your reading never leave the phone.',
+      sub: 'Balda is an EPUB, PDF, TXT and CBZ reader with a real shelf you arrange, highlights and reading stats. No account, no cloud, no sync to break: your books and your reading never leave the phone.',
       cta: 'Download free',
       ctaSub: 'On Google Play',
       secondary: 'How it works',
@@ -148,7 +148,7 @@ window.BV_I18N = {
     },
 
     stats: {
-      label: 'BookVault in four numbers',
+      label: 'Balda in four numbers',
       a: { num: '0', unit: 'bytes',       cap: 'of your books leave the phone' },
       b: { num: '5', unit: 'formats',     cap: 'EPUB, PDF, TXT, MD and CBZ' },
       c: { num: '0', unit: 'accounts',    cap: 'to create before you read' },
@@ -243,7 +243,7 @@ window.BV_I18N = {
 
     footer: {
       tagline: 'Your books and your reading never leave the phone.',
-      copy: '© 2026 BookVault · Daniel Barea',
+      copy: '© 2026 Balda · Daniel Barea',
       links: ['Privacy policy', 'Contact', 'Google Play']
     }
   }
