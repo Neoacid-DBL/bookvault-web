@@ -60,7 +60,7 @@ window.BV_POLICY = {
           'Un intersticial al cerrar un libro, y solo si ha habido lectura de verdad',
           'Anuncios con recompensa, siempre voluntarios, para desbloquear temas de balda durante 24 horas'
         ],
-        callout: 'Dentro del lector no hay publicidad. Ni banner ni corte a mitad de página. Y durante los primeros días de uso no se muestra ningún anuncio.',
+        callout: 'Dentro del lector no hay publicidad. Ni banner ni corte a mitad de página. Y durante los primeros días de uso no salta ningún anuncio a pantalla completa —solo verás el vídeo que tú pidas para desbloquear un tema—; los banners de las pantallas de navegación sí aparecen desde el principio.',
         warn: 'Puedes cambiar de opinión cuando quieras: en Ajustes → Publicidad → Opciones de privacidad de los anuncios se reabre el mismo formulario, y lo que elijas allí sustituye a tu respuesta anterior. Esa entrada solo aparece donde el formulario es obligatorio, así que si no la ves es que en tu región no se te llegó a pedir consentimiento. Aparte de eso, desde Ajustes de Android → Google → Anuncios puedes limitar el seguimiento publicitario o borrar tu identificador; al restablecerlo, los anuncios dejan de asociarse al anterior.',
         links: [
           { label: 'Política de privacidad de Google', href: 'https://policies.google.com/privacy' },
@@ -211,7 +211,7 @@ window.BV_POLICY = {
           'One interstitial when you close a book, and only if you actually read',
           'Rewarded ads, always opt-in, to unlock shelf themes for 24 hours'
         ],
-        callout: 'There is no advertising inside the reader. No banner, no interruption mid-page. And during the first days of use no ads are shown at all.',
+        callout: 'There is no advertising inside the reader. No banner, no interruption mid-page. And during the first days of use no full-screen ad pops up at all — only the video you choose to watch to unlock a theme; the banners on the browsing screens do appear from the start.',
         warn: 'You can change your mind whenever you like: Settings → Ads → Ad privacy options reopens the same form, and whatever you choose there replaces your earlier answer. That entry only appears where the form is required, so if you cannot see it, consent was never asked for in your region. Separately, from Android Settings → Google → Ads you can limit ad tracking or delete your identifier; resetting it stops ads from being tied to the previous one.',
         links: [
           { label: 'Google Privacy Policy', href: 'https://policies.google.com/privacy' },

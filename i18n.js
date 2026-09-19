@@ -75,7 +75,7 @@ window.BV_I18N = {
         { icon: 'offline', label: 'Sin conexión',title: 'Modo avión, igual',
           body: 'No hay servidor ni sincronización que se caiga. Puedes tener el móvil desconectado siempre y la app funciona exactamente igual.' },
         { icon: 'eyeoff',  label: 'Anuncios',    title: 'Ni uno mientras lees',
-          body: 'Los anuncios viven en las pantallas de navegación. Dentro del libro no hay banner ni corte a mitad de página, y los primeros días no hay ninguno.' },
+          body: 'Los anuncios viven en las pantallas de navegación. Dentro del libro no hay banner ni corte a mitad de página, y los primeros días no salta ninguno a pantalla completa.' },
         { icon: 'folder',  label: 'Importar',    title: 'Tú eliges qué entra',
           body: 'Ficheros sueltos o una carpeta concedida. La app no husmea tu almacenamiento: solo ve lo que le das.' }
       ]
@@ -197,7 +197,7 @@ window.BV_I18N = {
         { icon: 'offline', label: 'Offline',   title: 'Airplane mode, same app',
           body: 'There is no server and no sync to fail. Keep the phone offline forever and the app behaves exactly the same.' },
         { icon: 'eyeoff',  label: 'Ads',       title: 'Not one while you read',
-          body: 'Ads live on the browsing screens. Inside a book there is no banner and no interruption mid-page, and there are none at all for the first few days.' },
+          body: 'Ads live on the browsing screens. Inside a book there is no banner and no interruption mid-page, and no full-screen ad pops up during the first few days.' },
         { icon: 'folder',  label: 'Importing', title: 'You choose what goes in',
           body: 'Single files or a folder you grant. The app does not snoop around your storage: it only sees what you hand it.' }
       ]
