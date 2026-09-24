@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Política de privacidad — Balda</title>
-<meta name="description" content="Política de privacidad de Balda: tus libros, tu progreso y tus anotaciones no salen del dispositivo. Qué recoge AdMob, qué recogen Crashlytics y Analytics, y cómo apagarlo." />
+<meta name="description" content="Política de privacidad de Balda: tus libros, tu progreso y tus anotaciones no salen del dispositivo. Qué recoge AdMob, qué recogen Crashlytics y Analytics, qué pasa con la voz alta y la copia de seguridad, y cómo apagarlo." />
 <meta name="theme-color" content="#FAF5EE" />
 <link rel="icon" type="image/svg+xml" href="assets/bookvault_icon.svg" />
 <link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html" />
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/privacy.html" />
 <meta property="og:title" content="Política de privacidad — Balda" />
-<meta property="og:description" content="Tus libros, tu progreso y tus anotaciones no salen del dispositivo. Qué recoge AdMob, qué recogen Crashlytics y Analytics, y cómo apagarlo." />
+<meta property="og:description" content="Tus libros, tu progreso y tus anotaciones no salen del dispositivo. Qué recoge AdMob, qué recogen Crashlytics y Analytics, qué pasa con la voz alta y la copia de seguridad, y cómo apagarlo." />
 <meta property="og:site_name" content="Balda" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Política de privacidad — Balda" />
@@ -71,9 +71,9 @@
       <div>
         <div class="eyebrow" data-i18n="hero.eyebrow">Política de privacidad</div>
         <h1 id="heroTitle">Tus libros. Tu lectura. <span class="em">Tu dispositivo.</span></h1>
-        <p class="hero-sub" data-i18n="hero.sub">Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas se quedan en el teléfono y nunca se envían. Lo único que sale son los anuncios y —si no lo apagas— los informes de fallo.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas se quedan en el teléfono y nunca se envían. Lo único que sale son los anuncios, los informes de fallo —si no los apagas— y lo que tú decidas enviar.</p>
         <div class="hero-meta">
-          <span data-i18n="hero.meta">Última actualización: 12 de septiembre de 2026</span>
+          <span data-i18n="hero.meta">Última actualización: 24 de septiembre de 2026</span>
           <span class="sep"></span>
           <span data-i18n="hero.author">Balda · por Daniel Barea</span>
         </div>
@@ -86,7 +86,7 @@
           </span>
           TL;DR
         </div>
-        <p data-i18n="hero.tldr">Sin cuenta · sin servidor propio · tus libros no se suben nunca · AdMob para los anuncios y Firebase para los fallos, con interruptor.</p>
+        <p data-i18n="hero.tldr">Sin cuenta · sin servidor propio · tus libros no se suben nunca · AdMob para los anuncios y Firebase para los fallos, con interruptor · la copia de seguridad y lo que compartes van adonde tú digas.</p>
       </div>
     </div>
   </section>
@@ -130,14 +130,19 @@
 <script>
 (function(){
   const I18N  = window.BV_POLICY;
-  const LANGS = ['es','en'];
-  const SHORT = { es:'ES', en:'EN' };
+  // Los mismos seis idiomas que la app y que la portada.
+  const LANGS = ['es','en','fr','de','it','pt'];
 
   const PERM_ICONS = {
     globe:  '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18Z"/></svg>',
     wifi:   '<svg viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M8.5 16.2a5 5 0 0 1 7 0"/><path d="M12 20h.01"/></svg>',
     bell:   '<svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>',
-    folder: '<svg viewBox="0 0 24 24"><path d="M4 20a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2Z"/></svg>'
+    folder: '<svg viewBox="0 0 24 24"><path d="M4 20a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2Z"/></svg>',
+    play:   '<svg viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>',
+    moon:   '<svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>',
+    ad:     '<svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m7 15 2.5-6 2.5 6"/><path d="M7.8 13h3.4"/><path d="M15 9v6h1.5a2.5 2.5 0 0 0 0-5H15"/></svg>',
+    cart:   '<svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.5L22 8H6"/></svg>',
+    link:   '<svg viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg>'
   };
 
   function get(obj, path){
@@ -154,7 +159,7 @@
 
   function applyLang(lang){
     const d = I18N[lang]; if (!d) return;
-    document.documentElement.lang = lang;
+    document.documentElement.lang = d.htmlLang || lang;
     document.documentElement.dir  = d.dir;
 
     document.querySelectorAll('[data-i18n]').forEach(el=>{
@@ -251,7 +256,7 @@
       });
     }
 
-    document.getElementById('langLabel').textContent = SHORT[lang];
+    document.getElementById('langLabel').textContent = d.short;
     document.getElementById('langFlag').textContent  = d.flag;
 
     try { localStorage.setItem('bv_lang', lang); } catch(e){}

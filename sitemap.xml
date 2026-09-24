@@ -6,8 +6,12 @@
     <loc>https://neoacid-dbl.github.io/bookvault-web/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,8 +20,12 @@
     <loc>https://neoacid-dbl.github.io/bookvault-web/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
