@@ -278,6 +278,146 @@ h3 { font-size: 21px; line-height: 1.25; }
   background: var(--sage-tint); color: #33402C; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em;
 }
 
+/* ── Móvil animado: tres escenas, una por paso ── */
+.phone { --d: 5.5s; }
+.phone-screen { position: relative; }
+.scene {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  opacity: 0; visibility: hidden; transform: translateX(14px);
+  transition: opacity .45s var(--ease-out), transform .45s var(--ease-out), visibility 0s .45s;
+}
+.phone[data-scene="0"] .scene-import,
+.phone[data-scene="1"] .scene-shelf,
+.phone[data-scene="2"] .scene-read { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+
+.tap {
+  position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px;
+  border-radius: 50%; background: rgba(36,30,27,0.18); opacity: 0; pointer-events: none;
+}
+@keyframes tap { 0% { opacity: 0; transform: scale(.4); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(1.5); } }
+
+/* Escena 1 · chat y «Abrir con» */
+.scene-import { background: var(--paper-tint); }
+.chat { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.bubble {
+  max-width: 86%; padding: 9px 12px; border-radius: 14px 14px 14px 4px;
+  background: var(--white); box-shadow: var(--shadow-sm); font-size: 12px; line-height: 1.4; color: var(--ink-soft);
+}
+.bubble-file { position: relative; display: flex; align-items: center; gap: 9px; min-width: 0; }
+.file-ic {
+  flex: none; padding: 7px 6px; border-radius: 6px; background: var(--rose); color: var(--on-rose);
+  font-size: 8.5px; font-weight: 800; letter-spacing: 0.06em;
+}
+.file-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; font-size: 11px; }
+.sheet {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 16px 22px;
+  background: var(--white); border-radius: 22px 22px 0 0; box-shadow: 0 -10px 30px rgba(36,30,27,0.12);
+  transform: translateY(110%);
+}
+.sheet::before { content: ""; display: block; width: 34px; height: 4px; border-radius: 2px; background: var(--paper-soft); margin: -6px auto 12px; }
+.sheet-title { font-size: 12px; font-weight: 700; color: var(--ink-muted); margin-bottom: 12px; }
+.sheet-apps { display: flex; justify-content: space-around; }
+.app { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 6px; border-radius: 12px; font-size: 10.5px; font-weight: 600; color: var(--ink-soft); }
+.app-ic { width: 40px; height: 40px; border-radius: 11px; display: block; box-shadow: var(--shadow-sm); }
+.app-ic-files { background: linear-gradient(135deg, var(--sage-soft), var(--sage)); }
+.app-ic-drive { background: linear-gradient(135deg, var(--spine-slate), #7F93A3); }
+.toast {
+  position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); white-space: nowrap;
+  padding: 9px 14px; border-radius: var(--r-pill); background: var(--ink); color: var(--paper);
+  font-size: 11px; font-weight: 700; box-shadow: var(--shadow-md);
+}
+@keyframes bubbleIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes sheet { 0%, 30% { transform: translateY(110%); } 38%, 66% { transform: none; } 73%, 100% { transform: translateY(110%); } }
+@keyframes appPick { 0%, 50% { background: transparent; } 54%, 66% { background: var(--rose-tint); } 70%, 100% { background: transparent; } }
+@keyframes toast { 0%, 72% { opacity: 0; transform: translate(-50%, 12px); } 78%, 100% { opacity: 1; transform: translateX(-50%); } }
+.phone[data-scene="0"] .bubble { animation: bubbleIn .5s var(--ease-out) .25s both; }
+.phone[data-scene="0"] .bubble-file { animation-delay: .7s; }
+.phone[data-scene="0"] .tap-file { animation: tap .6s ease-out 1.35s both; }
+.phone[data-scene="0"] .sheet { animation: sheet var(--d) var(--ease-out) both; }
+.phone[data-scene="0"] .app-balda { animation: appPick var(--d) linear both; }
+.phone[data-scene="0"] .tap-app { animation: tap .6s ease-out 2.8s both; }
+.phone[data-scene="0"] .toast { animation: toast var(--d) var(--ease-out) both; }
+
+/* Escena 2 · estantería con dos baldas */
+.lib { width: 220px; margin: 6px auto 0; display: flex; flex-direction: column; }
+.lib-name { height: 26px; display: flex; align-items: center; font-family: var(--serif); font-size: 15px; color: var(--ink); }
+.lib-name-b { margin-top: 12px; }
+.lib-row {
+  height: 92px; display: flex; align-items: flex-end; gap: 5px; padding: 0 10px;
+  background: linear-gradient(#3B2C21, #4A382A); border-radius: 8px 8px 0 0;
+}
+.lib-board { height: 10px; border-radius: 0 0 3px 3px; background: linear-gradient(var(--wood-light), var(--wood-face) 45%, var(--wood-edge)); }
+.sp { flex: none; position: relative; width: var(--w); height: var(--h); border-radius: 2px; background: var(--c); }
+.sp::after { content: ""; position: absolute; left: 0; right: 0; top: 18%; height: 6px; background: rgba(255,255,255,0.35); }
+.slot { flex: none; width: 24px; height: 74px; border-radius: 2px; border: 1.5px dashed var(--wood-edge); opacity: 0; }
+/* Al final queda en la balda de arriba: 50px a la derecha y una balda (140px) más arriba */
+.drag-book { z-index: 2; transform: translate(50px, -140px); }
+.finger {
+  position: absolute; left: 50%; bottom: 12px; width: 24px; height: 24px; margin-left: -12px;
+  border-radius: 50%; background: rgba(255,252,247,0.55); border: 2px solid rgba(255,252,247,0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25); opacity: 0;
+}
+@keyframes dragBook {
+  0%, 20%  { transform: none; box-shadow: none; }
+  27%      { transform: translateY(-8px) scale(1.08) rotate(-3deg); box-shadow: 0 10px 18px rgba(0,0,0,0.35); }
+  60%      { transform: translate(50px, -148px) scale(1.08) rotate(4deg); box-shadow: 0 10px 18px rgba(0,0,0,0.35); }
+  67%, 100% { transform: translate(50px, -140px); box-shadow: none; }
+}
+@keyframes finger { 0%, 15% { opacity: 0; transform: scale(1.4); } 21%, 61% { opacity: 1; transform: none; } 67%, 100% { opacity: 0; transform: scale(.8); } }
+@keyframes slot { 0%, 58% { opacity: .9; } 66%, 100% { opacity: 0; } }
+.phone[data-scene="1"] .drag-book { animation: dragBook var(--d) var(--ease-out) both; }
+.phone[data-scene="1"] .finger { animation: finger var(--d) linear both; }
+.phone[data-scene="1"] .slot { animation: slot var(--d) linear both; }
+
+/* Escena 3 · lector: subraya, lee en voz alta y avanza */
+.tts { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; padding: 7px 10px; border-radius: var(--r-pill); background: var(--rose-tint); color: var(--rose-deep); font-size: 10.5px; font-weight: 800; }
+.tts-play { width: 0; height: 0; border-left: 7px solid currentColor; border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent; }
+.tts-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.eq { display: flex; align-items: flex-end; gap: 2px; height: 11px; }
+.eq i { width: 2.5px; height: 100%; border-radius: 1px; background: currentColor; transform-origin: bottom; transform: scaleY(.45); }
+@keyframes eq { 0%, 100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+@keyframes markIn { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes speak { 0% { background: var(--paper-border); } 6%, 16% { background: var(--rose-dark); } 22%, 100% { background: var(--paper-border); } }
+@keyframes progress { from { width: 58%; } to { width: 62%; } }
+.reader-line { transform-origin: left center; }
+.phone[data-scene="2"] .eq i { animation: eq .9s ease-in-out infinite; }
+.phone[data-scene="2"] .eq i:nth-child(2) { animation-delay: -.3s; }
+.phone[data-scene="2"] .eq i:nth-child(3) { animation-delay: -.6s; }
+.phone[data-scene="2"] .eq i:nth-child(4) { animation-delay: -.15s; }
+.phone[data-scene="2"] .tts { animation: bubbleIn .5s var(--ease-out) .2s both; }
+.phone[data-scene="2"] .speak { animation: speak var(--d) linear both; }
+.phone[data-scene="2"] .speak:nth-of-type(3) { animation-delay: .8s; }
+.phone[data-scene="2"] .speak:nth-of-type(6) { animation-delay: 2.6s; }
+.phone[data-scene="2"] .speak:nth-of-type(7) { animation-delay: 3.4s; }
+.phone[data-scene="2"] .mark { animation: markIn .6s var(--ease-out) 1.7s both; }
+.phone[data-scene="2"] .mark + .mark { animation-delay: 2.2s; }
+.phone[data-scene="2"] .mark2 { animation: markIn .6s var(--ease-out) 4.2s both; }
+.phone[data-scene="2"] .progress-fill { animation: progress var(--d) linear both; }
+
+/* Pasos enlazados al móvil */
+.steps.demo .step { position: relative; cursor: pointer; opacity: .55; transition: opacity .3s var(--ease-out); }
+.steps.demo .step:hover, .steps.demo .step.is-active { opacity: 1; }
+.step-num { transition: background .3s var(--ease-out), color .3s var(--ease-out); }
+.steps.demo .step.is-active .step-num { background: var(--rose); color: var(--on-rose); }
+.step-bar { display: none; }
+.steps.demo .step-bar { display: block; position: absolute; left: 52px; right: 0; bottom: -1px; height: 2px; overflow: hidden; }
+.step-bar i { display: block; height: 100%; background: var(--rose); transform: scaleX(0); transform-origin: left; }
+.steps.demo.playing .step.is-active .step-bar i { animation: markIn var(--d, 5.5s) linear both; }
+
+/* Libro del hero: sale de la mano, entra en el hueco y vuelve a empezar */
+.hero-book { transform-box: fill-box; transform-origin: 0 0; animation: heroBook 8s var(--ease-out) infinite; }
+.hero-slot { animation: heroSlot 8s linear infinite; }
+@keyframes heroBook {
+  0%, 10%  { transform: translate(44px, -28px) rotate(7deg); }
+  5%       { transform: translate(44px, -33px) rotate(7deg); }
+  15%      { transform: translate(47px, -38px) rotate(5deg); }
+  40%      { transform: translate(0, -6px) rotate(0); }
+  46%, 80% { transform: none; }
+  88%      { transform: translate(0, -10px); }
+  100%     { transform: translate(44px, -28px) rotate(7deg); }
+}
+@keyframes heroSlot { 0%, 38% { opacity: .75; } 45%, 80% { opacity: 0; } 90%, 100% { opacity: .75; } }
+
 /* ─────────────────────────── Funciones ─────────────────────────── */
 .features { padding: clamp(52px, 8vw, 96px) 0; }
 .features-head { max-width: 58ch; margin-bottom: 44px; }
@@ -379,6 +519,9 @@ footer { border-top: 1px solid var(--paper-line); background: var(--paper-tint);
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .phone *, .hero-book, .hero-slot { animation: none !important; }
+  .hero-slot { opacity: 0; }
+  .scene { transition: none; }
 }
 
 /* ═══════════════════════ Página de política ═══════════════════════ */
