@@ -54,7 +54,15 @@ window.BV_I18N = {
         title: 'La casa junto al faro',
         badge: '✓ Sin anuncios aquí dentro',
         page: 'Página 148 / 239',
-        left: 'Te quedan 41 min'
+        left: 'Te quedan 41 min',
+        chatMsg: 'Te paso el libro que te dije 📚',
+        file: 'la_casa_junto_al_faro.epub',
+        openWith: 'Abrir con',
+        files: 'Archivos',
+        added: '✓ Añadido a tu biblioteca',
+        lib: 'Biblioteca',
+        shelfB: 'Pendientes',
+        listen: 'Leyendo en voz alta'
       }
     },
 
@@ -182,7 +190,15 @@ window.BV_I18N = {
         title: 'The House by the Lighthouse',
         badge: '✓ No ads in here',
         page: 'Page 148 / 239',
-        left: '41 min left'
+        left: '41 min left',
+        chatMsg: 'Here\'s the book I mentioned 📚',
+        file: 'the_house_by_the_lighthouse.epub',
+        openWith: 'Open with',
+        files: 'Files',
+        added: '✓ Added to your library',
+        lib: 'Library',
+        shelfB: 'Up next',
+        listen: 'Reading aloud'
       }
     },
 
@@ -310,7 +326,15 @@ window.BV_I18N = {
         title: 'La maison près du phare',
         badge: '✓ Aucune pub ici',
         page: 'Page 148 / 239',
-        left: 'Encore 41 min'
+        left: 'Encore 41 min',
+        chatMsg: 'Voici le livre dont je t’ai parlé 📚',
+        file: 'la_maison_du_phare.epub',
+        openWith: 'Ouvrir avec',
+        files: 'Fichiers',
+        added: '✓ Ajouté à votre bibliothèque',
+        lib: 'Bibliothèque',
+        shelfB: 'À lire',
+        listen: 'Lecture à voix haute'
       }
     },
 
@@ -438,7 +462,15 @@ window.BV_I18N = {
         title: 'Das Haus am Leuchtturm',
         badge: '✓ Hier drin keine Werbung',
         page: 'Seite 148 / 239',
-        left: 'Noch 41 Min.'
+        left: 'Noch 41 Min.',
+        chatMsg: 'Hier ist das Buch, von dem ich erzählt habe 📚',
+        file: 'das_haus_am_leuchtturm.epub',
+        openWith: 'Öffnen mit',
+        files: 'Dateien',
+        added: '✓ Zur Bibliothek hinzugefügt',
+        lib: 'Bibliothek',
+        shelfB: 'Als Nächstes',
+        listen: 'Wird vorgelesen'
       }
     },
 
@@ -566,7 +598,15 @@ window.BV_I18N = {
         title: 'La casa vicino al faro',
         badge: '✓ Niente annunci qui dentro',
         page: 'Pagina 148 / 239',
-        left: 'Mancano 41 min'
+        left: 'Mancano 41 min',
+        chatMsg: 'Ecco il libro di cui ti parlavo 📚',
+        file: 'la_casa_vicino_al_faro.epub',
+        openWith: 'Apri con',
+        files: 'File',
+        added: '✓ Aggiunto alla tua libreria',
+        lib: 'Libreria',
+        shelfB: 'Da leggere',
+        listen: 'Lettura ad alta voce'
       }
     },
 
@@ -694,7 +734,15 @@ window.BV_I18N = {
         title: 'A casa perto do farol',
         badge: '✓ Sem anúncios aqui dentro',
         page: 'Página 148 / 239',
-        left: 'Faltam 41 min'
+        left: 'Faltam 41 min',
+        chatMsg: 'Aqui está o livro que te falei 📚',
+        file: 'a_casa_junto_ao_farol.epub',
+        openWith: 'Abrir com',
+        files: 'Arquivos',
+        added: '✓ Adicionado à sua biblioteca',
+        lib: 'Biblioteca',
+        shelfB: 'Para ler',
+        listen: 'Lendo em voz alta'
       }
     },
 
