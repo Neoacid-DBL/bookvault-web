@@ -30,4 +30,64 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

@@ -139,7 +139,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'Tus libros y tu lectura no salen del móvil.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Política de privacidad', 'Contacto', 'Google Play']
+      links: ['Política de privacidad', 'Contacto', 'Google Play', 'Guías'],
+      guides: 'guias/'
     }
   },
 
@@ -275,7 +276,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'Your books and your reading never leave the phone.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Privacy policy', 'Contact', 'Google Play']
+      links: ['Privacy policy', 'Contact', 'Google Play', 'Guides'],
+      guides: 'en/guides/'
     }
   },
 
@@ -411,7 +413,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'Vos livres et votre lecture ne quittent pas le téléphone.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Politique de confidentialité', 'Contact', 'Google Play']
+      links: ['Politique de confidentialité', 'Contact', 'Google Play', 'Guides (en anglais)'],
+      guides: 'en/guides/'
     }
   },
 
@@ -547,7 +550,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'Deine Bücher und dein Lesen verlassen das Handy nicht.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Datenschutzerklärung', 'Kontakt', 'Google Play']
+      links: ['Datenschutzerklärung', 'Kontakt', 'Google Play', 'Anleitungen (auf Englisch)'],
+      guides: 'en/guides/'
     }
   },
 
@@ -683,7 +687,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'I tuoi libri e la tua lettura non escono dal telefono.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Informativa sulla privacy', 'Contatti', 'Google Play']
+      links: ['Informativa sulla privacy', 'Contatti', 'Google Play', 'Guide (in inglese)'],
+      guides: 'en/guides/'
     }
   },
 
@@ -819,7 +824,8 @@ window.BV_I18N = {
     footer: {
       tagline: 'Seus livros e sua leitura não saem do celular.',
       copy: '© 2026 Balda · Daniel Barea',
-      links: ['Política de privacidade', 'Contato', 'Google Play']
+      links: ['Política de privacidade', 'Contato', 'Google Play', 'Guias (em inglês)'],
+      guides: 'en/guides/'
     }
   }
 };

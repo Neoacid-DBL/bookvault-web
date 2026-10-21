@@ -580,7 +580,7 @@
 
   function renderFooterLinks(d){
     const wrap = document.getElementById('footerLinks'); if (!wrap) return;
-    const hrefs = ['privacy.html', 'mailto:danibarea@gmail.com', 'https://play.google.com/store/apps/details?id=com.danib.bookvault'];
+    const hrefs = ['privacy.html', 'mailto:danibarea@gmail.com', 'https://play.google.com/store/apps/details?id=com.danib.bookvault', d.footer.guides];
     wrap.innerHTML = '';
     (d.footer.links || []).forEach((label,i)=>{
       const a = document.createElement('a');

@@ -9,6 +9,8 @@ Publicado con GitHub Pages desde la rama `main`, carpeta raíz:
 |---|---|
 | Portada | https://neoacid-dbl.github.io/bookvault-web/ |
 | Política de privacidad | https://neoacid-dbl.github.io/bookvault-web/privacy.html |
+| Guías (es) | https://neoacid-dbl.github.io/bookvault-web/guias/ |
+| Guides (en) | https://neoacid-dbl.github.io/bookvault-web/en/guides/ |
 
 La URL de la política es la que se pega en **Play Console → Contenido de la app →
 Política de privacidad**, y también en la ficha de AdMob.
@@ -20,6 +22,8 @@ Política de privacidad**, y también en la ficha de AdMob.
 | `index.html` | Portada: hero, cifras, cómo funciona, funciones, formatos, privacidad, descarga |
 | `privacy.html` | Política de privacidad. El índice y las secciones se pintan desde JS |
 | `styles.css` | Hoja compartida por las dos páginas |
+| `guides.css` | Lo propio de los artículos (columna de lectura, pasos, avisos). Va después de `styles.css` |
+| `guias/`, `en/guides/` | Artículos para buscadores, en HTML estático por idioma (no por `i18n.js`, para que Google indexe cada idioma en su URL). Cada uno enlaza a su traducción con `hreflang` y va en `sitemap.xml` |
 | `i18n.js` | Textos de la portada (es, en, fr, de, it, pt) |
 | `i18n_policy.js` | Textos de la política (es, en, fr, de, it, pt) |
 | `assets/` | Icono y marca en SVG, dibujados a partir del icono adaptativo de la app |
@@ -82,3 +86,11 @@ que el código si:
 Los tres sitios que hay que dejar de acuerdo son esta política, la declaración
 de **Seguridad de los datos** de Play Console y los textos del onboarding de la
 app.
+
+## Guías
+
+Lo que dicen los artículos se comprueba contra el código de la app, igual que la ficha de
+Play: formatos (EPUB, PDF, TXT/MD, CBZ; no CBR, MOBI ni FB2), rótulos de la interfaz
+(«Añadir», Ajustes → Carpetas de libros) y anuncios. Si la app cambia, se tocan también.
+Los enlaces a Play llevan `referrer` con `utm_campaign` por artículo, para ver en Play
+Console qué instalaciones trae cada uno.
