@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo convertir CBR a CBZ (y por qué tu cómic CBR no abre) — Balda</title>
+<meta name="description" content="Un CBR es un RAR con imágenes y un CBZ, un ZIP. Cómo pasar tus cómics de CBR a CBZ en Windows, Mac, Linux o desde el propio Android, uno a uno o todos a la vez, sin perder el orden de las páginas." />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="../assets/bookvault_icon.svg" />
+<link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html" />
+<link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html" />
+<link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html" />
+<link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html" />
+<meta property="og:title" content="Cómo convertir un cómic CBR a CBZ" />
+<meta property="og:description" content="En Windows, Mac, Linux o desde el propio Android, uno a uno o todos a la vez, sin perder el orden de las páginas." />
+<meta property="og:site_name" content="Balda" />
+<meta name="twitter:card" content="summary" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../guides.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Cómo convertir un cómic CBR a CBZ",
+      "description": "Cómo pasar tus cómics de CBR a CBZ en Windows, Mac, Linux o desde el propio Android, uno a uno o todos a la vez, sin perder el orden de las páginas.",
+      "inLanguage": "es",
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-21",
+      "author": { "@type": "Person", "name": "Daniel Barea" },
+      "publisher": { "@type": "Organization", "name": "Balda", "logo": { "@type": "ImageObject", "url": "https://neoacid-dbl.github.io/bookvault-web/assets/bookvault_icon.svg" } },
+      "mainEntityOfPage": "https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Balda", "item": "https://neoacid-dbl.github.io/bookvault-web/" },
+        { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://neoacid-dbl.github.io/bookvault-web/guias/" },
+        { "@type": "ListItem", "position": 3, "name": "Convertir CBR a CBZ" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="../" class="nav-logo" aria-label="Balda">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">Balda</span>
+  </a>
+  <div class="nav-links">
+    <a href="../">Inicio</a>
+    <a href="./" class="active">Guías</a>
+  </div>
+  <div class="nav-right">
+    <a class="lang-link" href="../en/guides/convert-cbr-to-cbz.html" hreflang="en" lang="en">🇬🇧 EN</a>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguia%26utm_campaign%3Dcbr-a-cbz" target="_blank" rel="noopener">Descargar</a>
+  </div>
+</nav>
+
+<main>
+<article class="guide">
+
+  <div class="crumbs">
+    <a href="../">Balda</a><span aria-hidden="true">/</span>
+    <a href="./">Guías</a><span aria-hidden="true">/</span>
+    <span>CBR a CBZ</span>
+  </div>
+
+  <h1>Cómo convertir un cómic CBR a CBZ</h1>
+  <p class="lead">Tienes un cómic en <code>.cbr</code> y tu lector dice que no puede abrirlo, o abre unos sí y otros no. No está roto: casi siempre es cuestión del formato de compresión, y pasarlo a <code>.cbz</code> lo arregla sin perder calidad.</p>
+  <p class="meta">Actualizado el 21 de octubre de 2026 · 7 min de lectura</p>
+
+  <div class="answer">
+    <div class="label">Respuesta corta</div>
+    <ul>
+      <li><strong>Prueba primero a renombrarlo:</strong> muchos <code>.cbr</code> son en realidad ZIP. Cambia la extensión a <code>.cbz</code> y ábrelo.</li>
+      <li><strong>Si no funciona:</strong> descomprímelo con 7-Zip (o ZArchiver en el móvil), vuelve a comprimir las imágenes en <strong>ZIP</strong> y cambia la extensión de <code>.zip</code> a <code>.cbz</code>.</li>
+      <li>Las imágenes no se recomprimen: el cómic queda exactamente igual.</li>
+    </ul>
+  </div>
+
+  <nav class="toc-box" aria-label="Contenido">
+    <div class="label">En esta guía</div>
+    <ol>
+      <li><a href="#que-es">Qué son CBR y CBZ</a></li>
+      <li><a href="#por-que">Por qué tantos CBR no abren</a></li>
+      <li><a href="#renombrar">Truco 1: renombrar a .cbz</a></li>
+      <li><a href="#windows">Convertir en Windows con 7-Zip</a></li>
+      <li><a href="#mac-linux">Convertir en Mac o Linux</a></li>
+      <li><a href="#android">Convertir desde el móvil</a></li>
+      <li><a href="#muchos">Convertir muchos de golpe</a></li>
+      <li><a href="#orden">Que las páginas salgan en orden</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="que-es">Qué son CBR y CBZ</h2>
+  <p>Un cómic digital no tiene nada especial: es una carpeta de imágenes (una por página, normalmente JPG o PNG) metida en un archivo comprimido y con otra extensión.</p>
+  <ul>
+    <li><strong>CBZ</strong> = <em>Comic Book ZIP</em>. Las imágenes van en un ZIP.</li>
+    <li><strong>CBR</strong> = <em>Comic Book RAR</em>. Las imágenes van en un RAR.</li>
+  </ul>
+  <p>El contenido es idéntico; solo cambia la caja. Por eso convertir de uno a otro es sacar las imágenes de una caja y meterlas en la otra, sin tocarlas.</p>
+
+  <h2 id="por-que">Por qué tantos CBR no abren</h2>
+  <p>RAR es un formato propietario y tiene dos versiones: la antigua (RAR4) y <strong>RAR5</strong>, que es la que usan por defecto las versiones actuales de WinRAR. Muchas apps y librerías de Android solo saben leer la antigua, así que un CBR creado hace años abre y uno reciente falla con un error genérico, del tipo «no se pudieron leer las páginas».</p>
+  <p>ZIP, en cambio, lo lee cualquier sistema sin licencias ni versiones raras. Por eso CBZ es el formato más compatible para cómics, y el que recomendamos. <strong>Balda solo abre CBZ</strong>: preferimos decirte al importar un CBR que lo conviertas a que el cómic entre en tu biblioteca y luego no abra.</p>
+
+  <h2 id="renombrar">Truco 1: prueba a renombrarlo a .cbz</h2>
+  <p>Mucha gente creó sus CBR con un programa que en realidad comprimía en ZIP y solo les puso la extensión <code>.cbr</code>. En ese caso basta con cambiar el nombre:</p>
+  <ol class="steps">
+    <li>En el ordenador, activa «Mostrar extensiones de archivo» si no las ves (en Windows: Explorador → Vista → Mostrar → Extensiones de nombre de archivo).</li>
+    <li>Cambia <code>Mi comic.cbr</code> por <code>Mi comic.cbz</code>. En el móvil, puedes hacerlo con la app Archivos: mantén pulsado el archivo → Cambiar nombre.</li>
+    <li>Ábrelo. Si funciona, ya está. Si sigue sin abrir, es un RAR de verdad: sigue con el siguiente paso.</li>
+  </ol>
+  <div class="note">
+    <span class="ic" aria-hidden="true">🔎</span>
+    <p>Para saberlo sin probar: ábrelo con 7-Zip y mira la columna o ventana de propiedades. Si dice <em>zip</em>, basta con renombrar; si dice <em>Rar</em> o <em>Rar5</em>, hay que convertir.</p>
+  </div>
+
+  <h2 id="windows">Convertir en Windows con 7-Zip</h2>
+  <p><a href="https://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a> es gratuito, de código abierto, y abre RAR5.</p>
+  <ol class="steps">
+    <li>Instala 7-Zip.</li>
+    <li>Clic derecho sobre el <code>.cbr</code> → <strong>7-Zip → Extraer en "Mi comic\"</strong>. Se crea una carpeta con las imágenes.</li>
+    <li>Entra en esa carpeta, selecciona todas las imágenes (<kbd>Ctrl</kbd>+<kbd>A</kbd>), clic derecho → <strong>7-Zip → Añadir al archivo…</strong></li>
+    <li>En <em>Formato de archivo</em> elige <strong>zip</strong> y en <em>Nivel de compresión</em>, <strong>Almacenar</strong>: las imágenes ya están comprimidas y así se crea en un segundo. Pon como nombre <code>Mi comic.cbz</code> y acepta.</li>
+    <li>Comprueba que el <code>.cbz</code> abre y borra el <code>.cbr</code> y la carpeta si quieres.</li>
+  </ol>
+
+  <h2 id="mac-linux">Convertir en Mac o Linux</h2>
+  <p>En Mac, descomprime el CBR con <a href="https://theunarchiver.com/" target="_blank" rel="noopener">The Unarchiver</a> o Keka. En Linux, con el gestor de archivos (si tienes <code>unrar</code> o <code>unar</code> instalados) o desde la terminal. Después, crea el ZIP desde la terminal, dentro de la carpeta con las imágenes:</p>
+  <pre><code>cd "Mi comic"
+zip -0 -r -X "../Mi comic.cbz" .</code></pre>
+  <div class="note warn">
+    <span class="ic" aria-hidden="true">⚠️</span>
+    <p>En Mac, evita «Comprimir» del Finder: mete dentro una carpeta oculta <code>__MACOSX</code> con archivos que algunos lectores toman por páginas rotas. Si ya lo hiciste, se arregla con <code>zip -d "Mi comic.cbz" "__MACOSX/*"</code>.</p>
+  </div>
+
+  <h2 id="android">Convertir desde el propio móvil</h2>
+  <p>Si no tienes ordenador a mano, <strong>ZArchiver</strong> (gratis en Google Play) descomprime RAR, también RAR5, y crea ZIP:</p>
+  <ol class="steps">
+    <li>Abre ZArchiver y busca tu <code>.cbr</code> (normalmente en <em>Download</em>).</li>
+    <li>Tócalo y elige <strong>Extraer a ./Mi comic/</strong>.</li>
+    <li>Entra en la carpeta nueva, mantén pulsada una imagen y marca todas.</li>
+    <li>Pulsa <strong>Comprimir</strong>, elige formato <strong>zip</strong> y crea el archivo.</li>
+    <li>Mantén pulsado el <code>.zip</code> resultante → <strong>Renombrar</strong>, y cambia <code>.zip</code> por <code>.cbz</code>.</li>
+  </ol>
+  <p>Después ábrelo en tu lector. En Balda: botón <strong>«Añadir»</strong> y eliges el <code>.cbz</code>, o lo tocas en ZArchiver y eliges «Abrir con Balda».</p>
+
+  <h2 id="muchos">Convertir muchos cómics de golpe</h2>
+  <p>Si tienes una colección entera, hazlo con un bucle en vez de uno a uno. Copia antes los CBR a una carpeta aparte, por si acaso.</p>
+  <h3>Windows (Símbolo del sistema, dentro de la carpeta)</h3>
+  <pre><code>for %f in (*.cbr) do ("C:\Program Files\7-Zip\7z.exe" x "%f" -o"%~nf" &amp;&amp; "C:\Program Files\7-Zip\7z.exe" a -tzip -mx0 "%~nf.cbz" ".\%~nf\*")</code></pre>
+  <h3>Mac o Linux (Terminal, dentro de la carpeta; necesita <code>unar</code>)</h3>
+  <pre><code>for f in *.cbr; do
+  d="${f%.cbr}"
+  unar -q -D -o "$d" "$f" &amp;&amp; (cd "$d" &amp;&amp; zip -q -0 -r -X "../$d.cbz" .)
+done</code></pre>
+  <p>Cada CBR genera una carpeta con sus imágenes y un CBZ al lado. Cuando compruebes que los CBZ abren, puedes borrar las carpetas y los CBR.</p>
+
+  <h2 id="orden">Que las páginas salgan en orden</h2>
+  <p>Los lectores ordenan las páginas por <strong>nombre de archivo</strong>, alfabéticamente. Si las imágenes se llaman <code>1.jpg, 2.jpg … 10.jpg</code>, la página 10 aparecerá entre la 1 y la 2. Los cómics bien hechos usan ceros a la izquierda (<code>001.jpg, 002.jpg … 010.jpg</code>); si el tuyo no, renómbralas así antes de comprimir (en Windows, herramientas gratuitas como PowerRename de PowerToys lo hacen en lote).</p>
+  <p>Las subcarpetas dentro del ZIP no son un problema siempre que sus nombres mantengan también el orden (<code>Capitulo 01</code>, <code>Capitulo 02</code>…).</p>
+
+  <section class="guide-cta">
+    <h2>Lee tus cómics CBZ en el móvil</h2>
+    <p>Balda abre cómics CBZ, EPUB, PDF y TXT, y los coloca en una estantería de verdad. Gratis, sin cuenta y sin conexión.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguia%26utm_campaign%3Dcbr-a-cbz" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+      </svg>
+      <span class="btn-sub"><span class="small">En Google Play</span><span>Descargar gratis</span></span>
+    </a>
+  </section>
+
+  <div class="related">
+    <div class="label">Sigue leyendo</div>
+    <ul>
+      <li><a href="como-abrir-epub-android.html">Cómo abrir un archivo EPUB en Android</a></li>
+    </ul>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">Balda</div>
+        <div class="tag">Tus libros y tu lectura no salen del móvil.</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./">Guías</a>
+      <a href="../privacy.html">Privacidad</a>
+      <a href="mailto:danibarea@gmail.com">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 Balda · Daniel Barea</div>
+  </div>
+</footer>
+
+</body>
+</html>

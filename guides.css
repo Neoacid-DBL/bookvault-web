@@ -1,0 +1,117 @@
+/* ─────────────────────────────── Balda · guías ───────────────────────────────
+   Se carga después de styles.css en las páginas de /guias/ y /en/guides/.
+   Usa sus mismos tokens; aquí solo va lo que necesita un artículo largo:
+   columna de lectura, pasos numerados, avisos, figuras y la llamada a Play.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.lang-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 12px; border-radius: var(--r-pill);
+  border: 1px solid var(--paper-border); background: var(--white);
+  font-size: 13px; font-weight: 600; color: var(--ink-soft);
+}
+.lang-link:hover { border-color: var(--paper-soft); box-shadow: var(--shadow-sm); }
+
+.guide { width: min(100% - 32px, 720px); margin-inline: auto; padding: 48px 0 80px; }
+
+.crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13.5px; color: var(--ink-faint); margin-bottom: 26px; }
+.crumbs a { color: var(--ink-muted); }
+.crumbs a:hover { color: var(--rose); }
+.crumbs span[aria-hidden] { color: var(--paper-soft); }
+
+.guide h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.06; margin-bottom: 18px; }
+.guide .lead { font-size: 19px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 14px; }
+.guide .meta { font-size: 13px; color: var(--ink-faint); margin-bottom: 34px; }
+
+.guide h2 { font-size: clamp(28px, 4vw, 36px); margin: 52px 0 14px; scroll-margin-top: 90px; }
+.guide h3 { font-family: var(--sans); font-weight: 700; font-size: 18px; letter-spacing: 0; margin: 30px 0 8px; }
+.guide p, .guide li { font-size: 17px; line-height: 1.7; color: var(--ink-soft); }
+.guide p { margin: 0 0 16px; }
+.guide ul { padding-left: 22px; margin: 0 0 18px; }
+.guide li { margin-bottom: 6px; }
+.guide strong { color: var(--ink); font-weight: 650; }
+.guide a:not(.btn-primary) { color: var(--rose); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.guide a:not(.btn-primary):hover { color: var(--rose-deep); }
+.guide code, .guide kbd {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 0.88em;
+  background: var(--paper-tint); border: 1px solid var(--paper-line); border-radius: 6px; padding: 1px 6px;
+}
+.guide pre {
+  background: var(--dark-surface); color: var(--dark-ink); border-radius: var(--r-md);
+  padding: 16px 18px; overflow-x: auto; font-size: 14px; line-height: 1.6; margin: 0 0 20px;
+}
+.guide pre code { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; }
+
+/* Respuesta corta, arriba del todo: lo que Google y el lector con prisa buscan */
+.answer {
+  background: var(--white); border: 1px solid var(--paper-border); border-left: 3px solid var(--rose);
+  border-radius: var(--r-md); padding: 18px 22px; margin: 0 0 34px; box-shadow: var(--shadow-sm);
+}
+.answer p:last-child, .answer ul:last-child { margin-bottom: 0; }
+.answer .label { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); margin-bottom: 6px; }
+
+.toc-box { background: var(--paper-tint); border-radius: var(--r-md); padding: 16px 22px; margin: 0 0 10px; }
+.toc-box .label { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px; }
+.toc-box ol { margin: 0; padding-left: 20px; }
+.toc-box li { font-size: 15.5px; margin: 3px 0; }
+.toc-box a { color: var(--ink-soft) !important; text-decoration: none !important; }
+.toc-box a:hover { color: var(--rose) !important; }
+
+/* Pasos numerados */
+ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0 0 22px; }
+ol.steps > li { counter-increment: step; position: relative; padding: 2px 0 10px 48px; }
+ol.steps > li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--rose-tint); color: var(--rose-deep); font-weight: 700; font-size: 15px;
+}
+
+.note {
+  display: flex; gap: 12px; background: var(--sand-tint); border-radius: var(--r-md);
+  padding: 14px 18px; margin: 0 0 22px;
+}
+.note.warn { background: var(--rose-pale); }
+.note .ic { flex: 0 0 auto; font-size: 18px; line-height: 1.6; }
+.note p { margin: 0; font-size: 15.5px; }
+
+.guide figure { margin: 26px auto 30px; max-width: 300px; }
+.guide figure img { width: 100%; height: auto; border-radius: var(--r-lg); box-shadow: var(--shadow-md); }
+.guide figcaption { font-size: 13.5px; color: var(--ink-faint); text-align: center; margin-top: 10px; }
+
+.table-wrap { overflow-x: auto; margin: 0 0 22px; }
+.guide table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.guide th, .guide td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--paper-line); vertical-align: top; }
+.guide th { font-weight: 700; color: var(--ink); background: var(--paper-tint); }
+.guide td { color: var(--ink-soft); }
+
+.faq details { border-bottom: 1px solid var(--paper-line); padding: 14px 0; }
+.faq summary { cursor: pointer; font-weight: 650; font-size: 17px; color: var(--ink); }
+.faq details p { margin: 10px 0 0; }
+
+.guide-cta {
+  margin: 56px 0 0; padding: 30px 28px; border-radius: var(--r-xl);
+  background: var(--white); border: 1px solid var(--paper-border); box-shadow: var(--shadow-md);
+}
+.guide-cta h2 { margin: 0 0 10px; font-size: 32px; }
+.guide-cta p { color: var(--ink-muted); font-size: 16px; margin: 0 0 22px; }
+
+.related { margin-top: 44px; }
+.related .label { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 10px; }
+
+/* Índice de guías */
+.guide-list { display: grid; gap: 16px; margin: 30px 0 0; padding: 0; list-style: none; }
+.guide-list a {
+  display: block; padding: 22px 24px; border-radius: var(--r-lg);
+  background: var(--white); border: 1px solid var(--paper-border); box-shadow: var(--shadow-sm);
+  text-decoration: none !important; transition: transform .2s var(--ease-out), box-shadow .2s var(--ease-out);
+}
+.guide-list a:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.guide-list .t { font-family: var(--serif); font-size: 26px; line-height: 1.15; color: var(--ink); display: block; margin-bottom: 6px; }
+.guide-list .d { font-size: 15.5px; color: var(--ink-muted); line-height: 1.55; display: block; }
+
+@media (max-width: 560px) {
+  .guide { padding-top: 32px; }
+  .guide p, .guide li { font-size: 16.5px; }
+  .guide-cta { padding: 24px 20px; }
+  .guide-cta .btn-primary { width: 100%; justify-content: center; }
+}
