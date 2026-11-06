@@ -15,6 +15,7 @@
 <meta property="og:title" content="Política de privacidad — Balda" />
 <meta property="og:description" content="Tus libros, tu progreso y tus anotaciones no salen del dispositivo. Qué recoge AdMob, qué recogen Crashlytics y Analytics, qué pasa con la voz alta y la copia de seguridad, y cómo apagarlo." />
 <meta property="og:site_name" content="Balda" />
+<meta property="og:image" content="https://neoacid-dbl.github.io/bookvault-web/assets/og/es.png" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Política de privacidad — Balda" />
 <meta name="twitter:description" content="Tus libros, tu progreso y tus anotaciones no salen del dispositivo." />
@@ -31,7 +32,7 @@
 
 <!-- ─────────────────────────── NAV ─────────────────────────── -->
 <nav class="nav">
-  <a href="index.html" class="nav-logo" aria-label="Balda">
+  <a href="./" data-home class="nav-logo" aria-label="Balda">
     <span class="mark">
       <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
         <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
@@ -46,7 +47,7 @@
   </a>
 
   <div class="nav-links">
-    <a href="index.html" data-i18n="nav.home">Inicio</a>
+    <a href="./" data-home data-i18n="nav.home">Inicio</a>
     <a href="#" class="active" data-i18n="nav.policy">Privacidad</a>
   </div>
 
@@ -59,7 +60,7 @@
       </button>
       <div class="lang-menu" id="langMenu" role="menu"></div>
     </div>
-    <a class="nav-cta" href="index.html" data-i18n="nav.back">← Volver a la app</a>
+    <a class="nav-cta" href="./" data-home data-i18n="nav.back">← Volver a la app</a>
   </div>
 </nav>
 
@@ -242,10 +243,14 @@
       wrap.appendChild(sec);
     });
 
+    // La portada de cada idioma tiene su URL (el español, en la raíz)
+    const home = lang === 'es' ? './' : lang + '/';
+    document.querySelectorAll('[data-home]').forEach(a=>{ a.href = home; });
+
     // Enlaces del pie
     const fl = document.getElementById('footerLinks');
     if (fl){
-      const hrefs = ['index.html', 'mailto:danibarea@gmail.com', 'https://play.google.com/store/apps/details?id=com.danib.bookvault'];
+      const hrefs = [home, 'mailto:danibarea@gmail.com', 'https://play.google.com/store/apps/details?id=com.danib.bookvault'];
       fl.innerHTML = '';
       (d.footer.links || []).forEach((label,i)=>{
         const a = document.createElement('a');
