@@ -21,7 +21,7 @@ window.BV_POLICY = {
       eyebrow: 'Política de privacidad',
       title: 'Tus libros. Tu lectura. Tu dispositivo.',
       sub: 'Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas se quedan en el teléfono y nunca se envían. Lo único que sale son los anuncios, los informes de fallo —si no los apagas— y lo que tú decidas enviar.',
-      meta: 'Última actualización: 24 de septiembre de 2026',
+      meta: 'Última actualización: 6 de noviembre de 2026',
       author: 'Balda · por Daniel Barea',
       tldr: 'Sin cuenta · sin servidor propio · tus libros no se suben nunca · AdMob para los anuncios y Firebase para los fallos, con interruptor · la copia de seguridad y lo que compartes van adonde tú digas.'
     },
@@ -126,10 +126,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Que el teléfono no se duerma entre frase y frase mientras escuchas un libro, y que terminen las tareas programadas (widgets y recordatorio).' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Los añade el SDK de AdMob: leer el identificador de publicidad y usar las API de publicidad de Android. Puedes borrar o limitar el identificador en los ajustes de Android.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Lo añade la librería de pagos de Google Play. Hoy no se usa: la compra sin anuncios no está activa.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Lo añade Firebase Analytics para saber si la app se instaló desde Google Play. No recibe nada de tu biblioteca.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Lo añade Firebase Analytics para saber si la app se instaló desde Google Play. No recibe nada de tu biblioteca.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Solo si activas «Buscar libros en todo el móvil» (Ajustes → Libros del móvil, o la tarjeta «Encuentra tus libros solo»). Android lo llama «Acceso a todos los archivos». Balda lo usa para encontrar los libros ePub, FB2, AZW3 y MOBI y los cómics CBZ del almacenamiento del móvil y añadirlos a tu biblioteca. Solo los lee: no modifica ni borra ningún fichero, no busca otros tipos de archivo y no envía a ningún sitio ni los ficheros ni sus nombres.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'El mismo uso en Android 10 o anterior, donde el permiso se llama así. En Android 11 o superior no se declara.' }
         ],
-        callout: 'Balda no pide permiso de acceso al almacenamiento. Los libros entran por el selector del sistema —eliges un fichero o concedes una carpeta— o porque los abres con Balda desde otra app, y la app solo ve lo que tú le has dado.',
-        outro: 'Esto no es un tecnicismo: significa que la app no puede recorrer tu galería, tus documentos ni tus descargas aunque quisiera. Queda además un permiso interno de AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) que no da acceso a nada: impide que otras apps envíen avisos a Balda.'
+        callout: 'El acceso a los archivos del móvil es opcional y está apagado hasta que tú lo activas. Sin él, los libros entran por el selector del sistema —eliges un fichero o concedes una carpeta— o porque los abres con Balda desde otra app, y la app solo ve lo que tú le has dado. Puedes retirarlo cuando quieras: Ajustes → Libros del móvil te lleva a los ajustes de Android.',
+        outro: 'Con el acceso activado, Balda solo busca esas extensiones, se salta las carpetas ocultas y las de datos de otras apps (Android/data y Android/obb) y copia a su almacenamiento privado los libros que encuentra, como cualquier importación. Los PDF, los textos y los documentos nunca se añaden solos, y un libro que borras en Balda no vuelve a entrar. Queda además un permiso interno de AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) que no da acceso a nada: impide que otras apps envíen avisos a Balda.'
       },
       {
         id: 'payments', num: '09', kicker: 'Pagos', title: 'Compras y recompensas',
@@ -166,7 +168,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Cambios', title: 'Cambios en esta política',
-        body: 'Si la app cambia lo que hace con los datos —un SDK nuevo, la compra sin anuncios activa, otro producto de Firebase, un permiso nuevo—, esta página se actualiza a la vez que la ficha de Google Play, y la fecha de arriba lo refleja. Vigente desde el 24 de septiembre de 2026.',
+        body: 'Si la app cambia lo que hace con los datos —un SDK nuevo, la compra sin anuncios activa, otro producto de Firebase, un permiso nuevo—, esta página se actualiza a la vez que la ficha de Google Play, y la fecha de arriba lo refleja. Vigente desde el 6 de noviembre de 2026.',
         outro: 'Al seguir usando la aplicación después de una actualización de esta política, aceptas la versión vigente.'
       },
       {
@@ -192,7 +194,7 @@ window.BV_POLICY = {
       eyebrow: 'Privacy policy',
       title: 'Your books. Your reading. Your device.',
       sub: 'Your library, your progress, your highlights and your stats stay on the phone and are never sent anywhere. The only things that leave are the ads, the crash reports — unless you turn them off — and whatever you choose to send.',
-      meta: 'Last updated: 24 September 2026',
+      meta: 'Last updated: 6 November 2026',
       author: 'Balda · by Daniel Barea',
       tldr: 'No account · no server of our own · your books are never uploaded · AdMob for ads and Firebase for crashes, with an off switch · backups and what you share go wherever you say.'
     },
@@ -297,10 +299,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Keep the phone from sleeping between sentences while you listen to a book, and let scheduled tasks (widgets and reminder) finish.' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Added by the AdMob SDK: read the advertising identifier and use Android’s advertising APIs. You can delete or limit the identifier in Android settings.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Added by the Google Play billing library. Unused today: the ad-free purchase is not live.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Added by Firebase Analytics to know whether the app was installed from Google Play. It receives nothing from your library.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Added by Firebase Analytics to know whether the app was installed from Google Play. It receives nothing from your library.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Only if you turn on “Find books on the whole phone” (Settings → Books on your phone, or the “Find your books automatically” card). Android calls it “All files access”. Balda uses it to find the ePub, FB2, AZW3 and MOBI books and CBZ comics in the phone’s storage and add them to your library. It only reads them: it changes or deletes no file, looks for no other file type, and sends neither the files nor their names anywhere.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'The same use on Android 10 or earlier, where the permission has this name. It is not declared on Android 11 or later.' }
         ],
-        callout: 'Balda does not request storage access permission. Books come in through the system picker — you pick a file or grant a folder — or because you open them with Balda from another app, and the app only ever sees what you hand it.',
-        outro: 'That is not a technicality: it means the app could not walk through your gallery, your documents or your downloads even if it wanted to. There is also an internal AndroidX permission (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) that grants access to nothing: it stops other apps from sending notices to Balda.'
+        callout: 'Access to the phone’s files is optional and stays off until you turn it on. Without it, books come in through the system picker — you pick a file or grant a folder — or because you open them with Balda from another app, and the app only ever sees what you hand it. You can withdraw it at any time: Settings → Books on your phone takes you to Android’s settings.',
+        outro: 'With access on, Balda only looks for those extensions, skips hidden folders and other apps’ data folders (Android/data and Android/obb), and copies the books it finds into its private storage, like any import. PDFs, text files and documents are never added on their own, and a book you delete in Balda does not come back. There is also an internal AndroidX permission (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) that grants access to nothing: it stops other apps from sending notices to Balda.'
       },
       {
         id: 'payments', num: '09', kicker: 'Payments', title: 'Purchases and rewards',
@@ -337,7 +341,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Changes', title: 'Changes to this policy',
-        body: 'If the app changes what it does with data — a new SDK, the ad-free purchase going live, another Firebase product, a new permission — this page is updated at the same time as the Google Play listing, and the date above reflects it. Effective from 24 September 2026.',
+        body: 'If the app changes what it does with data — a new SDK, the ad-free purchase going live, another Firebase product, a new permission — this page is updated at the same time as the Google Play listing, and the date above reflects it. Effective from 6 November 2026.',
         outro: 'By continuing to use the app after this policy is updated, you accept the version then in force.'
       },
       {
@@ -363,7 +367,7 @@ window.BV_POLICY = {
       eyebrow: 'Politique de confidentialité',
       title: 'Vos livres. Votre lecture. Votre appareil.',
       sub: 'Votre bibliothèque, votre progression, vos annotations et vos statistiques restent sur le téléphone et ne sont jamais envoyées. Ce qui sort : les publicités, les rapports de plantage — sauf si vous les désactivez — et ce que vous choisissez d’envoyer.',
-      meta: 'Dernière mise à jour : 24 septembre 2026',
+      meta: 'Dernière mise à jour : 6 novembre 2026',
       author: 'Balda · par Daniel Barea',
       tldr: 'Sans compte · aucun serveur à nous · vos livres ne sont jamais envoyés · AdMob pour la publicité et Firebase pour les plantages, désactivable · la sauvegarde et ce que vous partagez vont où vous le décidez.'
     },
@@ -468,10 +472,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Empêcher le téléphone de s’endormir entre deux phrases pendant que vous écoutez un livre, et laisser finir les tâches programmées (widgets et rappel).' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Ajoutées par le SDK AdMob : lire l’identifiant publicitaire et utiliser les API publicitaires d’Android. Vous pouvez supprimer ou limiter l’identifiant dans les paramètres Android.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Ajoutée par la bibliothèque de paiement de Google Play. Inutilisée aujourd’hui : l’achat sans publicité n’est pas actif.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Ajoutée par Firebase Analytics pour savoir si l’application a été installée depuis Google Play. Elle ne reçoit rien de votre bibliothèque.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Ajoutée par Firebase Analytics pour savoir si l’application a été installée depuis Google Play. Elle ne reçoit rien de votre bibliothèque.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Seulement si vous activez « Chercher des livres sur tout le téléphone » (Réglages → Livres du téléphone, ou la carte « Retrouvez vos livres automatiquement »). Android l’appelle « Accès à tous les fichiers ». Balda s’en sert pour trouver les livres ePub, FB2, AZW3 et MOBI et les BD CBZ du stockage du téléphone et les ajouter à votre bibliothèque. Elle ne fait que les lire : elle ne modifie ni ne supprime aucun fichier, ne cherche aucun autre type de fichier et n’envoie nulle part ni les fichiers ni leurs noms.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'Le même usage sous Android 10 ou antérieur, où l’autorisation porte ce nom. Elle n’est pas déclarée sous Android 11 ou ultérieur.' }
         ],
-        callout: 'Balda ne demande pas d’autorisation d’accès au stockage. Les livres arrivent par le sélecteur du système — vous choisissez un fichier ou autorisez un dossier — ou parce que vous les ouvrez avec Balda depuis une autre application, et l’application ne voit que ce que vous lui donnez.',
-        outro: 'Ce n’est pas un détail technique : l’application ne pourrait pas parcourir votre galerie, vos documents ou vos téléchargements, même si elle le voulait. Il reste aussi une autorisation interne d’AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) qui ne donne accès à rien : elle empêche d’autres applications d’envoyer des signaux à Balda.'
+        callout: 'L’accès aux fichiers du téléphone est facultatif et reste désactivé tant que vous ne l’activez pas. Sans lui, les livres arrivent par le sélecteur du système — vous choisissez un fichier ou autorisez un dossier — ou parce que vous les ouvrez avec Balda depuis une autre application, et l’application ne voit que ce que vous lui donnez. Vous pouvez le retirer à tout moment : Réglages → Livres du téléphone vous mène aux paramètres d’Android.',
+        outro: 'Avec l’accès activé, Balda ne cherche que ces extensions, ignore les dossiers cachés et les dossiers de données des autres applications (Android/data et Android/obb), et copie les livres trouvés dans son stockage privé, comme pour toute importation. Les PDF, les textes et les documents ne sont jamais ajoutés tout seuls, et un livre supprimé dans Balda ne revient pas. Il reste aussi une autorisation interne d’AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) qui ne donne accès à rien : elle empêche d’autres applications d’envoyer des signaux à Balda.'
       },
       {
         id: 'payments', num: '09', kicker: 'Paiements', title: 'Achats et récompenses',
@@ -508,7 +514,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Modifications', title: 'Modifications de cette politique',
-        body: 'Si l’application change ce qu’elle fait des données — un nouveau SDK, l’achat sans publicité activé, un autre produit Firebase, une nouvelle autorisation —, cette page est mise à jour en même temps que la fiche Google Play, et la date ci-dessus en témoigne. En vigueur depuis le 24 septembre 2026.',
+        body: 'Si l’application change ce qu’elle fait des données — un nouveau SDK, l’achat sans publicité activé, un autre produit Firebase, une nouvelle autorisation —, cette page est mise à jour en même temps que la fiche Google Play, et la date ci-dessus en témoigne. En vigueur depuis le 6 novembre 2026.',
         outro: 'En continuant à utiliser l’application après une mise à jour de cette politique, vous acceptez la version en vigueur.'
       },
       {
@@ -534,7 +540,7 @@ window.BV_POLICY = {
       eyebrow: 'Datenschutzerklärung',
       title: 'Deine Bücher. Dein Lesen. Dein Gerät.',
       sub: 'Deine Bibliothek, dein Fortschritt, deine Markierungen und deine Statistiken bleiben auf dem Handy und werden nie gesendet. Was rausgeht: die Werbung, die Absturzberichte – wenn du sie nicht abschaltest – und was du selbst verschickst.',
-      meta: 'Zuletzt aktualisiert: 24. September 2026',
+      meta: 'Zuletzt aktualisiert: 6. November 2026',
       author: 'Balda · von Daniel Barea',
       tldr: 'Kein Konto · kein eigener Server · deine Bücher werden nie hochgeladen · AdMob für Werbung und Firebase für Abstürze, abschaltbar · Sicherungen und Geteiltes gehen dahin, wohin du willst.'
     },
@@ -639,10 +645,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Verhindern, dass das Handy zwischen zwei Sätzen einschläft, während du einem Buch zuhörst, und geplante Aufgaben (Widgets und Erinnerung) zu Ende laufen lassen.' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Vom AdMob-SDK hinzugefügt: die Werbe-ID lesen und die Werbe-APIs von Android nutzen. Du kannst die ID in den Android-Einstellungen löschen oder einschränken.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Von der Zahlungsbibliothek von Google Play hinzugefügt. Heute ungenutzt: Der Kauf ohne Werbung ist nicht aktiv.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Von Firebase Analytics hinzugefügt, um zu erfahren, ob die App über Google Play installiert wurde. Sie erhält nichts aus deiner Bibliothek.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Von Firebase Analytics hinzugefügt, um zu erfahren, ob die App über Google Play installiert wurde. Sie erhält nichts aus deiner Bibliothek.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Nur wenn du „Auf dem ganzen Handy nach Büchern suchen“ einschaltest (Einstellungen → Bücher auf dem Handy oder die Karte „Deine Bücher automatisch finden“). Android nennt das „Zugriff auf alle Dateien“. Balda nutzt es, um die ePub-, FB2-, AZW3- und MOBI-Bücher und CBZ-Comics im Speicher des Handys zu finden und deiner Bibliothek hinzuzufügen. Sie werden nur gelesen: Keine Datei wird geändert oder gelöscht, es wird nach keinen anderen Dateitypen gesucht, und weder die Dateien noch ihre Namen werden irgendwohin gesendet.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'Derselbe Zweck unter Android 10 oder älter, wo die Berechtigung so heißt. Ab Android 11 wird sie nicht deklariert.' }
         ],
-        callout: 'Balda fragt keine Berechtigung für den Speicherzugriff ab. Bücher kommen über die Dateiauswahl des Systems – du wählst eine Datei oder gibst einen Ordner frei – oder weil du sie aus einer anderen App mit Balda öffnest, und die App sieht nur, was du ihr gibst.',
-        outro: 'Das ist keine Formalie: Die App könnte deine Galerie, deine Dokumente oder deine Downloads gar nicht durchsuchen, selbst wenn sie wollte. Dazu kommt eine interne AndroidX-Berechtigung (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION), die auf nichts Zugriff gibt: Sie verhindert, dass andere Apps Signale an Balda schicken.'
+        callout: 'Der Zugriff auf die Dateien des Handys ist freiwillig und bleibt aus, bis du ihn einschaltest. Ohne ihn kommen Bücher über die Dateiauswahl des Systems – du wählst eine Datei oder gibst einen Ordner frei – oder weil du sie aus einer anderen App mit Balda öffnest, und die App sieht nur, was du ihr gibst. Du kannst ihn jederzeit entziehen: Einstellungen → Bücher auf dem Handy führt dich zu den Android-Einstellungen.',
+        outro: 'Mit eingeschaltetem Zugriff sucht Balda nur nach diesen Endungen, überspringt versteckte Ordner und die Datenordner anderer Apps (Android/data und Android/obb) und kopiert gefundene Bücher wie jeden Import in ihren privaten Speicher. PDFs, Textdateien und Dokumente werden nie von selbst hinzugefügt, und ein in Balda gelöschtes Buch kommt nicht zurück. Dazu kommt eine interne AndroidX-Berechtigung (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION), die auf nichts Zugriff gibt: Sie verhindert, dass andere Apps Signale an Balda schicken.'
       },
       {
         id: 'payments', num: '09', kicker: 'Zahlungen', title: 'Käufe und Belohnungen',
@@ -679,7 +687,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Änderungen', title: 'Änderungen dieser Erklärung',
-        body: 'Ändert die App, was sie mit Daten macht – ein neues SDK, der aktivierte Kauf ohne Werbung, ein weiteres Firebase-Produkt, eine neue Berechtigung –, wird diese Seite zusammen mit dem Google-Play-Eintrag aktualisiert, und das Datum oben zeigt es an. Gültig ab dem 24. September 2026.',
+        body: 'Ändert die App, was sie mit Daten macht – ein neues SDK, der aktivierte Kauf ohne Werbung, ein weiteres Firebase-Produkt, eine neue Berechtigung –, wird diese Seite zusammen mit dem Google-Play-Eintrag aktualisiert, und das Datum oben zeigt es an. Gültig ab dem 6. November 2026.',
         outro: 'Wenn du die App nach einer Aktualisierung dieser Erklärung weiter nutzt, akzeptierst du die dann gültige Fassung.'
       },
       {
@@ -705,7 +713,7 @@ window.BV_POLICY = {
       eyebrow: 'Informativa sulla privacy',
       title: 'I tuoi libri. La tua lettura. Il tuo dispositivo.',
       sub: 'La tua biblioteca, i tuoi progressi, le tue annotazioni e le tue statistiche restano sul telefono e non vengono mai inviati. Escono solo gli annunci, i rapporti sugli arresti anomali — se non li disattivi — e ciò che scegli di inviare tu.',
-      meta: 'Ultimo aggiornamento: 24 settembre 2026',
+      meta: 'Ultimo aggiornamento: 6 novembre 2026',
       author: 'Balda · di Daniel Barea',
       tldr: 'Senza account · nessun server nostro · i tuoi libri non vengono mai caricati · AdMob per gli annunci e Firebase per gli arresti, disattivabile · il backup e ciò che condividi vanno dove dici tu.'
     },
@@ -810,10 +818,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Evitare che il telefono si addormenti tra una frase e l’altra mentre ascolti un libro, e lasciare finire le attività programmate (widget e promemoria).' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Aggiunti dall’SDK di AdMob: leggere l’identificativo pubblicitario e usare le API pubblicitarie di Android. Puoi eliminare o limitare l’identificativo nelle impostazioni di Android.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Aggiunto dalla libreria di pagamento di Google Play. Oggi non è usato: l’acquisto senza pubblicità non è attivo.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Aggiunto da Firebase Analytics per sapere se l’app è stata installata da Google Play. Non riceve nulla della tua biblioteca.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Aggiunto da Firebase Analytics per sapere se l’app è stata installata da Google Play. Non riceve nulla della tua biblioteca.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Solo se attivi «Cerca libri in tutto il telefono» (Impostazioni → Libri del telefono, o la scheda «Trova i tuoi libri da solo»). Android lo chiama «Accesso a tutti i file». Balda lo usa per trovare i libri ePub, FB2, AZW3 e MOBI e i fumetti CBZ nella memoria del telefono e aggiungerli alla tua biblioteca. Li legge soltanto: non modifica né cancella alcun file, non cerca altri tipi di file e non invia da nessuna parte né i file né i loro nomi.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'Lo stesso uso su Android 10 o precedenti, dove il permesso si chiama così. Su Android 11 o successivi non viene dichiarato.' }
         ],
-        callout: 'Balda non chiede il permesso di accesso alla memoria. I libri entrano dal selettore di sistema — scegli un file o concedi una cartella — oppure perché li apri con Balda da un’altra app, e l’app vede solo quello che le dai.',
-        outro: 'Non è un tecnicismo: significa che l’app non potrebbe scorrere la tua galleria, i tuoi documenti o i tuoi download nemmeno volendo. C’è poi un permesso interno di AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) che non dà accesso a nulla: impedisce ad altre app di inviare segnali a Balda.'
+        callout: 'L’accesso ai file del telefono è facoltativo e resta spento finché non lo attivi tu. Senza, i libri entrano dal selettore di sistema — scegli un file o concedi una cartella — oppure perché li apri con Balda da un’altra app, e l’app vede solo quello che le dai. Puoi revocarlo quando vuoi: Impostazioni → Libri del telefono ti porta alle impostazioni di Android.',
+        outro: 'Con l’accesso attivo, Balda cerca solo quelle estensioni, salta le cartelle nascoste e quelle dei dati di altre app (Android/data e Android/obb) e copia i libri trovati nella sua memoria privata, come qualsiasi importazione. PDF, testi e documenti non vengono mai aggiunti da soli, e un libro cancellato in Balda non torna. C’è poi un permesso interno di AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) che non dà accesso a nulla: impedisce ad altre app di inviare segnali a Balda.'
       },
       {
         id: 'payments', num: '09', kicker: 'Pagamenti', title: 'Acquisti e premi',
@@ -850,7 +860,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Modifiche', title: 'Modifiche a questa informativa',
-        body: 'Se l’app cambia ciò che fa con i dati — un nuovo SDK, l’acquisto senza pubblicità attivo, un altro prodotto Firebase, un nuovo permesso —, questa pagina viene aggiornata insieme alla scheda di Google Play e la data in alto lo indica. In vigore dal 24 settembre 2026.',
+        body: 'Se l’app cambia ciò che fa con i dati — un nuovo SDK, l’acquisto senza pubblicità attivo, un altro prodotto Firebase, un nuovo permesso —, questa pagina viene aggiornata insieme alla scheda di Google Play e la data in alto lo indica. In vigore dal 6 novembre 2026.',
         outro: 'Continuando a usare l’app dopo un aggiornamento di questa informativa, accetti la versione in vigore.'
       },
       {
@@ -876,7 +886,7 @@ window.BV_POLICY = {
       eyebrow: 'Política de privacidade',
       title: 'Seus livros. Sua leitura. Seu dispositivo.',
       sub: 'Sua biblioteca, seu progresso, suas anotações e suas estatísticas ficam no celular e nunca são enviados. Só saem os anúncios, os relatórios de falha — se você não os desligar — e o que você decidir enviar.',
-      meta: 'Última atualização: 24 de setembro de 2026',
+      meta: 'Última atualização: 6 de novembro de 2026',
       author: 'Balda · por Daniel Barea',
       tldr: 'Sem conta · nenhum servidor próprio · seus livros nunca são enviados · AdMob para os anúncios e Firebase para as falhas, com botão para desligar · o backup e o que você compartilha vão para onde você mandar.'
     },
@@ -981,10 +991,12 @@ window.BV_POLICY = {
           { icon: 'moon',  name: 'WAKE_LOCK',            desc: 'Evitar que o celular durma entre uma frase e outra enquanto você ouve um livro, e deixar terminar as tarefas programadas (widgets e lembrete).' },
           { icon: 'ad',    name: 'AD_ID · ACCESS_ADSERVICES_*', desc: 'Acrescentadas pelo SDK do AdMob: ler o identificador de publicidade e usar as APIs de publicidade do Android. Você pode apagar ou limitar o identificador nas configurações do Android.' },
           { icon: 'cart',  name: 'BILLING',              desc: 'Acrescentada pela biblioteca de pagamentos do Google Play. Hoje não é usada: a compra sem anúncios não está ativa.' },
-          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Acrescentada pelo Firebase Analytics para saber se o app foi instalado pelo Google Play. Não recebe nada da sua biblioteca.' }
+          { icon: 'link',  name: 'BIND_GET_INSTALL_REFERRER_SERVICE', desc: 'Acrescentada pelo Firebase Analytics para saber se o app foi instalado pelo Google Play. Não recebe nada da sua biblioteca.' },
+          { icon: 'folder', name: 'MANAGE_EXTERNAL_STORAGE', desc: 'Só se você ativar «Procurar livros no celular todo» (Configurações → Livros do celular, ou o cartão «Encontre seus livros automaticamente»). O Android chama isso de «Acesso a todos os arquivos». O Balda usa para encontrar os livros ePub, FB2, AZW3 e MOBI e os quadrinhos CBZ do armazenamento do celular e adicioná-los à sua biblioteca. Ele só os lê: não modifica nem apaga nenhum arquivo, não procura outros tipos de arquivo e não envia para lugar nenhum nem os arquivos nem seus nomes.' },
+          { icon: 'folder', name: 'READ_EXTERNAL_STORAGE', desc: 'O mesmo uso no Android 10 ou anterior, onde a permissão tem esse nome. No Android 11 ou posterior ela não é declarada.' }
         ],
-        callout: 'O Balda não pede permissão de acesso ao armazenamento. Os livros entram pelo seletor do sistema — você escolhe um arquivo ou libera uma pasta — ou porque você os abre com o Balda a partir de outro app, e o app só vê o que você entrega.',
-        outro: 'Isso não é detalhe técnico: significa que o app não conseguiria percorrer sua galeria, seus documentos ou seus downloads nem se quisesse. Há ainda uma permissão interna do AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) que não dá acesso a nada: impede que outros apps enviem avisos ao Balda.'
+        callout: 'O acesso aos arquivos do celular é opcional e fica desligado até você ativar. Sem ele, os livros entram pelo seletor do sistema — você escolhe um arquivo ou libera uma pasta — ou porque você os abre com o Balda a partir de outro app, e o app só vê o que você entrega. Você pode retirá-lo quando quiser: Configurações → Livros do celular leva às configurações do Android.',
+        outro: 'Com o acesso ativado, o Balda procura só essas extensões, pula as pastas ocultas e as pastas de dados de outros apps (Android/data e Android/obb) e copia os livros encontrados para o armazenamento privado dele, como em qualquer importação. PDFs, textos e documentos nunca são adicionados sozinhos, e um livro que você apaga no Balda não volta. Há ainda uma permissão interna do AndroidX (DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) que não dá acesso a nada: impede que outros apps enviem avisos ao Balda.'
       },
       {
         id: 'payments', num: '09', kicker: 'Pagamentos', title: 'Compras e recompensas',
@@ -1021,7 +1033,7 @@ window.BV_POLICY = {
       },
       {
         id: 'changes', num: '14', kicker: 'Alterações', title: 'Alterações nesta política',
-        body: 'Se o app mudar o que faz com os dados — um SDK novo, a compra sem anúncios ativada, outro produto do Firebase, uma permissão nova —, esta página é atualizada junto com a página do Google Play, e a data acima mostra isso. Em vigor desde 24 de setembro de 2026.',
+        body: 'Se o app mudar o que faz com os dados — um SDK novo, a compra sem anúncios ativada, outro produto do Firebase, uma permissão nova —, esta página é atualizada junto com a página do Google Play, e a data acima mostra isso. Em vigor desde 6 de novembro de 2026.',
         outro: 'Ao continuar usando o app depois de uma atualização desta política, você aceita a versão em vigor.'
       },
       {

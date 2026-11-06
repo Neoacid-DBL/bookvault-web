@@ -5,29 +5,78 @@
   <url>
     <loc>https://neoacid-dbl.github.io/bookvault-web/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/de/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/it/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/"/>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
     <loc>https://neoacid-dbl.github.io/bookvault-web/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/privacy.html"/>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -35,9 +84,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -45,9 +92,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -55,9 +100,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -65,9 +108,55 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/abrir-fb2-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/abrir-fb2-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/abrir-fb2-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/guias/leer-en-voz-alta-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-en-voz-alta-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-en-voz-alta-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -75,9 +164,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
   <url>
@@ -85,9 +172,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
 
 </urlset>

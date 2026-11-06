@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo leer libros MOBI y AZW3 en Android (sin Kindle) — Balda</title>
+<meta name="description" content="Cómo abrir archivos .mobi, .azw3, .azw y .prc en el móvil Android sin la app de Kindle ni convertirlos en el ordenador, y qué pasa con el DRM de Amazon." />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="../assets/bookvault_icon.svg" />
+<link rel="apple-touch-icon" href="../assets/icon-512.png" />
+<link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html" />
+<link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html" />
+<link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html" />
+<link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html" />
+<meta property="og:title" content="Cómo leer libros MOBI y AZW3 en Android" />
+<meta property="og:description" content="Abre tus .mobi y .azw3 sin DRM en el móvil, sin la app de Kindle ni Calibre. Y qué pasa con los libros comprados en Amazon." />
+<meta property="og:site_name" content="Balda" />
+<meta property="og:image" content="https://neoacid-dbl.github.io/bookvault-web/assets/guides/es-03-lector.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../guides.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Cómo leer libros MOBI y AZW3 en Android",
+      "description": "Cómo abrir archivos .mobi, .azw3, .azw y .prc en el móvil Android sin la app de Kindle ni convertirlos en el ordenador, y qué pasa con el DRM de Amazon.",
+      "inLanguage": "es",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "author": {
+        "@type": "Person",
+        "name": "Daniel Barea"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balda",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://neoacid-dbl.github.io/bookvault-web/assets/icon-512.png"
+        }
+      },
+      "image": "https://neoacid-dbl.github.io/bookvault-web/assets/guides/es-03-lector.webp",
+      "mainEntityOfPage": "https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Balda",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guías",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/guias/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOBI y AZW3 en Android"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="../" class="nav-logo" aria-label="Balda">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">Balda</span>
+  </a>
+  <div class="nav-links">
+    <a href="../">Inicio</a>
+    <a href="./" class="active">Guías</a>
+  </div>
+  <div class="nav-right">
+    <a class="lang-link" href="../en/guides/read-mobi-azw3-android.html" hreflang="en" lang="en">🇬🇧 EN</a>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguia%26utm_campaign%3Dleer-mobi" target="_blank" rel="noopener">Descargar</a>
+  </div>
+</nav>
+
+<main>
+<article class="guide">
+
+  <div class="crumbs">
+    <a href="../">Balda</a><span aria-hidden="true">/</span>
+    <a href="./">Guías</a><span aria-hidden="true">/</span>
+    <span>MOBI y AZW3 en Android</span>
+  </div>
+
+  <h1>Cómo leer libros MOBI y AZW3 en Android</h1>
+  <p class="lead">Tienes una carpeta de libros de Kindle de hace años, o alguien te ha pasado un <code>.mobi</code>, y el móvil no sabe qué hacer con él. No hace falta convertirlo en el ordenador: basta un lector que entienda el formato.</p>
+  <p class="meta">Actualizado el 6 de noviembre de 2026 · 5 min de lectura</p>
+
+  <div class="answer">
+    <div class="label">Respuesta corta</div>
+    <p>Instala un lector que abra MOBI y AZW3, como <strong>Balda</strong> (gratis y sin cuenta), toca el archivo y elige <strong>«Abrir con Balda»</strong>. Funciona con los libros <strong>sin DRM</strong>; los que compraste en la tienda de Amazon llevan DRM y solo se leen en la app de Kindle.</p>
+  </div>
+
+  <nav class="toc-box" aria-label="En esta guía">
+    <div class="label">En esta guía</div>
+    <ol>
+      <li><a href="#que-es">Qué son MOBI y AZW3</a></li>
+      <li><a href="#paso-a-paso">Abrir un MOBI o AZW3 paso a paso</a></li>
+      <li><a href="#que-se-conserva">Qué se conserva al leerlo</a></li>
+      <li><a href="#drm">Libros comprados en Amazon: el DRM</a></li>
+      <li><a href="#faq">Preguntas frecuentes</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="que-es">Qué son MOBI y AZW3</h2>
+  <p>Son los formatos de libro electrónico de Kindle. <strong>MOBI</strong> (también <code>.azw</code> y <code>.prc</code>) es el antiguo, heredado de Mobipocket. <strong>AZW3</strong>, también llamado KF8, es el moderno: por dentro es casi un EPUB —HTML y CSS— empaquetado de otra manera, así que conserva capítulos, índice, imágenes y la tipografía del libro.</p>
+  <p>Muchos <code>.mobi</code> modernos son en realidad «combinados»: llevan dentro una versión antigua y otra KF8. Un buen lector usa la moderna, que se ve mejor.</p>
+
+  <h2 id="paso-a-paso">Abrir un MOBI o AZW3 paso a paso</h2>
+  <ol class="steps">
+    <li>Instala <a href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguia%26utm_campaign%3Dleer-mobi" target="_blank" rel="noopener">Balda desde Google Play</a>. No pide registrarte.</li>
+    <li>Si el libro te llegó por WhatsApp, correo o Drive, <strong>tócalo y elige Balda</strong> en «Abrir con». Si está en el móvil, abre Balda y pulsa <strong>«Añadir»</strong>.</li>
+    <li>El libro entra en tu biblioteca con su portada, título, autor e índice, y se abre por la primera página.</li>
+  </ol>
+  <div class="note">
+    <span class="ic" aria-hidden="true">💡</span>
+    <p>En el selector de archivos de Android los <code>.mobi</code> a veces aparecen como «Archivo BIN» o «Archivo PRC». Es normal: Android no sabe qué tipo de archivo son, pero Balda los reconoce por el nombre y los abre igual.</p>
+  </div>
+  <p>Si tienes muchos repartidos por el móvil, en <strong>Ajustes → Libros del móvil</strong> puedes dejar que Balda los busque sola: encuentra los MOBI, AZW3, EPUB, FB2 y CBZ del almacenamiento y añade los nuevos cada vez que la abres. Es opcional y necesita el permiso «Acceso a todos los archivos».</p>
+
+  <h2 id="que-se-conserva">Qué se conserva al leerlo</h2>
+  <p>Balda convierte el MOBI o el AZW3 a EPUB en el momento de importarlo, dentro del propio móvil, y desde ahí lo lee como cualquier EPUB. En la práctica eso significa que tienes:</p>
+  <ul>
+    <li><strong>Portada, índice con partes y capítulos, ilustraciones</strong> y el estilo del libro.</li>
+    <li><strong>Subrayados</strong> en cinco colores, notas y marcadores.</li>
+    <li><strong>Búsqueda</strong> dentro del libro y <strong>lectura en voz alta</strong>.</li>
+    <li>Tipografía, tamaño, márgenes y papel (día, sepia, noche u OLED) a tu gusto.</li>
+  </ul>
+  <p>Un detalle: en la ficha del libro verás «EPUB» como formato, porque es lo que guarda la app. Tu archivo original no se toca.</p>
+
+  <h2 id="drm">Libros comprados en Amazon: el DRM</h2>
+  <p>Los libros que compras en la tienda de Kindle van protegidos con DRM: están cifrados para que solo los abra la app de Kindle con tu cuenta. Ningún lector independiente puede abrirlos, y Balda tampoco. Si lo intentas, te dirá que el libro tiene DRM en lugar de enseñarte una página en blanco.</p>
+  <p>Sí se abren los MOBI y AZW3 <strong>sin DRM</strong>: los de editoriales y autores que no lo usan, los de Project Gutenberg y otras bibliotecas de dominio público, o los que generas tú con Calibre a partir de un EPUB.</p>
+
+  <h2 id="faq">Preguntas frecuentes</h2>
+  <div class="faq">
+    <details>
+      <summary>¿Tengo que convertir el MOBI a EPUB con Calibre?</summary>
+      <p>No. Balda hace esa conversión sola al importarlo, en el propio móvil. Calibre sigue siendo útil para organizar una biblioteca grande en el ordenador, pero no es necesario para leer.</p>
+    </details>
+    <details>
+      <summary>¿Abre los archivos KFX de Kindle?</summary>
+      <p>No. Balda abre <code>.mobi</code>, <code>.azw</code>, <code>.azw3</code> y <code>.prc</code> sin DRM. El formato KFX que usan las apps recientes de Kindle no está entre ellos.</p>
+    </details>
+    <details>
+      <summary>¿Se suben mis libros a algún sitio?</summary>
+      <p>No. Balda no tiene cuenta ni servidor: la conversión y la lectura pasan en el móvil, y tus libros no salen de él.</p>
+    </details>
+    <details>
+      <summary>¿Es gratis?</summary>
+      <p>Sí. Tiene anuncios en la biblioteca y otras pantallas de navegación, nunca mientras lees.</p>
+    </details>
+  </div>
+
+  <section class="guide-cta">
+    <h2>Abre tus libros de Kindle</h2>
+    <p>Balda es gratis, no pide cuenta y tus libros no salen del móvil. Para Android 8 y superior.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguia%26utm_campaign%3Dleer-mobi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+      </svg>
+      <span class="btn-sub"><span class="small">En Google Play</span><span>Descargar gratis</span></span>
+    </a>
+  </section>
+
+  <div class="related">
+    <div class="label">Sigue leyendo</div>
+    <ul>
+      <li><a href="como-abrir-epub-android.html">Cómo abrir un archivo EPUB en Android</a></li>
+      <li><a href="abrir-fb2-android.html">Cómo abrir un archivo FB2 en Android</a></li>
+      <li><a href="leer-en-voz-alta-android.html">Cómo hacer que el móvil te lea un libro en voz alta</a></li>
+    </ul>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">Balda</div>
+        <div class="tag">Tus libros y tu lectura no salen del móvil.</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./">Guías</a>
+      <a href="../privacy.html">Privacidad</a>
+      <a href="mailto:danibarea@gmail.com">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 Balda · Daniel Barea</div>
+  </div>
+</footer>
+
+</body>
+</html>

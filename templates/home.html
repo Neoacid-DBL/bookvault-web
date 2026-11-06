@@ -1,0 +1,445 @@
+<!doctype html>
+<!-- {{generated}} -->
+<html lang="{{htmlLang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>document.documentElement.classList.add('js')</script>
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}" />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="{{root}}assets/bookvault_icon.svg" />
+<link rel="apple-touch-icon" href="{{root}}assets/icon-512.png" />
+<link rel="canonical" href="{{url}}" />
+{{alternates}}
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="{{ogLocale}}" />
+<meta property="og:url" content="{{url}}" />
+<meta property="og:title" content="{{meta.title}}" />
+<meta property="og:description" content="{{meta.description}}" />
+<meta property="og:site_name" content="Balda" />
+<meta property="og:image" content="{{ogImage}}" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="500" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{meta.title}}" />
+<meta name="twitter:description" content="{{meta.description}}" />
+<meta name="twitter:image" content="{{ogImage}}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="{{root}}styles.css" />
+{{jsonld}}
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ─────────────────────────── NAV ─────────────────────────── -->
+<nav class="nav">
+  <a href="./" class="nav-logo" aria-label="Balda">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">Balda</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="#features" data-i18n="nav.features">Funciones</a>
+    <a href="#formats"  data-i18n="nav.formats">Formatos</a>
+    <a href="#privacy"  data-i18n="nav.privacy">Privacidad</a>
+    <a href="#download" data-i18n="nav.download">Descargar</a>
+  </div>
+
+  <div class="nav-right">
+    <div class="lang-wrap">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="{{name}} — {{langLabel}}">
+        <span class="flag" aria-hidden="true">{{flag}}</span>
+        <span>{{short}}</span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="lang-menu" id="langMenu">{{langMenu}}</div>
+    </div>
+    <a class="nav-cta" href="{{play:nav}}" target="_blank" rel="noopener" data-i18n="nav.download">Descargar</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ─────────────────────────── HERO ─────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow" data-i18n="hero.eyebrow">Android · Gratis · Sin conexión</div>
+        <h1>
+          <span class="row" data-i18n="hero.titleA">Tu biblioteca.</span>
+          <span class="row em" data-i18n="hero.titleB">Tu estantería.</span>
+          <span class="row muted" data-i18n="hero.titleC">Tu móvil, y ya está.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">Balda es un lector de EPUB, PDF, TXT y CBZ con estantería de baldas, lectura en voz alta, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="{{play:hero}}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+            </svg>
+            <span class="btn-sub">
+              <span class="small" data-i18n="hero.ctaSub">En Google Play</span>
+              <span data-i18n="hero.cta">Descargar gratis</span>
+            </span>
+          </a>
+          <a class="btn-ghost" href="#how">
+            <span data-i18n="hero.secondary">Cómo funciona</span>
+            <span style="font-size:13px;opacity:0.6;">↓</span>
+          </a>
+        </div>
+        <div class="hero-chips">{{chips}}</div>
+        <p class="hero-note" data-i18n="hero.note">Gratis, con anuncios en las pantallas de navegación. Ni uno mientras lees.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shelf-card">
+          <div class="shelf-card-head">
+            <span class="name" data-i18n="hero.shelfName">Leyendo ahora</span>
+            <span class="count" data-i18n="hero.shelfCount">6 libros</span>
+          </div>
+
+          <!-- Balda de roble con seis lomos, dibujada con los mismos tonos que la app -->
+          <svg class="shelf-svg" viewBox="0 0 420 214" role="presentation">
+            <defs>
+              <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3B2C21"/>
+                <stop offset="1" stop-color="#4A382A"/>
+              </linearGradient>
+              <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#C79A62"/>
+                <stop offset="0.45" stop-color="#B0834C"/>
+                <stop offset="1" stop-color="#8A6236"/>
+              </linearGradient>
+            </defs>
+
+            <rect x="6" y="4" width="408" height="176" rx="10" fill="url(#panel)"/>
+
+            <!-- Lomos -->
+            <g>
+              <rect x="34"  y="52"  width="34" height="128" rx="3" fill="#A0505F"/>
+              <rect x="34"  y="74"  width="34" height="9"       fill="#F7E9EC" opacity="0.75"/>
+              <rect x="42"  y="96"  width="18" height="4" rx="2" fill="#F7E9EC" opacity="0.45"/>
+
+              <rect x="74"  y="76"  width="26" height="104" rx="3" fill="#C9D2BF"/>
+              <rect x="74"  y="96"  width="26" height="7"       fill="#33402C" opacity="0.5"/>
+
+              <rect x="106" y="38"  width="38" height="142" rx="3" fill="#E8D2A8"/>
+              <rect x="106" y="62"  width="38" height="10"      fill="#5C4517" opacity="0.35"/>
+              <rect x="116" y="88"  width="18" height="4" rx="2" fill="#5C4517" opacity="0.3"/>
+
+              <rect x="150" y="66"  width="30" height="114" rx="3" fill="#241E1B"/>
+              <rect x="150" y="88"  width="30" height="8"       fill="#F3D9A0" opacity="0.85"/>
+
+              <rect x="186" y="46"  width="32" height="134" rx="3" fill="#DCC7CB"/>
+              <rect x="186" y="70"  width="32" height="9"       fill="#4F323A" opacity="0.45"/>
+              <rect x="195" y="96"  width="14" height="4" rx="2" fill="#4F323A" opacity="0.35"/>
+
+              <rect x="224" y="82"  width="28" height="98" rx="3" fill="#B7C4CE"/>
+              <rect x="224" y="100" width="28" height="7"      fill="#2E3A44" opacity="0.45"/>
+            </g>
+
+            <!-- Hueco: el libro que viaja a esta balda -->
+            <g opacity="0.95">
+              <rect class="hero-slot" x="286" y="58" width="36" height="122" rx="3" fill="none" stroke="#8A6236" stroke-width="2" stroke-dasharray="6 6" opacity="0.75"/>
+              <g transform="translate(286 58)">
+                <g class="hero-book">
+                  <rect x="0" y="0" width="36" height="122" rx="3" fill="#CFC4BA"/>
+                  <rect x="0" y="26" width="36" height="10" fill="#3B332D" opacity="0.42"/>
+                  <rect x="9" y="54" width="18" height="4" rx="2" fill="#3B332D" opacity="0.3"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- Tabla -->
+            <rect x="6" y="180" width="408" height="18" rx="4" fill="url(#board)"/>
+            <rect x="6" y="180" width="408" height="3"  rx="1.5" fill="#E0BD8E" opacity="0.6"/>
+            <rect x="26" y="198" width="16" height="12" rx="3" fill="#6B4A33"/>
+            <rect x="378" y="198" width="16" height="12" rx="3" fill="#6B4A33"/>
+          </svg>
+
+          <div class="shelf-caption" data-i18n="hero.shelfCaption">Arrastra un libro de una balda a otra. Como en casa.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CIFRAS ─────────────────────────── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-inner reveal">
+        <div class="stats-label" data-i18n="stats.label">Balda en cuatro cifras</div>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="num" data-i18n="stats.a.num">0</span><span class="unit" data-i18n="stats.a.unit">bytes</span>
+            <div class="cap" data-i18n="stats.a.cap">de tus libros salen del móvil</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.b.num">5</span><span class="unit" data-i18n="stats.b.unit">formatos</span>
+            <div class="cap" data-i18n="stats.b.cap">EPUB, PDF, TXT, MD y CBZ</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.c.num">0</span><span class="unit" data-i18n="stats.c.unit">cuentas</span>
+            <div class="cap" data-i18n="stats.c.cap">que crear para empezar a leer</div>
+          </div>
+          <div class="stat">
+            <span class="num" data-i18n="stats.d.num">0</span><span class="unit" data-i18n="stats.d.unit">permisos</span>
+            <div class="cap" data-i18n="stats.d.cap">de acceso a tu almacenamiento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CÓMO FUNCIONA ─────────────────────────── -->
+  <section class="showcase" id="how">
+    <div class="container showcase-grid">
+      <div class="showcase-text reveal">
+        <div class="eyebrow" data-i18n="showcase.eyebrow">Cómo funciona</div>
+        <h2 data-i18n="showcase.title">Tres pasos y a leer.</h2>
+        <p class="sub" data-i18n="showcase.sub">Nada de asistentes, escaneos ni registros. Traes tus ficheros y la app se aparta.</p>
+        <div class="steps" id="steps">{{steps}}</div>
+      </div>
+
+      <div class="showcase-visual reveal" aria-hidden="true">
+        <!-- Móvil animado: cada escena es uno de los tres pasos de la izquierda -->
+        <div class="phone" id="demoPhone" data-scene="2">
+          <div class="phone-screen">
+
+            <!-- Escena 1 · Trae tus libros: un .epub en un chat se abre con Balda -->
+            <div class="scene scene-import">
+              <div class="phone-bar">
+                <span>Lucía</span>
+                <span>21:38</span>
+              </div>
+              <div class="chat">
+                <div class="bubble" data-i18n="showcase.phone.chatMsg">Te paso el libro que te dije 📚</div>
+                <div class="bubble bubble-file">
+                  <span class="file-ic">EPUB</span>
+                  <span class="file-name" data-i18n="showcase.phone.file">la_casa_junto_al_faro.epub</span>
+                  <span class="tap tap-file"></span>
+                </div>
+              </div>
+              <div class="sheet">
+                <div class="sheet-title" data-i18n="showcase.phone.openWith">Abrir con</div>
+                <div class="sheet-apps">
+                  <div class="app app-balda">
+                    <img class="app-ic" src="{{root}}assets/bookvault_icon.svg" alt="" width="40" height="40" />
+                    <span>Balda</span>
+                    <span class="tap tap-app"></span>
+                  </div>
+                  <div class="app">
+                    <span class="app-ic app-ic-files"></span>
+                    <span data-i18n="showcase.phone.files">Archivos</span>
+                  </div>
+                  <div class="app">
+                    <span class="app-ic app-ic-drive"></span>
+                    <span>Drive</span>
+                  </div>
+                </div>
+              </div>
+              <div class="toast" data-i18n="showcase.phone.added">✓ Añadido a tu biblioteca</div>
+            </div>
+
+            <!-- Escena 2 · Colócalos: el libro nuevo sube de una balda a otra -->
+            <div class="scene scene-shelf">
+              <div class="phone-bar">
+                <span data-i18n="showcase.phone.lib">Biblioteca</span>
+                <span>21:39</span>
+              </div>
+              <div class="lib">
+                <div class="lib-name" data-i18n="hero.shelfName">Leyendo ahora</div>
+                <div class="lib-row">
+                  <span class="sp" style="--w:22px;--h:70px;--c:var(--spine-rose)"></span>
+                  <span class="sp" style="--w:18px;--h:58px;--c:var(--spine-sage)"></span>
+                  <span class="sp" style="--w:26px;--h:80px;--c:var(--spine-sand)"></span>
+                  <span class="sp" style="--w:20px;--h:64px;--c:var(--ink)"></span>
+                  <span class="slot"></span>
+                </div>
+                <div class="lib-board"></div>
+                <div class="lib-name lib-name-b" data-i18n="showcase.phone.shelfB">Pendientes</div>
+                <div class="lib-row">
+                  <span class="sp" style="--w:20px;--h:66px;--c:var(--spine-blush)"></span>
+                  <span class="sp" style="--w:26px;--h:76px;--c:var(--spine-slate)"></span>
+                  <span class="sp drag-book" style="--w:24px;--h:74px;--c:var(--spine-stone)"><span class="finger"></span></span>
+                  <span class="sp" style="--w:18px;--h:56px;--c:var(--spine-sage)"></span>
+                  <span class="sp" style="--w:22px;--h:68px;--c:var(--spine-rose)"></span>
+                </div>
+                <div class="lib-board"></div>
+              </div>
+            </div>
+
+            <!-- Escena 3 · Lee, o escucha: el lector, con subrayados y voz alta -->
+            <div class="scene scene-read">
+              <div class="phone-bar">
+                <span data-i18n="showcase.phone.bar">Capítulo 4</span>
+                <span data-i18n="showcase.phone.time">21:40</span>
+              </div>
+              <div class="phone-body">
+                <div class="reader-title" data-i18n="showcase.phone.title">La casa junto al faro</div>
+                <div class="reader-line w9 speak"></div>
+                <div class="reader-line w8 speak"></div>
+                <div class="reader-line w9 mark"></div>
+                <div class="reader-line w7 mark"></div>
+                <div class="reader-line w9 speak"></div>
+                <div class="reader-line w8 speak"></div>
+                <div class="reader-line w9 mark2"></div>
+                <div class="reader-line w7"></div>
+                <div class="reader-line w9"></div>
+                <div class="reader-line w8"></div>
+                <div class="no-ads-badge" data-i18n="showcase.phone.badge">✓ Sin anuncios aquí dentro</div>
+                <div class="reader-foot">
+                  <div class="tts">
+                    <span class="tts-play"></span>
+                    <span class="tts-label" data-i18n="showcase.phone.listen">Leyendo en voz alta</span>
+                    <span class="eq"><i></i><i></i><i></i><i></i></span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill"></div></div>
+                  <div class="reader-meta">
+                    <span data-i18n="showcase.phone.page">Página 148 / 239</span>
+                    <span data-i18n="showcase.phone.left">Te quedan 41 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── FUNCIONES ─────────────────────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-head reveal">
+        <div class="eyebrow" data-i18n="features.eyebrow">Funciones</div>
+        <h2 data-i18n="features.title">Lo que esperas de un lector, y la parte que las apps suelen quitarte.</h2>
+        <p class="sub" data-i18n="features.sub">Tener libros también es colocarlos, subrayarlos y saber cuánto has leído.</p>
+      </div>
+      <div class="features-grid" id="featuresGrid">{{features}}</div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── FORMATOS ─────────────────────────── -->
+  <section class="formats" id="formats">
+    <div class="container">
+      <div class="formats-wrap reveal">
+        <div class="formats-head">
+          <div>
+            <div class="eyebrow" data-i18n="formats.eyebrow">Formatos</div>
+            <h2 data-i18n="formats.title">Los que ya tienes en la carpeta de descargas.</h2>
+          </div>
+          <p class="sub" style="max-width:34ch" data-i18n="formats.sub">Sin convertir nada y sin herramientas de escritorio por medio.</p>
+        </div>
+        <div class="formats-grid" id="formatsGrid">{{formats}}</div>
+        <p class="formats-note" data-i18n="formats.note">Los .cbr se quedan fuera a propósito: casi todos usan RAR5 y no hay lector en Android capaz de abrirlos, así que la app te lo dice al importar en lugar de dejarte con un cómic que no abre. FB2 y MOBI llegan en la 1.5.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── PRIVACIDAD ─────────────────────────── -->
+  <section class="privacy" id="privacy">
+    <div class="container">
+      <div class="privacy-wrap reveal">
+        <div class="privacy-grid">
+          <div class="privacy-text">
+            <div class="eyebrow" data-i18n="privacy.eyebrow">Privacidad</div>
+            <h2>
+              <span data-i18n="privacy.titleA">Tus libros no salen</span>
+              <span class="em" data-i18n="privacy.titleB">del móvil.</span>
+            </h2>
+            <p class="sub" data-i18n="privacy.sub">No hay servidor, no hay cuenta y no hay sincronización. Tu biblioteca, tu progreso, tus anotaciones y tus estadísticas viven en el teléfono y no se envían a ningún sitio. Salen los anuncios, los informes de fallo si los dejas activados, y lo que tú decidas compartir, cuando lo envías tú.</p>
+            <div class="check-grid" id="checkGrid">{{checks}}</div>
+            <a class="more" href="{{root}}privacy.html" data-i18n="privacy.cta">Leer la política completa →</a>
+          </div>
+
+          <div class="vault" aria-hidden="true">
+            <div class="vault-ring">
+              <div class="vault-inner">
+                <div class="vault-core">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>
+                    <circle cx="14" cy="11" r="2.6"/>
+                    <path d="M14 13.6V16"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CTA FINAL ─────────────────────────── -->
+  <section class="bigcta" id="download">
+    <div class="container">
+      <div class="bigcta-wrap reveal">
+        <span class="mark">
+          <svg viewBox="0 0 48 56" width="44" height="51" aria-hidden="true">
+            <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+            <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+            <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+            <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+            <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+            <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+          </svg>
+        </span>
+        <h2 id="ctaTitle">{{ctaTitle}}</h2>
+        <p data-i18n="cta.sub">Gratis en Google Play, para Android 8 y superior. En español, inglés, francés, alemán, italiano y portugués.</p>
+        <a class="btn-primary" href="{{play:cta}}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:26px;height:26px;">
+            <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+          </svg>
+          <span class="btn-sub">
+            <span class="small" data-i18n="cta.btnSub">Compatible con Android 8.0+</span>
+            <span data-i18n="cta.btn">Descargar en Google Play</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">Balda</div>
+        <div class="tag" data-i18n="footer.tagline">Tus libros y tu lectura no salen del móvil.</div>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="{{footerNav}}">{{footerLinks}}</nav>
+    <div class="footer-copy" data-i18n="footer.copy">© 2026 Balda · Daniel Barea</div>
+  </div>
+</footer>
+
+{{script}}
+</body>
+</html>

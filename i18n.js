@@ -10,6 +10,12 @@ window.BV_I18N = {
   es: {
     dir: 'ltr', name: 'Español', flag: '🇪🇸', short: 'ES', htmlLang: 'es',
 
+    meta: {
+      title: 'Balda: lector de EPUB, MOBI y FB2 para Android, sin cuenta',
+      description: 'Lector de ebooks gratis para Android: EPUB, MOBI, AZW3, FB2, PDF y CBZ, con voz alta, estantería y estadísticas. Sin cuenta y sin nube.',
+      langHint: 'Esta página también está en español'
+    },
+
     nav: { features: 'Funciones', formats: 'Formatos', privacy: 'Privacidad', download: 'Descargar' },
 
     hero: {
@@ -17,7 +23,7 @@ window.BV_I18N = {
       titleA: 'Tu biblioteca.',
       titleB: 'Tu estantería.',
       titleC: 'Tu móvil, y ya está.',
-      sub: 'Balda es un lector de EPUB, PDF, TXT y CBZ con estantería de baldas, lectura en voz alta, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.',
+      sub: 'Balda es un lector de EPUB, MOBI, AZW3, FB2, PDF, DOCX y CBZ con estantería de baldas, lectura en voz alta, anotaciones y estadísticas. Sin cuenta, sin nube y sin sincronización que se caiga: tus libros y tu lectura no salen del móvil.',
       cta: 'Descargar gratis',
       ctaSub: 'En Google Play',
       secondary: 'Cómo funciona',
@@ -31,18 +37,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda en cuatro cifras',
       a: { num: '0', unit: 'bytes',    cap: 'de tus libros salen del móvil' },
-      b: { num: '5', unit: 'formatos', cap: 'EPUB, PDF, TXT, MD y CBZ' },
+      b: { num: '10', unit: 'formatos', cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD y CBZ' },
       c: { num: '0', unit: 'cuentas',  cap: 'que crear para empezar a leer' },
-      d: { num: '0', unit: 'permisos', cap: 'de acceso a tu almacenamiento' }
+      d: { num: '0', unit: 'anuncios', cap: 'mientras lees un libro' }
     },
 
     showcase: {
       eyebrow: 'Cómo funciona',
       title: 'Tres pasos y a leer.',
-      sub: 'Nada de asistentes, escaneos ni registros. Traes tus ficheros y la app se aparta.',
+      sub: 'Nada de asistentes ni registros. Traes tus ficheros y la app se aparta.',
       steps: [
         { kicker: 'Paso 1', title: 'Trae tus libros',
-          body: 'Tócalos en WhatsApp, el correo o el gestor de archivos y ábrelos con Balda, o elige ficheros o una carpeta, que la app recuerda. No rastrea tu almacenamiento. Y la primera vez ya te esperan dos clásicos en tu idioma.' },
+          body: 'Tócalos en WhatsApp, el correo o el gestor de archivos y ábrelos con Balda, o elige ficheros o una carpeta, que la app recuerda. Si se lo permites, también encuentra sola los ePub, MOBI, FB2 y CBZ de tu móvil. Y la primera vez ya te esperan dos clásicos en tu idioma.' },
         { kicker: 'Paso 2', title: 'Colócalos',
           body: 'Arrastra cada libro a su balda. Cada balda tiene nombre y temática —clásica, moderna, natural, fantasía, biblioteca o nocturna— con su madera y su tipografía de lomo.' },
         { kicker: 'Paso 3', title: 'Lee, o escucha',
@@ -88,7 +94,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Copia',       title: 'Tu biblioteca, en un fichero',
           body: 'Guarda progreso, anotaciones, estanterías y, si quieres, los propios libros en un .zip donde tú elijas, y restáuralo en otro móvil. Balda no lo sube a ningún sitio.' },
         { icon: 'folder',  label: 'Importar',    title: 'Ábrelo desde donde esté',
-          body: 'Un libro en WhatsApp, en el correo o en Descargas se abre con Balda. O elige ficheros sueltos o una carpeta: la app solo ve lo que le das.' },
+          body: 'Un libro en WhatsApp, en el correo o en Descargas se abre con Balda. Elige ficheros sueltos o una carpeta, o deja que Balda busque sola tus libros en el móvil si le das permiso.' },
         { icon: 'tablet',  label: 'Tablet',      title: 'Se estira bien',
           body: 'En pantalla ancha el panel de anotaciones se abre al lado del texto en vez de taparlo, y el mapa de calor pasa de 16 a 52 semanas.' },
         { icon: 'offline', label: 'Sin conexión',title: 'Modo avión, igual',
@@ -103,12 +109,16 @@ window.BV_I18N = {
       title: 'Los que ya tienes en la carpeta de descargas.',
       sub: 'Sin convertir nada y sin herramientas de escritorio por medio.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 y 3: anotaciones, búsqueda y voz alta' },
-        { tag: 'PDF',    what: 'Zoom con pellizco; búsqueda en Android 15+' },
+        { tag: 'EPUB', what: 'ePub 2 y 3: anotaciones, búsqueda y voz alta' },
+        { tag: 'MOBI·AZW3', what: 'De Kindle sin DRM, se lee como un ePub' },
+        { tag: 'FB2', what: 'También .fb2.zip, con notas e imágenes' },
+        { tag: 'PDF', what: 'Zoom con pellizco; búsqueda en Android 15+' },
+        { tag: 'DOCX·ODT', what: 'Documentos de Word y LibreOffice, para leer' },
         { tag: 'TXT·MD', what: 'Texto plano, también en voz alta' },
-        { tag: 'CBZ',    what: 'Cómics página a página' }
+        { tag: 'CBZ', what: 'Cómics página a página' },
+        { tag: 'CBR', what: 'No: casi todos son RAR5. Pásalo a CBZ', soon: true }
       ],
-      note: 'Los .cbr se quedan fuera a propósito: casi todos usan RAR5 y no hay lector en Android capaz de abrirlos, así que la app te lo dice al importar en lugar de dejarte con un cómic que no abre. FB2 y MOBI llegan en la 1.5.'
+      note: 'Los libros de Kindle comprados en Amazon llevan DRM y no se pueden abrir: Balda lee MOBI y AZW3 sin DRM. Los .cbr se quedan fuera a propósito: casi todos usan RAR5 y no hay lector en Android capaz de abrirlos, así que la app te lo dice al importar.'
     },
 
     privacy: {
@@ -121,7 +131,7 @@ window.BV_I18N = {
         'Sin servidor propio',
         'Tus libros nunca se suben',
         'Progreso y anotaciones, solo en tu móvil',
-        'No pide permiso de almacenamiento',
+        'Acceso a archivos solo si lo activas, y solo lectura',
         'Copia de seguridad en un fichero que guardas tú',
         'Informes de fallo con interruptor',
         'Sin publicidad dentro del lector'
@@ -147,6 +157,12 @@ window.BV_I18N = {
   en: {
     dir: 'ltr', name: 'English', flag: '🇬🇧', short: 'EN', htmlLang: 'en',
 
+    meta: {
+      title: 'Balda: EPUB, MOBI & FB2 ebook reader for Android, no account',
+      description: 'Free ebook reader for Android: EPUB, MOBI, AZW3, FB2, PDF and CBZ, with read-aloud, a real bookshelf and reading stats. No account, no cloud.',
+      langHint: 'This page is also available in English'
+    },
+
     nav: { features: 'Features', formats: 'Formats', privacy: 'Privacy', download: 'Download' },
 
     hero: {
@@ -154,7 +170,7 @@ window.BV_I18N = {
       titleA: 'Your library.',
       titleB: 'Your bookshelf.',
       titleC: 'Your phone, and that is it.',
-      sub: 'Balda is an EPUB, PDF, TXT and CBZ reader with a real shelf you arrange, read-aloud, highlights and reading stats. No account, no cloud, no sync to break: your books and your reading never leave the phone.',
+      sub: 'Balda is an ebook reader for EPUB, MOBI, AZW3, FB2, PDF, DOCX and CBZ, with a real shelf you arrange, read-aloud, highlights and reading stats. No account, no cloud, no sync to break: your books and your reading never leave the phone.',
       cta: 'Download free',
       ctaSub: 'On Google Play',
       secondary: 'How it works',
@@ -168,18 +184,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda in four numbers',
       a: { num: '0', unit: 'bytes',       cap: 'of your books leave the phone' },
-      b: { num: '5', unit: 'formats',     cap: 'EPUB, PDF, TXT, MD and CBZ' },
+      b: { num: '10', unit: 'formats',     cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD and CBZ' },
       c: { num: '0', unit: 'accounts',    cap: 'to create before you read' },
-      d: { num: '0', unit: 'permissions', cap: 'requested over your storage' }
+      d: { num: '0', unit: 'ads', cap: 'while you read a book' }
     },
 
     showcase: {
       eyebrow: 'How it works',
       title: 'Three steps, then read.',
-      sub: 'No wizards, no scanning, no sign-up. You bring the files and the app gets out of the way.',
+      sub: 'No wizards, no sign-up. You bring the files and the app gets out of the way.',
       steps: [
         { kicker: 'Step 1', title: 'Bring your books',
-          body: 'Tap them in WhatsApp, your email or the file manager and open them with Balda, or pick files or a folder, which the app remembers. It never crawls your storage. And the first time, two classics in your language are already waiting.' },
+          body: 'Tap them in WhatsApp, your email or the file manager and open them with Balda, or pick files or a folder, which the app remembers. If you allow it, it also finds the ePub, MOBI, FB2 and CBZ books on your phone by itself. And the first time, two classics in your language are already waiting.' },
         { kicker: 'Step 2', title: 'Arrange them',
           body: 'Drag each book onto its shelf. Every shelf has a name and a theme — classic, modern, natural, fantasy, library or night — with its own wood and spine typeface.' },
         { kicker: 'Step 3', title: 'Read, or listen',
@@ -225,7 +241,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Backup',    title: 'Your library in one file',
           body: 'Save progress, highlights, shelves and, if you like, the books themselves to a .zip wherever you choose, and restore it on another phone. Balda uploads it nowhere.' },
         { icon: 'folder',  label: 'Importing', title: 'Open it from wherever it is',
-          body: 'A book in WhatsApp, your email or Downloads opens with Balda. Or pick single files or a folder: the app only sees what you hand it.' },
+          body: 'A book in WhatsApp, your email or Downloads opens with Balda. Pick single files or a folder, or let Balda find the books on your phone by itself, if you give it permission.' },
         { icon: 'tablet',  label: 'Tablets',   title: 'It stretches properly',
           body: 'On a wide screen the highlights panel opens beside the text instead of covering it, and the heatmap grows from 16 weeks to 52.' },
         { icon: 'offline', label: 'Offline',   title: 'Airplane mode, same app',
@@ -240,12 +256,16 @@ window.BV_I18N = {
       title: 'The ones already sitting in your downloads folder.',
       sub: 'Nothing to convert and no desktop tool in the middle.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 and 3: highlights, search and read-aloud' },
-        { tag: 'PDF',    what: 'Pinch to zoom; search on Android 15+' },
+        { tag: 'EPUB', what: 'ePub 2 and 3: highlights, search and read-aloud' },
+        { tag: 'MOBI·AZW3', what: 'Kindle files without DRM, read like an ePub' },
+        { tag: 'FB2', what: '.fb2.zip too, with footnotes and images' },
+        { tag: 'PDF', what: 'Pinch to zoom; search on Android 15+' },
+        { tag: 'DOCX·ODT', what: 'Word and LibreOffice documents, to read' },
         { tag: 'TXT·MD', what: 'Plain text, read-aloud too' },
-        { tag: 'CBZ',    what: 'Comics, page by page' }
+        { tag: 'CBZ', what: 'Comics, page by page' },
+        { tag: 'CBR', what: 'No: nearly all are RAR5. Repack as CBZ', soon: true }
       ],
-      note: 'CBR is left out on purpose: nearly all of them use RAR5 and no Android reader can open those, so the app tells you at import time instead of handing you a comic that will not open. FB2 and MOBI arrive in 1.5.'
+      note: 'Kindle books bought on Amazon carry DRM and cannot be opened: Balda reads DRM-free MOBI and AZW3. CBR is left out on purpose: nearly all of them use RAR5 and no Android reader can open those, so the app tells you at import time.'
     },
 
     privacy: {
@@ -258,7 +278,7 @@ window.BV_I18N = {
         'No server of our own',
         'Your books are never uploaded',
         'Progress and notes stay on the phone',
-        'No storage permission requested',
+        'File access only if you turn it on, read-only',
         'Backups go to a file you keep',
         'Crash reports have an off switch',
         'No advertising inside the reader'
@@ -284,6 +304,12 @@ window.BV_I18N = {
   fr: {
     dir: 'ltr', name: 'Français', flag: '🇫🇷', short: 'FR', htmlLang: 'fr',
 
+    meta: {
+      title: 'Balda : liseuse EPUB, MOBI et FB2 pour Android, sans compte',
+      description: 'Liseuse gratuite pour Android : EPUB, MOBI, AZW3, FB2, PDF et CBZ, avec lecture à voix haute, étagères et statistiques. Sans compte ni cloud.',
+      langHint: 'Cette page existe aussi en français'
+    },
+
     nav: { features: 'Fonctions', formats: 'Formats', privacy: 'Confidentialité', download: 'Télécharger' },
 
     hero: {
@@ -291,7 +317,7 @@ window.BV_I18N = {
       titleA: 'Votre bibliothèque.',
       titleB: 'Vos étagères.',
       titleC: 'Votre téléphone, et c’est tout.',
-      sub: 'Balda est une liseuse EPUB, PDF, TXT et CBZ avec de vraies étagères à ranger, la lecture à voix haute, des annotations et des statistiques. Sans compte, sans cloud et sans synchronisation qui plante : vos livres et votre lecture ne quittent pas le téléphone.',
+      sub: 'Balda est une liseuse EPUB, MOBI, AZW3, FB2, PDF, DOCX et CBZ avec de vraies étagères à ranger, la lecture à voix haute, des annotations et des statistiques. Sans compte, sans cloud et sans synchronisation qui plante : vos livres et votre lecture ne quittent pas le téléphone.',
       cta: 'Télécharger gratuitement',
       ctaSub: 'Sur Google Play',
       secondary: 'Comment ça marche',
@@ -305,18 +331,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda en quatre chiffres',
       a: { num: '0', unit: 'octet',       cap: 'de vos livres ne quitte le téléphone' },
-      b: { num: '5', unit: 'formats',     cap: 'EPUB, PDF, TXT, MD et CBZ' },
+      b: { num: '10', unit: 'formats',     cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD et CBZ' },
       c: { num: '0', unit: 'compte',      cap: 'à créer pour commencer à lire' },
-      d: { num: '0', unit: 'autorisation',cap: 'd’accès à votre stockage' }
+      d: { num: '0', unit: 'publicité',cap: 'pendant votre lecture' }
     },
 
     showcase: {
       eyebrow: 'Comment ça marche',
       title: 'Trois étapes, et bonne lecture.',
-      sub: 'Ni assistant, ni analyse, ni inscription. Vous apportez vos fichiers et l’application s’efface.',
+      sub: 'Ni assistant ni inscription. Vous apportez vos fichiers et l’application s’efface.',
       steps: [
         { kicker: 'Étape 1', title: 'Apportez vos livres',
-          body: 'Touchez-les dans WhatsApp, vos e-mails ou le gestionnaire de fichiers et ouvrez-les avec Balda, ou choisissez des fichiers ou un dossier, que l’application retient. Elle ne fouille pas votre stockage. Et la première fois, deux classiques dans votre langue vous attendent déjà.' },
+          body: 'Touchez-les dans WhatsApp, vos e-mails ou le gestionnaire de fichiers et ouvrez-les avec Balda, ou choisissez des fichiers ou un dossier, que l’application retient. Si vous l’autorisez, elle trouve aussi toute seule les ePub, MOBI, FB2 et CBZ de votre téléphone. Et la première fois, deux classiques dans votre langue vous attendent déjà.' },
         { kicker: 'Étape 2', title: 'Rangez-les',
           body: 'Glissez chaque livre sur son étagère. Chaque étagère a un nom et un thème — classique, moderne, naturel, fantasy, bibliothèque ou nuit — avec son bois et sa typographie de dos.' },
         { kicker: 'Étape 3', title: 'Lisez, ou écoutez',
@@ -362,7 +388,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Sauvegarde',   title: 'Votre bibliothèque dans un fichier',
           body: 'Enregistrez progression, annotations, étagères et, si vous voulez, les livres eux-mêmes dans un .zip à l’endroit de votre choix, puis restaurez-le sur un autre téléphone. Balda ne l’envoie nulle part.' },
         { icon: 'folder',  label: 'Import',       title: 'Ouvrez-le d’où qu’il vienne',
-          body: 'Un livre dans WhatsApp, vos e-mails ou vos Téléchargements s’ouvre avec Balda. Ou choisissez des fichiers ou un dossier : l’application ne voit que ce que vous lui donnez.' },
+          body: 'Un livre dans WhatsApp, vos e-mails ou vos Téléchargements s’ouvre avec Balda. Choisissez des fichiers ou un dossier, ou laissez Balda trouver seule les livres de votre téléphone, si vous l’autorisez.' },
         { icon: 'tablet',  label: 'Tablette',     title: 'Elle s’adapte',
           body: 'Sur grand écran, le panneau d’annotations s’ouvre à côté du texte au lieu de le masquer, et la carte de régularité passe de 16 à 52 semaines.' },
         { icon: 'offline', label: 'Hors ligne',   title: 'Mode avion, même appli',
@@ -377,12 +403,16 @@ window.BV_I18N = {
       title: 'Ceux qui dorment déjà dans vos téléchargements.',
       sub: 'Rien à convertir, aucun outil sur ordinateur.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 et 3 : annotations, recherche et voix haute' },
-        { tag: 'PDF',    what: 'Zoom à deux doigts ; recherche sous Android 15+' },
+        { tag: 'EPUB', what: 'ePub 2 et 3 : annotations, recherche et voix haute' },
+        { tag: 'MOBI·AZW3', what: 'Kindle sans DRM, lu comme un ePub' },
+        { tag: 'FB2', what: 'Aussi .fb2.zip, avec notes et images' },
+        { tag: 'PDF', what: 'Zoom à deux doigts ; recherche sous Android 15+' },
+        { tag: 'DOCX·ODT', what: 'Documents Word et LibreOffice, en lecture' },
         { tag: 'TXT·MD', what: 'Texte brut, lu à voix haute aussi' },
-        { tag: 'CBZ',    what: 'BD page par page' }
+        { tag: 'CBZ', what: 'BD page par page' },
+        { tag: 'CBR', what: 'Non : presque tous en RAR5. Passez-les en CBZ', soon: true }
       ],
-      note: 'Les .cbr sont exclus exprès : presque tous utilisent RAR5 et aucune liseuse Android ne sait les ouvrir. L’application vous le dit à l’import plutôt que de vous laisser une BD qui ne s’ouvre pas. FB2 et MOBI arrivent avec la 1.5.'
+      note: 'Les livres Kindle achetés sur Amazon sont protégés par DRM et ne s’ouvrent pas : Balda lit les MOBI et AZW3 sans DRM. Les .cbr sont exclus exprès : presque tous utilisent RAR5 et aucune liseuse Android ne sait les ouvrir, alors l’application vous le dit à l’import.'
     },
 
     privacy: {
@@ -395,7 +425,7 @@ window.BV_I18N = {
         'Aucun serveur à nous',
         'Vos livres ne sont jamais envoyés',
         'Progression et notes restent sur le téléphone',
-        'Aucune autorisation de stockage',
+        'Accès aux fichiers seulement si vous l’activez, en lecture seule',
         'Sauvegarde dans un fichier que vous gardez',
         'Rapports de plantage désactivables',
         'Aucune publicité dans la liseuse'
@@ -421,6 +451,12 @@ window.BV_I18N = {
   de: {
     dir: 'ltr', name: 'Deutsch', flag: '🇩🇪', short: 'DE', htmlLang: 'de',
 
+    meta: {
+      title: 'Balda: EPUB-, MOBI- und FB2-Reader für Android, ohne Konto',
+      description: 'Kostenloser E-Book-Reader für Android: EPUB, MOBI, AZW3, FB2, PDF und CBZ, mit Vorlesefunktion, Bücherregal und Lesestatistiken. Ohne Konto, ohne Cloud.',
+      langHint: 'Diese Seite gibt es auch auf Deutsch'
+    },
+
     nav: { features: 'Funktionen', formats: 'Formate', privacy: 'Datenschutz', download: 'Herunterladen' },
 
     hero: {
@@ -428,7 +464,7 @@ window.BV_I18N = {
       titleA: 'Deine Bibliothek.',
       titleB: 'Dein Bücherregal.',
       titleC: 'Dein Handy, sonst nichts.',
-      sub: 'Balda ist ein Reader für EPUB, PDF, TXT und CBZ mit einem echten Regal zum Einräumen, Vorlesefunktion, Markierungen und Lesestatistiken. Ohne Konto, ohne Cloud und ohne Synchronisierung, die ausfällt: Deine Bücher und dein Lesen verlassen das Handy nicht.',
+      sub: 'Balda ist ein Reader für EPUB, MOBI, AZW3, FB2, PDF, DOCX und CBZ mit einem echten Regal zum Einräumen, Vorlesefunktion, Markierungen und Lesestatistiken. Ohne Konto, ohne Cloud und ohne Synchronisierung, die ausfällt: Deine Bücher und dein Lesen verlassen das Handy nicht.',
       cta: 'Kostenlos laden',
       ctaSub: 'Bei Google Play',
       secondary: 'So funktioniert’s',
@@ -442,18 +478,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda in vier Zahlen',
       a: { num: '0', unit: 'Bytes',        cap: 'deiner Bücher verlassen das Handy' },
-      b: { num: '5', unit: 'Formate',      cap: 'EPUB, PDF, TXT, MD und CBZ' },
+      b: { num: '10', unit: 'Formate',      cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD und CBZ' },
       c: { num: '0', unit: 'Konten',       cap: 'musst du zum Lesen anlegen' },
-      d: { num: '0', unit: 'Berechtigungen', cap: 'für deinen Speicher' }
+      d: { num: '0', unit: 'Werbung', cap: 'während du liest' }
     },
 
     showcase: {
       eyebrow: 'So funktioniert’s',
       title: 'Drei Schritte, dann lesen.',
-      sub: 'Keine Assistenten, kein Scannen, keine Anmeldung. Du bringst die Dateien mit, die App hält sich raus.',
+      sub: 'Keine Assistenten, keine Anmeldung. Du bringst die Dateien mit, die App hält sich raus.',
       steps: [
         { kicker: 'Schritt 1', title: 'Bring deine Bücher mit',
-          body: 'Tipp sie in WhatsApp, in der Mail oder im Dateimanager an und öffne sie mit Balda – oder wähle Dateien oder einen Ordner, den die App sich merkt. Sie durchsucht deinen Speicher nicht. Und beim ersten Start warten schon zwei Klassiker in deiner Sprache.' },
+          body: 'Tipp sie in WhatsApp, in der Mail oder im Dateimanager an und öffne sie mit Balda – oder wähle Dateien oder einen Ordner, den die App sich merkt. Wenn du es erlaubst, findet sie auch die ePub-, MOBI-, FB2- und CBZ-Dateien auf deinem Handy von selbst. Und beim ersten Start warten schon zwei Klassiker in deiner Sprache.' },
         { kicker: 'Schritt 2', title: 'Räum sie ein',
           body: 'Zieh jedes Buch auf sein Regalbrett. Jedes Brett hat einen Namen und ein Thema – klassisch, modern, natürlich, Fantasy, Bibliothek oder Nacht – mit eigenem Holz und eigener Rückenschrift.' },
         { kicker: 'Schritt 3', title: 'Lies – oder hör zu',
@@ -499,7 +535,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Sicherung',    title: 'Deine Bibliothek in einer Datei',
           body: 'Sichere Fortschritt, Markierungen, Regale und auf Wunsch die Bücher selbst in eine .zip-Datei, wo du willst, und stell sie auf einem anderen Handy wieder her. Balda lädt sie nirgendwo hoch.' },
         { icon: 'folder',  label: 'Import',       title: 'Öffnen, wo immer es liegt',
-          body: 'Ein Buch aus WhatsApp, der Mail oder den Downloads öffnet sich mit Balda. Oder wähle einzelne Dateien oder einen Ordner: Die App sieht nur, was du ihr gibst.' },
+          body: 'Ein Buch aus WhatsApp, der Mail oder den Downloads öffnet sich mit Balda. Wähle einzelne Dateien oder einen Ordner – oder lass Balda die Bücher auf deinem Handy selbst finden, wenn du es erlaubst.' },
         { icon: 'tablet',  label: 'Tablet',       title: 'Nutzt den Platz',
           body: 'Auf großen Bildschirmen öffnet sich das Markierungsfeld neben dem Text statt darüber, und die Heatmap wächst von 16 auf 52 Wochen.' },
         { icon: 'offline', label: 'Offline',      title: 'Flugmodus, gleiche App',
@@ -514,12 +550,16 @@ window.BV_I18N = {
       title: 'Die, die schon in deinem Download-Ordner liegen.',
       sub: 'Nichts umwandeln, kein Programm am Computer dazwischen.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 und 3: Markierungen, Suche und Vorlesen' },
-        { tag: 'PDF',    what: 'Zoom mit zwei Fingern; Suche ab Android 15' },
+        { tag: 'EPUB', what: 'ePub 2 und 3: Markierungen, Suche und Vorlesen' },
+        { tag: 'MOBI·AZW3', what: 'Kindle ohne DRM, gelesen wie ein ePub' },
+        { tag: 'FB2', what: 'Auch .fb2.zip, mit Fußnoten und Bildern' },
+        { tag: 'PDF', what: 'Zoom mit zwei Fingern; Suche ab Android 15' },
+        { tag: 'DOCX·ODT', what: 'Word- und LibreOffice-Dokumente, zum Lesen' },
         { tag: 'TXT·MD', what: 'Reiner Text, auch zum Vorlesen' },
-        { tag: 'CBZ',    what: 'Comics Seite für Seite' }
+        { tag: 'CBZ', what: 'Comics Seite für Seite' },
+        { tag: 'CBR', what: 'Nein: fast alle sind RAR5. Als CBZ packen', soon: true }
       ],
-      note: '.cbr bleibt bewusst draußen: Fast alle nutzen RAR5, und kein Android-Reader kann sie öffnen. Die App sagt es dir beim Import, statt dir einen Comic zu geben, der sich nicht öffnen lässt. FB2 und MOBI kommen mit Version 1.5.'
+      note: 'Bei Amazon gekaufte Kindle-Bücher haben DRM und lassen sich nicht öffnen: Balda liest MOBI und AZW3 ohne DRM. .cbr bleibt bewusst draußen: Fast alle nutzen RAR5, und kein Android-Reader kann sie öffnen – die App sagt es dir beim Import.'
     },
 
     privacy: {
@@ -532,7 +572,7 @@ window.BV_I18N = {
         'Kein eigener Server',
         'Deine Bücher werden nie hochgeladen',
         'Fortschritt und Notizen bleiben auf dem Handy',
-        'Keine Speicherberechtigung',
+        'Dateizugriff nur, wenn du ihn einschaltest – nur lesend',
         'Sicherung in einer Datei, die du behältst',
         'Absturzberichte abschaltbar',
         'Keine Werbung im Reader'
@@ -558,6 +598,12 @@ window.BV_I18N = {
   it: {
     dir: 'ltr', name: 'Italiano', flag: '🇮🇹', short: 'IT', htmlLang: 'it',
 
+    meta: {
+      title: 'Balda: lettore EPUB, MOBI e FB2 per Android, senza account',
+      description: 'Lettore di ebook gratuito per Android: EPUB, MOBI, AZW3, FB2, PDF e CBZ, con lettura ad alta voce, libreria a ripiani e statistiche. Senza account né cloud.',
+      langHint: 'Questa pagina è disponibile anche in italiano'
+    },
+
     nav: { features: 'Funzioni', formats: 'Formati', privacy: 'Privacy', download: 'Scarica' },
 
     hero: {
@@ -565,7 +611,7 @@ window.BV_I18N = {
       titleA: 'La tua biblioteca.',
       titleB: 'La tua libreria.',
       titleC: 'Il tuo telefono, e basta.',
-      sub: 'Balda è un lettore di EPUB, PDF, TXT e CBZ con una vera libreria a ripiani, lettura ad alta voce, annotazioni e statistiche. Senza account, senza cloud e senza sincronizzazioni che si bloccano: i tuoi libri e la tua lettura non escono dal telefono.',
+      sub: 'Balda è un lettore di EPUB, MOBI, AZW3, FB2, PDF, DOCX e CBZ con una vera libreria a ripiani, lettura ad alta voce, annotazioni e statistiche. Senza account, senza cloud e senza sincronizzazioni che si bloccano: i tuoi libri e la tua lettura non escono dal telefono.',
       cta: 'Scarica gratis',
       ctaSub: 'Su Google Play',
       secondary: 'Come funziona',
@@ -579,18 +625,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda in quattro numeri',
       a: { num: '0', unit: 'byte',     cap: 'dei tuoi libri escono dal telefono' },
-      b: { num: '5', unit: 'formati',  cap: 'EPUB, PDF, TXT, MD e CBZ' },
+      b: { num: '10', unit: 'formati',  cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD e CBZ' },
       c: { num: '0', unit: 'account',  cap: 'da creare per iniziare a leggere' },
-      d: { num: '0', unit: 'permessi', cap: 'di accesso alla tua memoria' }
+      d: { num: '0', unit: 'annunci', cap: 'mentre leggi un libro' }
     },
 
     showcase: {
       eyebrow: 'Come funziona',
       title: 'Tre passi e si legge.',
-      sub: 'Niente procedure guidate, scansioni o registrazioni. Porti i tuoi file e l’app si fa da parte.',
+      sub: 'Niente procedure guidate né registrazioni. Porti i tuoi file e l’app si fa da parte.',
       steps: [
         { kicker: 'Passo 1', title: 'Porta i tuoi libri',
-          body: 'Toccali su WhatsApp, nella posta o nel gestore di file e aprili con Balda, oppure scegli dei file o una cartella, che l’app ricorda. Non fruga nella tua memoria. E la prima volta ti aspettano già due classici nella tua lingua.' },
+          body: 'Toccali su WhatsApp, nella posta o nel gestore di file e aprili con Balda, oppure scegli dei file o una cartella, che l’app ricorda. Se glielo permetti, trova anche da sola gli ePub, MOBI, FB2 e CBZ del telefono. E la prima volta ti aspettano già due classici nella tua lingua.' },
         { kicker: 'Passo 2', title: 'Sistemali',
           body: 'Trascina ogni libro sul suo ripiano. Ogni ripiano ha un nome e un tema — classico, moderno, naturale, fantasy, biblioteca o notturno — con il suo legno e il suo carattere sul dorso.' },
         { kicker: 'Passo 3', title: 'Leggi, o ascolta',
@@ -636,7 +682,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Backup',      title: 'La tua biblioteca in un file',
           body: 'Salva progressi, annotazioni, ripiani e, se vuoi, i libri stessi in un .zip dove scegli tu, e ripristinalo su un altro telefono. Balda non lo carica da nessuna parte.' },
         { icon: 'folder',  label: 'Importa',     title: 'Aprilo ovunque si trovi',
-          body: 'Un libro su WhatsApp, nella posta o nei Download si apre con Balda. Oppure scegli singoli file o una cartella: l’app vede solo quello che le dai.' },
+          body: 'Un libro su WhatsApp, nella posta o nei Download si apre con Balda. Scegli singoli file o una cartella, oppure lascia che Balda trovi da sola i libri del telefono, se le dai il permesso.' },
         { icon: 'tablet',  label: 'Tablet',      title: 'Si allarga bene',
           body: 'Su schermo largo il pannello delle annotazioni si apre accanto al testo invece di coprirlo, e la mappa di costanza passa da 16 a 52 settimane.' },
         { icon: 'offline', label: 'Offline',     title: 'Modalità aereo, stessa app',
@@ -651,12 +697,16 @@ window.BV_I18N = {
       title: 'Quelli che hai già nella cartella dei download.',
       sub: 'Niente da convertire e nessun programma sul computer.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 e 3: annotazioni, ricerca e voce alta' },
-        { tag: 'PDF',    what: 'Zoom con due dita; ricerca da Android 15' },
+        { tag: 'EPUB', what: 'ePub 2 e 3: annotazioni, ricerca e voce alta' },
+        { tag: 'MOBI·AZW3', what: 'Kindle senza DRM, letti come un ePub' },
+        { tag: 'FB2', what: 'Anche .fb2.zip, con note e immagini' },
+        { tag: 'PDF', what: 'Zoom con due dita; ricerca da Android 15' },
+        { tag: 'DOCX·ODT', what: 'Documenti Word e LibreOffice, da leggere' },
         { tag: 'TXT·MD', what: 'Testo semplice, anche ad alta voce' },
-        { tag: 'CBZ',    what: 'Fumetti pagina per pagina' }
+        { tag: 'CBZ', what: 'Fumetti pagina per pagina' },
+        { tag: 'CBR', what: 'No: quasi tutti RAR5. Convertili in CBZ', soon: true }
       ],
-      note: 'I .cbr restano fuori di proposito: quasi tutti usano RAR5 e nessun lettore Android riesce ad aprirli, quindi l’app te lo dice all’importazione invece di lasciarti un fumetto che non si apre. FB2 e MOBI arrivano con la 1.5.'
+      note: 'I libri Kindle comprati su Amazon hanno il DRM e non si possono aprire: Balda legge MOBI e AZW3 senza DRM. I .cbr restano fuori di proposito: quasi tutti usano RAR5 e nessun lettore Android riesce ad aprirli, quindi l’app te lo dice all’importazione.'
     },
 
     privacy: {
@@ -669,7 +719,7 @@ window.BV_I18N = {
         'Nessun server nostro',
         'I tuoi libri non vengono mai caricati',
         'Progressi e note restano sul telefono',
-        'Nessun permesso di memoria',
+        'Accesso ai file solo se lo attivi, in sola lettura',
         'Backup in un file che tieni tu',
         'Rapporti di arresto disattivabili',
         'Nessuna pubblicità nel lettore'
@@ -695,6 +745,12 @@ window.BV_I18N = {
   pt: {
     dir: 'ltr', name: 'Português (Brasil)', flag: '🇧🇷', short: 'PT', htmlLang: 'pt-BR',
 
+    meta: {
+      title: 'Balda: leitor de EPUB, MOBI e FB2 para Android, sem conta',
+      description: 'Leitor de ebooks grátis para Android: EPUB, MOBI, AZW3, FB2, PDF e CBZ, com leitura em voz alta, estante e estatísticas. Sem conta e sem nuvem.',
+      langHint: 'Esta página também está em português'
+    },
+
     nav: { features: 'Recursos', formats: 'Formatos', privacy: 'Privacidade', download: 'Baixar' },
 
     hero: {
@@ -702,7 +758,7 @@ window.BV_I18N = {
       titleA: 'Sua biblioteca.',
       titleB: 'Sua estante.',
       titleC: 'Seu celular, e pronto.',
-      sub: 'Balda é um leitor de EPUB, PDF, TXT e CBZ com uma estante de verdade para organizar, leitura em voz alta, anotações e estatísticas. Sem conta, sem nuvem e sem sincronização que falha: seus livros e sua leitura não saem do celular.',
+      sub: 'Balda é um leitor de EPUB, MOBI, AZW3, FB2, PDF, DOCX e CBZ com uma estante de verdade para organizar, leitura em voz alta, anotações e estatísticas. Sem conta, sem nuvem e sem sincronização que falha: seus livros e sua leitura não saem do celular.',
       cta: 'Baixar grátis',
       ctaSub: 'No Google Play',
       secondary: 'Como funciona',
@@ -716,18 +772,18 @@ window.BV_I18N = {
     stats: {
       label: 'Balda em quatro números',
       a: { num: '0', unit: 'bytes',      cap: 'dos seus livros saem do celular' },
-      b: { num: '5', unit: 'formatos',   cap: 'EPUB, PDF, TXT, MD e CBZ' },
+      b: { num: '10', unit: 'formatos',   cap: 'EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, TXT, MD e CBZ' },
       c: { num: '0', unit: 'contas',     cap: 'para criar antes de ler' },
-      d: { num: '0', unit: 'permissões', cap: 'de acesso ao seu armazenamento' }
+      d: { num: '0', unit: 'anúncios', cap: 'enquanto você lê' }
     },
 
     showcase: {
       eyebrow: 'Como funciona',
       title: 'Três passos e boa leitura.',
-      sub: 'Nada de assistentes, varreduras ou cadastro. Você traz os arquivos e o app sai da frente.',
+      sub: 'Nada de assistentes nem cadastro. Você traz os arquivos e o app sai da frente.',
       steps: [
         { kicker: 'Passo 1', title: 'Traga seus livros',
-          body: 'Toque neles no WhatsApp, no e-mail ou no gerenciador de arquivos e abra com o Balda, ou escolha arquivos ou uma pasta, que o app lembra. Ele não vasculha seu armazenamento. E, na primeira vez, dois clássicos no seu idioma já estão esperando.' },
+          body: 'Toque neles no WhatsApp, no e-mail ou no gerenciador de arquivos e abra com o Balda, ou escolha arquivos ou uma pasta, que o app lembra. Se você permitir, ele também encontra sozinho os ePub, MOBI, FB2 e CBZ do celular. E, na primeira vez, dois clássicos no seu idioma já estão esperando.' },
         { kicker: 'Passo 2', title: 'Organize',
           body: 'Arraste cada livro para a sua prateleira. Cada prateleira tem nome e tema — clássico, moderno, natural, fantasia, biblioteca ou noturno — com sua madeira e sua tipografia de lombada.' },
         { kicker: 'Passo 3', title: 'Leia, ou ouça',
@@ -773,7 +829,7 @@ window.BV_I18N = {
         { icon: 'backup',  label: 'Backup',       title: 'Sua biblioteca em um arquivo',
           body: 'Salve progresso, anotações, estantes e, se quiser, os próprios livros em um .zip onde você escolher, e restaure em outro celular. O Balda não envia isso para lugar nenhum.' },
         { icon: 'folder',  label: 'Importar',     title: 'Abra de onde estiver',
-          body: 'Um livro no WhatsApp, no e-mail ou em Downloads abre com o Balda. Ou escolha arquivos avulsos ou uma pasta: o app só vê o que você entrega.' },
+          body: 'Um livro no WhatsApp, no e-mail ou em Downloads abre com o Balda. Escolha arquivos avulsos ou uma pasta, ou deixe o Balda encontrar sozinho os livros do celular, se você permitir.' },
         { icon: 'tablet',  label: 'Tablet',       title: 'Aproveita a tela',
           body: 'Em tela larga, o painel de anotações abre ao lado do texto em vez de cobri-lo, e o mapa de constância passa de 16 para 52 semanas.' },
         { icon: 'offline', label: 'Offline',      title: 'Modo avião, mesmo app',
@@ -788,12 +844,16 @@ window.BV_I18N = {
       title: 'Os que já estão na sua pasta de downloads.',
       sub: 'Nada para converter e nenhum programa de computador no meio.',
       items: [
-        { tag: 'EPUB',   what: 'ePub 2 e 3: anotações, busca e voz alta' },
-        { tag: 'PDF',    what: 'Zoom com pinça; busca no Android 15+' },
+        { tag: 'EPUB', what: 'ePub 2 e 3: anotações, busca e voz alta' },
+        { tag: 'MOBI·AZW3', what: 'Kindle sem DRM, lido como um ePub' },
+        { tag: 'FB2', what: 'Também .fb2.zip, com notas e imagens' },
+        { tag: 'PDF', what: 'Zoom com pinça; busca no Android 15+' },
+        { tag: 'DOCX·ODT', what: 'Documentos do Word e do LibreOffice, para ler' },
         { tag: 'TXT·MD', what: 'Texto simples, também em voz alta' },
-        { tag: 'CBZ',    what: 'Quadrinhos página por página' }
+        { tag: 'CBZ', what: 'Quadrinhos página por página' },
+        { tag: 'CBR', what: 'Não: quase todos são RAR5. Converta para CBZ', soon: true }
       ],
-      note: 'Os .cbr ficam de fora de propósito: quase todos usam RAR5 e nenhum leitor Android consegue abri-los, então o app avisa na importação em vez de deixar você com um quadrinho que não abre. FB2 e MOBI chegam na versão 1.5.'
+      note: 'Livros do Kindle comprados na Amazon têm DRM e não abrem: o Balda lê MOBI e AZW3 sem DRM. Os .cbr ficam de fora de propósito: quase todos usam RAR5 e nenhum leitor Android consegue abri-los, então o app avisa na importação.'
     },
 
     privacy: {
@@ -806,7 +866,7 @@ window.BV_I18N = {
         'Nenhum servidor próprio',
         'Seus livros nunca são enviados',
         'Progresso e notas ficam no celular',
-        'Sem permissão de armazenamento',
+        'Acesso aos arquivos só se você ativar, somente leitura',
         'Backup em um arquivo que fica com você',
         'Relatórios de falha com botão para desligar',
         'Sem publicidade dentro do leitor'

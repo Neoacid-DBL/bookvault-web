@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cómo abrir un archivo EPUB en Android (gratis y sin cuenta) — Balda</title>
-<meta name="description" content="Android no trae lector de EPUB. Cómo abrir un .epub en el móvil desde WhatsApp, Gmail, Drive o Descargas, qué hacer si no abre (ACSM, DRM, MOBI) y qué lectores hay." />
+<meta name="description" content="Android no trae lector de EPUB. Cómo abrir un .epub en el móvil desde WhatsApp, Gmail, Drive o Descargas, qué hacer si no abre (ACSM, DRM) y qué lectores hay." />
 <meta name="theme-color" content="#FAF5EE" />
 <link rel="icon" type="image/svg+xml" href="../assets/bookvault_icon.svg" />
 <link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html" />
@@ -35,10 +35,10 @@
     {
       "@type": "Article",
       "headline": "Cómo abrir un archivo EPUB en Android",
-      "description": "Cómo abrir un .epub en el móvil desde WhatsApp, Gmail, Drive o Descargas, qué hacer si no abre (ACSM, DRM, MOBI) y qué lectores hay.",
+      "description": "Cómo abrir un .epub en el móvil desde WhatsApp, Gmail, Drive o Descargas, qué hacer si no abre (ACSM, DRM) y qué lectores hay.",
       "inLanguage": "es",
       "datePublished": "2026-10-21",
-      "dateModified": "2026-10-21",
+      "dateModified": "2026-11-06",
       "author": { "@type": "Person", "name": "Daniel Barea" },
       "publisher": { "@type": "Organization", "name": "Balda", "logo": { "@type": "ImageObject", "url": "https://neoacid-dbl.github.io/bookvault-web/assets/bookvault_icon.svg" } },
       "image": "https://neoacid-dbl.github.io/bookvault-web/assets/guides/es-03-lector.webp",
@@ -96,7 +96,7 @@
 
   <h1>Cómo abrir un archivo EPUB en Android</h1>
   <p class="lead">Te han pasado un libro por WhatsApp, lo has descargado de una biblioteca o lo tenías en el ordenador, lo tocas en el móvil… y Android dice que no tiene ninguna app para abrirlo. Es normal y tiene arreglo en un minuto.</p>
-  <p class="meta">Actualizado el 21 de octubre de 2026 · 6 min de lectura</p>
+  <p class="meta">Actualizado el 6 de noviembre de 2026 · 6 min de lectura</p>
 
   <div class="answer">
     <div class="label">Respuesta corta</div>
@@ -150,8 +150,11 @@
   </ol>
   <div class="note">
     <span class="ic" aria-hidden="true">💡</span>
-    <p>Balda solo mira las carpetas que tú le das. No recorre el resto del móvil, y el archivo original no se toca: si borras un libro en Balda, el de tu carpeta sigue ahí.</p>
+    <p>Balda solo mira las carpetas que tú le das, y el archivo original no se toca: si borras un libro en Balda, el de tu carpeta sigue ahí.</p>
   </div>
+
+  <h3>Si prefieres que Balda los encuentre sola</h3>
+  <p>Si tienes libros repartidos por Descargas, WhatsApp y otras carpetas, puedes activar <strong>Ajustes → Libros del móvil → Buscar libros en todo el móvil</strong>. Android te pedirá el permiso «Acceso a todos los archivos»; con él, Balda encuentra los EPUB, MOBI, AZW3, FB2 y cómics CBZ del móvil y añade los nuevos cada vez que la abres. Solo los lee, nunca añade PDF ni textos por su cuenta, y puedes quitar el permiso cuando quieras. Es opcional: sin él, todo lo anterior funciona igual.</p>
 
   <h2 id="ajustes">Ajustar la lectura a tu gusto</h2>
   <p>Con el libro abierto, toca el centro de la pantalla para ver los mandos. Desde ahí puedes cambiar:</p>
@@ -180,7 +183,7 @@
       </tbody>
     </table>
   </div>
-  <p>Si necesitas leer MOBI o FB2, hoy un lector clásico te servirá mejor: Balda lee EPUB, PDF, TXT y cómics CBZ, y nada más.</p>
+  <p>Balda lee EPUB, MOBI y AZW3 sin DRM, FB2, PDF, DOCX, ODT, TXT y cómics CBZ. Si tu libro está en otro formato, mira <a href="leer-mobi-azw3-android.html">cómo leer MOBI y AZW3</a> o <a href="abrir-fb2-android.html">cómo abrir un FB2</a>.</p>
 
   <h2 id="no-abre">Si el EPUB no se abre</h2>
   <h3>El archivo termina en <code>.acsm</code></h3>
@@ -193,7 +196,7 @@
   <ul>
     <li><strong>Descarga incompleta:</strong> vuelve a descargarlo. Un EPUB cortado a medias no se puede leer.</li>
     <li><strong>Extensión cambiada:</strong> a veces el archivo llega como <code>libro.epub.zip</code> o <code>libro.zip</code>. Renómbralo a <code>.epub</code> desde la app <em>Archivos</em>.</li>
-    <li><strong>No es un EPUB:</strong> si es <code>.mobi</code> o <code>.azw3</code> (formato de Kindle) y no tiene DRM, puedes convertirlo a EPUB en el ordenador con <a href="https://calibre-ebook.com/" target="_blank" rel="noopener">Calibre</a>, que es gratuito.</li>
+    <li><strong>Es un libro de Kindle:</strong> los <code>.mobi</code> y <code>.azw3</code> sin DRM se abren en Balda igual que un EPUB; los comprados en Amazon llevan DRM y no. Más detalles en <a href="leer-mobi-azw3-android.html">cómo leer MOBI y AZW3 en Android</a>.</li>
     <li><strong>Es un cómic en CBR:</strong> mira <a href="convertir-cbr-a-cbz.html">cómo pasar un CBR a CBZ</a>.</li>
   </ul>
 
@@ -235,6 +238,9 @@
   <div class="related">
     <div class="label">Sigue leyendo</div>
     <ul>
+      <li><a href="leer-mobi-azw3-android.html">Cómo leer libros MOBI y AZW3 en Android</a></li>
+      <li><a href="abrir-fb2-android.html">Cómo abrir un archivo FB2 en Android</a></li>
+      <li><a href="leer-en-voz-alta-android.html">Cómo hacer que el móvil te lea un libro en voz alta</a></li>
       <li><a href="convertir-cbr-a-cbz.html">Cómo convertir un cómic CBR a CBZ (y por qué muchos CBR no abren)</a></li>
     </ul>
   </div>

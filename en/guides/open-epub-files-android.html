@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>How to Open EPUB Files on Android (Free, No Account) — Balda</title>
-<meta name="description" content="Android has no built-in EPUB reader. How to open an .epub on your phone from WhatsApp, Gmail, Drive or Downloads, what to do when it won't open (ACSM, DRM, MOBI), and which reader to pick." />
+<meta name="description" content="Android has no built-in EPUB reader. How to open an .epub on your phone from WhatsApp, Gmail, Drive or Downloads, what to do when it won't open (ACSM, DRM), and which reader to pick." />
 <meta name="theme-color" content="#FAF5EE" />
 <link rel="icon" type="image/svg+xml" href="../../assets/bookvault_icon.svg" />
 <link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html" />
@@ -35,10 +35,10 @@
     {
       "@type": "Article",
       "headline": "How to open EPUB files on Android",
-      "description": "How to open an .epub on your phone from WhatsApp, Gmail, Drive or Downloads, what to do when it won't open (ACSM, DRM, MOBI), and which reader to pick.",
+      "description": "How to open an .epub on your phone from WhatsApp, Gmail, Drive or Downloads, what to do when it won't open (ACSM, DRM), and which reader to pick.",
       "inLanguage": "en",
       "datePublished": "2026-10-21",
-      "dateModified": "2026-10-21",
+      "dateModified": "2026-11-06",
       "author": { "@type": "Person", "name": "Daniel Barea" },
       "publisher": { "@type": "Organization", "name": "Balda", "logo": { "@type": "ImageObject", "url": "https://neoacid-dbl.github.io/bookvault-web/assets/bookvault_icon.svg" } },
       "image": "https://neoacid-dbl.github.io/bookvault-web/assets/guides/en-03-lector.webp",
@@ -47,7 +47,7 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Balda", "item": "https://neoacid-dbl.github.io/bookvault-web/" },
+        { "@type": "ListItem", "position": 1, "name": "Balda", "item": "https://neoacid-dbl.github.io/bookvault-web/en/" },
         { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://neoacid-dbl.github.io/bookvault-web/en/guides/" },
         { "@type": "ListItem", "position": 3, "name": "Open EPUB files on Android" }
       ]
@@ -62,7 +62,7 @@
 <div class="grain" aria-hidden="true"></div>
 
 <nav class="nav">
-  <a href="../../" class="nav-logo" aria-label="Balda">
+  <a href="../" class="nav-logo" aria-label="Balda">
     <span class="mark">
       <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
         <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
@@ -76,7 +76,7 @@
     <span class="word">Balda</span>
   </a>
   <div class="nav-links">
-    <a href="../../">Home</a>
+    <a href="../">Home</a>
     <a href="./" class="active">Guides</a>
   </div>
   <div class="nav-right">
@@ -89,14 +89,14 @@
 <article class="guide">
 
   <div class="crumbs">
-    <a href="../../">Balda</a><span aria-hidden="true">/</span>
+    <a href="../">Balda</a><span aria-hidden="true">/</span>
     <a href="./">Guides</a><span aria-hidden="true">/</span>
     <span>EPUB on Android</span>
   </div>
 
   <h1>How to open EPUB files on Android</h1>
   <p class="lead">Someone sent you a book on WhatsApp, you borrowed one from a library website, or you had it on your computer. You tap it on your phone and Android says there's no app that can open it. That's normal, and it takes a minute to fix.</p>
-  <p class="meta">Updated October 21, 2026 · 6 min read</p>
+  <p class="meta">Updated November 6, 2026 · 6 min read</p>
 
   <div class="answer">
     <div class="label">Short answer</div>
@@ -150,8 +150,11 @@
   </ol>
   <div class="note">
     <span class="ic" aria-hidden="true">💡</span>
-    <p>Balda only looks at the folders you give it. It doesn't scan the rest of your phone, and it never touches the original file: if you delete a book in Balda, the one in your folder stays where it was.</p>
+    <p>Balda only looks at the folders you give it, and it never touches the original file: if you delete a book in Balda, the one in your folder stays where it was.</p>
   </div>
+
+  <h3>If you'd rather Balda found them on its own</h3>
+  <p>If your books are scattered across Downloads, WhatsApp and other folders, turn on <strong>Settings → Books on your phone → Find books on the whole phone</strong>. Android will ask for “All files access”; with it, Balda finds the EPUB, MOBI, AZW3, FB2 and CBZ files on your phone and adds new ones every time you open it. It only reads them, never adds PDFs or text files on its own, and you can remove the permission whenever you like. It's optional: everything above works the same without it.</p>
 
   <h2 id="settings">Make the text comfortable to read</h2>
   <p>With the book open, tap the middle of the screen to show the controls. From there you can change:</p>
@@ -180,7 +183,7 @@
       </tbody>
     </table>
   </div>
-  <p>If you need MOBI or FB2, a classic reader will serve you better today: Balda reads EPUB, PDF, TXT and CBZ comics, and nothing else.</p>
+  <p>Balda reads EPUB, DRM-free MOBI and AZW3, FB2, PDF, DOCX, ODT, TXT and CBZ comics. If your book is in another format, see <a href="read-mobi-azw3-android.html">how to read MOBI and AZW3</a> or <a href="open-fb2-files-android.html">how to open an FB2</a>.</p>
 
   <h2 id="wont-open">If the EPUB won't open</h2>
   <h3>The file ends in <code>.acsm</code></h3>
@@ -193,7 +196,7 @@
   <ul>
     <li><strong>Incomplete download:</strong> download it again. A half-downloaded EPUB can't be read.</li>
     <li><strong>Wrong extension:</strong> sometimes the file arrives as <code>book.epub.zip</code> or <code>book.zip</code>. Rename it to <code>.epub</code> in the <em>Files</em> app.</li>
-    <li><strong>It isn't an EPUB:</strong> if it's <code>.mobi</code> or <code>.azw3</code> (Kindle formats) and DRM-free, you can convert it to EPUB on a computer with the free <a href="https://calibre-ebook.com/" target="_blank" rel="noopener">Calibre</a>.</li>
+    <li><strong>It's a Kindle book:</strong> DRM-free <code>.mobi</code> and <code>.azw3</code> files open in Balda just like an EPUB; books bought on Amazon carry DRM and don't. More in <a href="read-mobi-azw3-android.html">how to read MOBI and AZW3 on Android</a>.</li>
     <li><strong>It's a CBR comic:</strong> see <a href="convert-cbr-to-cbz.html">how to convert CBR to CBZ</a>.</li>
   </ul>
 
@@ -235,6 +238,9 @@
   <div class="related">
     <div class="label">Keep reading</div>
     <ul>
+      <li><a href="read-mobi-azw3-android.html">How to read MOBI and AZW3 books on Android</a></li>
+      <li><a href="open-fb2-files-android.html">How to open FB2 files on Android</a></li>
+      <li><a href="read-aloud-ebooks-android.html">How to have your phone read a book aloud</a></li>
       <li><a href="convert-cbr-to-cbz.html">How to convert CBR comics to CBZ (and why so many CBRs won't open)</a></li>
     </ul>
   </div>
