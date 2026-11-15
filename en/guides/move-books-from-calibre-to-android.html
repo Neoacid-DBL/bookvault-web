@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Move Books From Calibre to Your Android Phone — Balda</title>
+<meta name="description" content="Three simple ways to get books from Calibre onto an Android phone (USB, local network, email), which formats to choose and how to have Balda pick them up automatically." />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="../../assets/bookvault_icon.svg" />
+<link rel="apple-touch-icon" href="../../assets/icon-512.png" />
+<link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html" />
+<link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html" />
+<link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html" />
+<meta property="og:title" content="How to move books from Calibre to your Android phone" />
+<meta property="og:description" content="Copy your Calibre library to an Android phone by cable, Wi-Fi or email, and have it show up in your reader." />
+<meta property="og:site_name" content="Balda" />
+<meta property="og:image" content="https://neoacid-dbl.github.io/bookvault-web/assets/guides/en-02-biblioteca.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="stylesheet" href="../../guides.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to move books from Calibre to your Android phone",
+      "description": "Three simple ways to get books from Calibre onto an Android phone (USB, local network, email), which formats to choose and how to have Balda pick them up automatically.",
+      "inLanguage": "en",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "author": {
+        "@type": "Person",
+        "name": "Daniel Barea"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balda",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://neoacid-dbl.github.io/bookvault-web/assets/icon-512.png"
+        }
+      },
+      "image": "https://neoacid-dbl.github.io/bookvault-web/assets/guides/en-02-biblioteca.webp",
+      "mainEntityOfPage": "https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Balda",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/en/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Calibre to Android"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="../" class="nav-logo" aria-label="Balda">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">Balda</span>
+  </a>
+  <div class="nav-links">
+    <a href="../">Home</a>
+    <a href="./" class="active">Guides</a>
+  </div>
+  <div class="nav-right">
+    <a class="lang-link" href="../../guias/" hreflang="es" lang="es">🇪🇸 ES</a>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguide%26utm_campaign%3Dcalibre-to-android" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<main>
+<article class="guide">
+
+  <div class="crumbs">
+    <a href="../">Balda</a><span aria-hidden="true">/</span>
+    <a href="./">Guides</a><span aria-hidden="true">/</span>
+    <span>Calibre to Android</span>
+  </div>
+
+  <h1>How to move books from Calibre to your Android phone</h1>
+  <p class="lead">Calibre is great for organising a library on a computer, but it does not install on a phone. Here is how to get the books across, and how to make sure they are in a format your phone can read.</p>
+  <p class="meta">Updated November 15, 2026 · 5 min read</p>
+
+  <div class="answer">
+    <div class="label">Short answer</div>
+    <p>Use Calibre’s <strong>Save to disk</strong> to copy the books, plug the phone in by USB and drop them into a folder, then open them in a reader such as <strong>Balda</strong>. Or serve them over your Wi-Fi with Calibre’s content server and download them in the phone’s browser.</p>
+  </div>
+
+  <nav class="toc-box" aria-label="In this guide">
+    <div class="label">In this guide</div>
+    <ol>
+      <li><a href="#format">Check the format first</a></li>
+      <li><a href="#ways">Three ways to get the files onto the phone</a></li>
+      <li><a href="#reader">Getting the books into your reader</a></li>
+      <li><a href="#tips">Tips for a clean library</a></li>
+      <li><a href="#faq">Frequently asked questions</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="format">Check the format first</h2>
+  <p>Balda reads <strong>EPUB, FB2, DRM-free MOBI and AZW3, PDF, TXT, DOCX, ODT and CBZ</strong>. If your Calibre library has a format outside that list, use Calibre's <strong>Convert books</strong> button to make an EPUB copy. Where you have a choice, EPUB is the safe pick, since it is the format Balda reads natively and every other book format is converted to it on import.</p>
+  <p>Books with DRM, such as most purchases from Amazon, cannot be opened by Balda.</p>
+
+  <h2 id="ways">Three ways to get the files onto the phone</h2>
+  <h3>1. USB cable</h3>
+  <ol class="steps">
+    <li>In Calibre, select the books and choose <strong>Save to disk</strong> to export them into a folder on your computer. Calibre can also write the title, author and cover into the saved copies (see Preferences → Saving books to disk).</li>
+    <li>Connect the phone and, when Android asks what the USB connection is for, choose <strong>File transfer</strong>.</li>
+    <li>Copy the files to a folder on the phone, for example <code>Documents/Books</code> or <code>Download/Books</code>.</li>
+  </ol>
+  <h3>2. Over your Wi-Fi, with Calibre's content server</h3>
+  <p>In Calibre, use <strong>Connect/share → Start Content server</strong>. With the phone on the same Wi-Fi network, open the address Calibre shows (it looks like <code>http://192.168.x.x:8080</code>) in the phone's browser, find the book and download it. It lands in Downloads.</p>
+  <h3>3. Email or cloud storage</h3>
+  <p>For a handful of books, email them to yourself or put them in a cloud drive and open them on the phone. Tap the attachment or file and choose your reader.</p>
+
+  <h2 id="reader">Getting the books into your reader</h2>
+  <p>Once the files are on the phone, you have several options in Balda:</p>
+  <ul>
+    <li><strong>Add:</strong> tap <strong>“Add”</strong> and select as many files as you like at once.</li>
+    <li><strong>Book folders:</strong> in <strong>Settings → Book folders</strong>, tap <strong>“Add folder”</strong> and pick your books folder. Balda checks it every time you open the app and adds new books by itself. Android does not allow the whole Downloads folder, but a folder inside it, like <code>Download/Books</code>, works.</li>
+    <li><strong>Books on your phone:</strong> if you allow “All files access”, Balda finds EPUB, FB2, AZW3, MOBI and CBZ files anywhere on the phone, including Downloads and WhatsApp. It never adds PDFs or text files this way.</li>
+  </ul>
+  <p>Balda copies each book into its own storage, so books take up space twice. Deleting a book in Balda does not delete your original file, and a book you deleted will not be re-added automatically unless the original file changes.</p>
+
+  <h2 id="tips">Tips for a clean library</h2>
+  <ul>
+    <li><strong>Fix metadata in Calibre before exporting.</strong> Title, author and cover are read from the file, so a tidy library in Calibre means a tidy shelf on the phone.</li>
+    <li><strong>Mind your FB2 files.</strong> FB2 books exported by Calibre often have no chapter titles, so the table of contents shows “Chapter 1, Chapter 2…”. The book reads fine.</li>
+    <li><strong>Use a dedicated folder.</strong> A single <code>Books</code> folder you keep adding to works well with “Book folders”.</li>
+  </ul>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Does Balda sync with Calibre?</summary>
+      <p>No. There is no sync or cloud: you copy books across and Balda reads them locally. That is also why your reading data stays on your phone.</p>
+    </details>
+    <details>
+      <summary>Can I send a whole Calibre library at once?</summary>
+      <p>Yes. Select all the books, choose Save to disk, copy the folder to the phone and point Balda at it with Book folders. Keep in mind the 200 MB limit per file.</p>
+    </details>
+    <details>
+      <summary>Do I have to convert everything to EPUB?</summary>
+      <p>No. FB2, MOBI, AZW3 (without DRM), PDF, DOCX, ODT, TXT and CBZ all open directly. Convert only formats that are not on the list.</p>
+    </details>
+  </div>
+
+  <section class="guide-cta">
+    <h2>Take your Calibre library with you</h2>
+    <p>Balda is free, needs no account, and your books never leave your phone. For Android 8 and later.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguide%26utm_campaign%3Dcalibre-to-android" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+      </svg>
+      <span class="btn-sub"><span class="small">On Google Play</span><span>Get it free</span></span>
+    </a>
+  </section>
+
+  <div class="related">
+    <div class="label">Keep reading</div>
+    <ul>
+      <li><a href="find-downloaded-ebooks-android.html">Where are my downloaded ebooks on Android?</a></li>
+      <li><a href="open-epub-files-android.html">How to open EPUB files on Android</a></li>
+      <li><a href="read-mobi-azw3-android.html">How to read MOBI and AZW3 books on Android</a></li>
+    </ul>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">Balda</div>
+        <div class="tag">Your books and your reading stay on your phone.</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./">Guides</a>
+      <a href="../../privacy.html">Privacy</a>
+      <a href="mailto:danibarea@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Balda · Daniel Barea</div>
+  </div>
+</footer>
+
+</body>
+</html>

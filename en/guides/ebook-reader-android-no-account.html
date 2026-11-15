@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ebook Reader for Android With No Account and No Cloud — Balda</title>
+<meta name="description" content="An ebook reader for Android that needs no sign-up and works offline. What stays on your phone, what does not, which formats it opens and the trade-offs of going without sync." />
+<meta name="theme-color" content="#FAF5EE" />
+<link rel="icon" type="image/svg+xml" href="../../assets/bookvault_icon.svg" />
+<link rel="apple-touch-icon" href="../../assets/icon-512.png" />
+<link rel="canonical" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html" />
+<link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html" />
+<link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Daniel Barea" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html" />
+<meta property="og:title" content="An ebook reader for Android with no account and no cloud" />
+<meta property="og:description" content="Read EPUB, MOBI, FB2, PDF and CBZ on Android with no sign-up, offline, and with your library staying on your phone." />
+<meta property="og:site_name" content="Balda" />
+<meta property="og:image" content="https://neoacid-dbl.github.io/bookvault-web/assets/guides/en-02-biblioteca.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="stylesheet" href="../../guides.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "An ebook reader for Android with no account and no cloud",
+      "description": "An ebook reader for Android that needs no sign-up and works offline. What stays on your phone, what does not, which formats it opens and the trade-offs of going without sync.",
+      "inLanguage": "en",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "author": {
+        "@type": "Person",
+        "name": "Daniel Barea"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balda",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://neoacid-dbl.github.io/bookvault-web/assets/icon-512.png"
+        }
+      },
+      "image": "https://neoacid-dbl.github.io/bookvault-web/assets/guides/en-02-biblioteca.webp",
+      "mainEntityOfPage": "https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Balda",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://neoacid-dbl.github.io/bookvault-web/en/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "No-account reader"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="../" class="nav-logo" aria-label="Balda">
+    <span class="mark">
+      <svg viewBox="0 0 48 56" width="20" height="23" aria-hidden="true">
+        <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+        <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+        <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+        <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        <rect x="17" y="14" width="14" height="6" fill="#E8D2A8"/>
+        <rect x="35" y="24" width="11" height="6" fill="#F3D9A0"/>
+      </svg>
+    </span>
+    <span class="word">Balda</span>
+  </a>
+  <div class="nav-links">
+    <a href="../">Home</a>
+    <a href="./" class="active">Guides</a>
+  </div>
+  <div class="nav-right">
+    <a class="lang-link" href="../../guias/" hreflang="es" lang="es">🇪🇸 ES</a>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguide%26utm_campaign%3Dno-account-reader" target="_blank" rel="noopener">Download</a>
+  </div>
+</nav>
+
+<main>
+<article class="guide">
+
+  <div class="crumbs">
+    <a href="../">Balda</a><span aria-hidden="true">/</span>
+    <a href="./">Guides</a><span aria-hidden="true">/</span>
+    <span>No-account reader</span>
+  </div>
+
+  <h1>An ebook reader for Android with no account and no cloud</h1>
+  <p class="lead">Many reading apps want you to sign in before you can open a single book. If you would rather keep your library on your own phone, here is what that looks like in practice, including what you give up.</p>
+  <p class="meta">Updated November 15, 2026 · 5 min read</p>
+
+  <div class="answer">
+    <div class="label">Short answer</div>
+    <p><strong>Balda</strong> is a free ebook reader for Android that needs no sign-up, no sync and no internet connection. Your books, reading progress, highlights and stats live on your phone and are never sent anywhere unless you choose to share them.</p>
+  </div>
+
+  <nav class="toc-box" aria-label="In this guide">
+    <div class="label">In this guide</div>
+    <ol>
+      <li><a href="#what">What “no account” means in practice</a></li>
+      <li><a href="#stays">What stays on your phone, and what does not</a></li>
+      <li><a href="#gets">What you still get</a></li>
+      <li><a href="#tradeoffs">The trade-offs</a></li>
+      <li><a href="#start">Getting started</a></li>
+      <li><a href="#faq">Frequently asked questions</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="what">What “no account” means in practice</h2>
+  <p>There is no sign-up screen, no email, no password and no library stored on someone else's server. You install the app, add your books and read. Nothing needs to sync, so there is nothing to break when your connection drops: put the phone in airplane mode and keep reading.</p>
+  <p>The flip side is that your library belongs to the phone it is on. We cover what that means for backups and for changing phones below.</p>
+
+  <h2 id="stays">What stays on your phone, and what does not</h2>
+  <p>Your books, your progress, your highlights and notes, and your reading stats are stored on the device. Balda never uploads them. The only things that leave the phone are:</p>
+  <ul>
+    <li><strong>Ads.</strong> The app is free and supported by ads, which use Android's advertising ID like any app with ads. In Europe you are asked for consent before the first one is shown, and you can change your choice later in <strong>Settings → Ads</strong>.</li>
+    <li><strong>Crash reports.</strong> They help fix unexpected closures and never include your books, your progress or your annotations. You can turn them off in <strong>Settings → Diagnostics</strong>.</li>
+    <li><strong>Whatever you decide to share.</strong> A highlighted quote, your yearly goal or your streak can be turned into an image and sent through Android's share sheet. Nothing is shared unless you tap <strong>Share</strong>.</li>
+  </ul>
+
+  <h2 id="gets">What you still get</h2>
+  <ul>
+    <li><strong>The formats you already have:</strong> EPUB, FB2 (including <code>.fb2.zip</code>), DRM-free MOBI and AZW3, PDF, TXT, DOCX, ODT and CBZ comics.</li>
+    <li><strong>A real bookshelf:</strong> named shelves you arrange by dragging books between them.</li>
+    <li><strong>A comfortable reader:</strong> your choice of font, size, line spacing and margins, four paper colours (Day, Sepia, Night and OLED), paged or continuous scrolling, and page turns with the volume keys.</li>
+    <li><strong>Highlights, notes and bookmarks</strong> in EPUB and in the formats Balda converts to EPUB (FB2, MOBI, AZW3, DOCX and ODT), with five highlight colours and export to Markdown or plain text.</li>
+    <li><strong>Read aloud</strong> with your phone's own voice, for everything except PDF and comics.</li>
+    <li><strong>Stats and goals:</strong> reading speed, daily streak, weekly charts and goals by books, pages or minutes. They are calculated from your own reading sessions, on the phone.</li>
+  </ul>
+
+  <h2 id="tradeoffs">The trade-offs</h2>
+  <ul>
+    <li><strong>No automatic sync between devices.</strong> A book you add on your phone will not appear on your tablet. You add it on each device, or restore a backup.</li>
+    <li><strong>No store.</strong> Balda is a reader, not a bookshop. You bring your own files. Our <a href="free-legal-ebooks-android.html">guide to free legal ebooks</a> is a good place to start.</li>
+    <li><strong>No DRM-protected books.</strong> Books bought from Amazon, or EPUBs protected with Adobe DRM (the ones that arrive as <code>.acsm</code> files), cannot be opened.</li>
+    <li><strong>Ads, but not while you read.</strong> There are no ads in the reader. Banners appear on browsing screens such as the library, and a full-screen ad may show when you close a book after reading for a while. No full-screen ad appears during your first days. There is no paid version at the moment.</li>
+  </ul>
+
+  <h2 id="start">Getting started</h2>
+  <ol class="steps">
+    <li>Install <a href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguide%26utm_campaign%3Dno-account-reader" target="_blank" rel="noopener">Balda from Google Play</a>. It needs Android 8 or later.</li>
+    <li>Tap a book in your browser, chat app or file manager and choose <strong>Balda</strong> under “Open with”, or open Balda and tap <strong>“Add”</strong> to pick one or several files at once.</li>
+    <li>Optionally, let Balda find your books by itself: it offers to look for EPUB, FB2, AZW3, MOBI and CBZ files on your phone, including Downloads and WhatsApp. This asks for Android's “All files access” permission, which you can turn off whenever you like, and Balda never adds PDFs or text files this way.</li>
+  </ol>
+  <div class="note">
+    <span class="ic" aria-hidden="true">💡</span>
+    <p>To protect your library, use <strong>Settings → Backup → Save a backup</strong>. It puts your library data, progress, annotations, shelves and settings in a single .zip file wherever you choose. Balda does not upload it anywhere. Keep your original book files too.</p>
+  </div>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Does Balda need an internet connection?</summary>
+      <p>No. Reading, highlighting, searching and listening all work offline. The only things that use the internet are the ads and, if you leave it on, crash reporting.</p>
+    </details>
+    <details>
+      <summary>Can I read on two devices?</summary>
+      <p>Yes, but each device keeps its own library and progress. There is no sync. You can move your data with a backup and restore it on the other device.</p>
+    </details>
+    <details>
+      <summary>Is it really free?</summary>
+      <p>Yes. It is supported by ads that never interrupt reading. There is no subscription.</p>
+    </details>
+    <details>
+      <summary>What happens to my books if I uninstall the app?</summary>
+      <p>Balda keeps its own copy of each book it imports, so uninstalling removes that copy and your reading data with it. Your original files, wherever you got them from, are never touched. Save a backup first if you want to keep your progress and highlights.</p>
+    </details>
+  </div>
+
+  <section class="guide-cta">
+    <h2>Read without signing up</h2>
+    <p>Balda is free, needs no account, and your books never leave your phone. For Android 8 and later.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.danib.bookvault&amp;referrer=utm_source%3Dweb%26utm_medium%3Dguide%26utm_campaign%3Dno-account-reader" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3.5 2.2c-.3.2-.5.6-.5 1v17.6c0 .4.2.7.5 1l10.5-10.4L3.5 2.2zm12.1 8.3 2.7-1.5c1-.6 1-1.5 0-2.1L5.9 1.6 13.4 9l2.2 2.5zM5.9 22.4l12.4-7.3c.9-.5.9-1.4 0-1.9l-2.7-1.5-2.2 2.6-7.5 8.1z"/>
+      </svg>
+      <span class="btn-sub"><span class="small">On Google Play</span><span>Get it free</span></span>
+    </a>
+  </section>
+
+  <div class="related">
+    <div class="label">Keep reading</div>
+    <ul>
+      <li><a href="find-downloaded-ebooks-android.html">Where are my downloaded ebooks on Android?</a></li>
+      <li><a href="free-legal-ebooks-android.html">Where to download free ebooks legally</a></li>
+      <li><a href="open-epub-files-android.html">How to open EPUB files on Android</a></li>
+    </ul>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="mark">
+        <svg viewBox="0 0 48 56" width="22" height="26" aria-hidden="true">
+          <rect x="1" y="46" width="46" height="7" rx="2.5" fill="currentColor"/>
+          <rect x="2" y="10" width="11" height="36" rx="2" fill="#5F7254"/>
+          <rect x="17" y="2" width="14" height="44" rx="2" fill="#A0505F"/>
+          <rect x="35" y="14" width="11" height="32" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <div class="word">Balda</div>
+        <div class="tag">Your books and your reading stay on your phone.</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./">Guides</a>
+      <a href="../../privacy.html">Privacy</a>
+      <a href="mailto:danibarea@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Balda · Daniel Barea</div>
+  </div>
+</footer>
+
+</body>
+</html>
