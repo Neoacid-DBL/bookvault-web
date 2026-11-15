@@ -34,7 +34,13 @@ const EN_ONLY = [
   'en/guides/track-reading-goals-streaks-android.html',
   'en/guides/organize-ebook-library-shelves-android.html',
   'en/guides/back-up-ebook-library-new-phone-android.html',
-  'en/guides/epub-vs-mobi-vs-pdf-ebook-formats.html'
+  'en/guides/epub-vs-mobi-vs-pdf-ebook-formats.html',
+  'en/guides/read-pdf-on-android-zoom-search.html',
+  'en/guides/ebook-reader-tablet-foldable-android.html',
+  'en/guides/free-ebook-reader-no-ads-while-reading-android.html',
+  'en/guides/add-many-ebooks-at-once-android.html',
+  'en/guides/ebook-wont-open-android-fixes.html',
+  'en/guides/share-book-quotes-reading-stats-android.html'
 ];
 
 // Fecha del último commit que tocó el fichero (o hoy, si aún no está commiteado)

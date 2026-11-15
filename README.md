@@ -126,6 +126,7 @@ Word/ODT/TXT como libros y ebooks gratis y legales. Segunda tanda: leer de noche
 subrayados y exportación de notas, metas y estadísticas, estanterías, copia de seguridad y
 nuevo móvil, y comparativa de formatos (EPUB, MOBI, AZW3, FB2, PDF). Sus afirmaciones se comprobaron contra
 el código de la app (formatos, rótulos de Ajustes, anuncios, límite de 200 MB, sin zoom en
-cómics).
+cómics). Tercera tanda: leer PDF (zoom y búsqueda), tablets y plegables, anuncios mientras
+se lee, añadir muchos libros a la vez, libro que no abre y compartir citas y estadísticas.
 Los enlaces a Play llevan `referrer` con `utm_campaign` por artículo, para ver en Play
 Console qué instalaciones trae cada uno.
