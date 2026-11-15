@@ -122,7 +122,9 @@ convertir CBR a CBZ. Una guía nueva se empareja en `tools/build-sitemap.js`.
 
 Guías solo en inglés (van en `EN_ONLY` de `tools/build-sitemap.js`, sin par en español):
 lector sin cuenta ni nube, cómics CBZ, de Calibre al móvil, encontrar ebooks descargados,
-Word/ODT/TXT como libros y ebooks gratis y legales. Sus afirmaciones se comprobaron contra
+Word/ODT/TXT como libros y ebooks gratis y legales. Segunda tanda: leer de noche,
+subrayados y exportación de notas, metas y estadísticas, estanterías, copia de seguridad y
+nuevo móvil, y comparativa de formatos (EPUB, MOBI, AZW3, FB2, PDF). Sus afirmaciones se comprobaron contra
 el código de la app (formatos, rótulos de Ajustes, anuncios, límite de 200 MB, sin zoom en
 cómics).
 Los enlaces a Play llevan `referrer` con `utm_campaign` por artículo, para ver en Play
