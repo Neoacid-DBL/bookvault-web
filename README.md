@@ -119,5 +119,11 @@ cambia, se tocan también.
 
 Guías en español e inglés: abrir EPUB, leer MOBI y AZW3, abrir FB2, leer en voz alta y
 convertir CBR a CBZ. Una guía nueva se empareja en `tools/build-sitemap.js`.
+
+Guías solo en inglés (van en `EN_ONLY` de `tools/build-sitemap.js`, sin par en español):
+lector sin cuenta ni nube, cómics CBZ, de Calibre al móvil, encontrar ebooks descargados,
+Word/ODT/TXT como libros y ebooks gratis y legales. Sus afirmaciones se comprobaron contra
+el código de la app (formatos, rótulos de Ajustes, anuncios, límite de 200 MB, sin zoom en
+cómics).
 Los enlaces a Play llevan `referrer` con `utm_campaign` por artículo, para ver en Play
 Console qué instalaciones trae cada uno.

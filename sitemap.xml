@@ -92,7 +92,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <url>
@@ -108,7 +108,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/como-abrir-epub-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-epub-files-android.html"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <url>
@@ -124,7 +124,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-mobi-azw3-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-mobi-azw3-android.html"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <url>
@@ -140,7 +140,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/abrir-fb2-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/open-fb2-files-android.html"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <url>
@@ -156,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/leer-en-voz-alta-android.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-aloud-ebooks-android.html"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <url>
@@ -172,7 +172,49 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://neoacid-dbl.github.io/bookvault-web/guias/convertir-cbr-a-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/convert-cbr-to-cbz.html"/>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/ebook-reader-android-no-account.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/read-cbz-comics-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-cbz-comics-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-cbz-comics-android.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/move-books-from-calibre-to-android.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/find-downloaded-ebooks-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/find-downloaded-ebooks-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/find-downloaded-ebooks-android.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/read-word-docx-odt-txt-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-word-docx-odt-txt-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/read-word-docx-odt-txt-android.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://neoacid-dbl.github.io/bookvault-web/en/guides/free-legal-ebooks-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/free-legal-ebooks-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neoacid-dbl.github.io/bookvault-web/en/guides/free-legal-ebooks-android.html"/>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
 </urlset>

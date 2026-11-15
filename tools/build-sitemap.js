@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /* Genera sitemap.xml: las seis portadas, la política y las guías con sus pares de idioma.
    Uso: node tools/build-sitemap.js  (después de añadir o tocar una página).
-   Las guías se emparejan en GUIDES; una guía nueva se añade ahí. */
+   Las guías se emparejan en GUIDES; una guía nueva se añade ahí.
+   Las que solo existen en inglés van en EN_ONLY. */
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -19,6 +20,15 @@ const GUIDES = [
   ['guias/abrir-fb2-android.html', 'en/guides/open-fb2-files-android.html'],
   ['guias/leer-en-voz-alta-android.html', 'en/guides/read-aloud-ebooks-android.html'],
   ['guias/convertir-cbr-a-cbz.html', 'en/guides/convert-cbr-to-cbz.html']
+];
+// Guías que solo existen en inglés (sin par en español)
+const EN_ONLY = [
+  'en/guides/ebook-reader-android-no-account.html',
+  'en/guides/read-cbz-comics-android.html',
+  'en/guides/move-books-from-calibre-to-android.html',
+  'en/guides/find-downloaded-ebooks-android.html',
+  'en/guides/read-word-docx-odt-txt-android.html',
+  'en/guides/free-legal-ebooks-android.html'
 ];
 
 // Fecha del último commit que tocó el fichero (o hoy, si aún no está commiteado)
@@ -47,6 +57,7 @@ for (const [es, en] of GUIDES) {
   const alts = [['es', es], ['en', en], ['x-default', en]];
   urls.push(entry(es, alts), entry(en, alts));
 }
+for (const en of EN_ONLY) urls.push(entry(en, [['en', en], ['x-default', en]]));
 
 for (const u of urls) {
   const loc = u.match(/<loc>(.*?)<\/loc>/)[1].slice(BASE.length);
