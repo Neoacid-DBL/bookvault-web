@@ -28,7 +28,13 @@ const EN_ONLY = [
   'en/guides/move-books-from-calibre-to-android.html',
   'en/guides/find-downloaded-ebooks-android.html',
   'en/guides/read-word-docx-odt-txt-android.html',
-  'en/guides/free-legal-ebooks-android.html'
+  'en/guides/free-legal-ebooks-android.html',
+  'en/guides/read-ebooks-at-night-android.html',
+  'en/guides/highlight-and-export-notes-ebooks-android.html',
+  'en/guides/track-reading-goals-streaks-android.html',
+  'en/guides/organize-ebook-library-shelves-android.html',
+  'en/guides/back-up-ebook-library-new-phone-android.html',
+  'en/guides/epub-vs-mobi-vs-pdf-ebook-formats.html'
 ];
 
 // Fecha del último commit que tocó el fichero (o hoy, si aún no está commiteado)
